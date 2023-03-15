@@ -1,0 +1,8 @@
+Id,Question,JumpTo,Options,Goto,Options,Goto,Options,Goto,Options,Goto
+1,Hello,,Hi,2,I don’t want to talk.,3,What do you need?,3,I don’t know you. I cant talk to you.,3
+2,How are you?,,I don’t know.,3,I am fine. Thank you. What about you?,4,Why are you asking?,3,I don’t want to tell you.,3
+3,That's rude. I was just trying to be friend with you.,,I already have friends.,5,Sorry. I didn’t mean to be rude. I am fine.,6,I am not rude. You are.,5,,
+4,I am fine as well.,6,,,,,,,,
+5,You are so rude. I don't want to be your friend.,,,,,,,,,
+6,My name is Emma. What is your name?,,I don't want to tell you my name.,5,My name is Hiren. Nice to meet you Emma.,7,,,,
+7,I am in the same class as you. Let's catchup after class. Bye.,,Sure. Bye. See you soon.,,I can't. I have other important things to do.,-1,,,,
