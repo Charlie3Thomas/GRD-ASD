@@ -20,6 +20,8 @@ namespace CT.Elements
         public string DialogueName { get; set; }
         public List<CTChoiceSaveData> Choices { get; set; }
         public string Text { get; set; }
+
+        public string TipText { get; set; }
         public CTDialogueType DialogueType { get; set; }
 
         public CTGroup group { get; set; }
@@ -34,6 +36,7 @@ namespace CT.Elements
             DialogueName = "DialogueName";
             Choices = new List<CTChoiceSaveData>();
             Text = "Dialogue text";
+            TipText = "Tip";
 
             graph_view = _ct_graph_view;
 
@@ -105,6 +108,7 @@ namespace CT.Elements
 
 
             // Extensions container
+            // Text
             VisualElement custom_data_container = new VisualElement();
 
             Foldout text_foldout = CTElementUtility.CreateFoldout("Dialogue Text");
@@ -116,6 +120,19 @@ namespace CT.Elements
 
             text_foldout.Add(text_textfield);
             custom_data_container.Add(text_foldout);
+            //extensionContainer.Add(custom_data_container);
+
+            // Tip Text
+            Foldout tip_text_foldout = CTElementUtility.CreateFoldout("Tip Text");
+
+            TextField tip_text_textfield = CTElementUtility.CreateTextArea(TipText, null, callback =>
+            {
+                TipText = callback.newValue;
+            });
+
+            tip_text_foldout.Add(tip_text_textfield);
+            custom_data_container.Add(tip_text_foldout);
+
             extensionContainer.Add(custom_data_container);
 
             RefreshExpandedState();

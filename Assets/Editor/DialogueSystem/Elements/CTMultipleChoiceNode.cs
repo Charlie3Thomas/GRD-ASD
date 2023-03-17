@@ -22,7 +22,8 @@ namespace CT.Elements
 
             CTChoiceSaveData choice_data = new CTChoiceSaveData()
             {
-                Text = "New Choice"
+                Text = "New Choice",
+                TipText = "Tip"
             };
 
             Choices.Add(choice_data);

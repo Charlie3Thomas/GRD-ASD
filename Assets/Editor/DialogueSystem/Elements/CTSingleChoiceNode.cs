@@ -20,7 +20,8 @@ namespace CT.Elements
 
             CTChoiceSaveData choice_data = new CTChoiceSaveData()
             {
-                Text = "Next Dialogue"
+                Text = "Next Dialogue",
+                TipText = "Tip"
             };
 
             Choices.Add(choice_data);

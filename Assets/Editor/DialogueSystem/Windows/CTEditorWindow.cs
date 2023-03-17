@@ -16,7 +16,7 @@ namespace CT.Windows
 
         private readonly string default_filename = "NewDialogueGraph";
 
-        private TextField filename_textfield;
+        private static TextField filename_textfield;
 
         private Button save_button;
 
@@ -55,10 +55,15 @@ namespace CT.Windows
                 filename_textfield.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
             });
 
-            save_button = CTElementUtility.CreateButton("Save", () => Save());
+            save_button = CTElementUtility.CreateButton("Save", () => SaveGraph());
+
+            Button clear_button = CTElementUtility.CreateButton("Clear", () => ClearGraph());
+            Button new_button = CTElementUtility.CreateButton("New", () => NewGraph());
 
             toolbar.Add(filename_textfield);
             toolbar.Add(save_button);
+            toolbar.Add(clear_button);
+            toolbar.Add(new_button);
 
             rootVisualElement.Add(toolbar);
         }
@@ -70,6 +75,13 @@ namespace CT.Windows
             rootVisualElement.styleSheets.Add(style_sheet);
         }
         #endregion
+
+        #region Utility
+
+        public static void UpdateFileName(string _new_file_name)
+        {
+            filename_textfield.value = _new_file_name;
+        }
 
         public void AllowSave()
         {
@@ -85,7 +97,7 @@ namespace CT.Windows
             Debug.Log("Saving disabled");
         }
 
-        private void Save()
+        private void SaveGraph()
         {
             // Check file name not empty
             if (string.IsNullOrEmpty(filename_textfield.value))
@@ -104,6 +116,19 @@ namespace CT.Windows
             CTIOUtility.Initialise(graph_view, filename_textfield.value);
             CTIOUtility.Save();
         }
+
+        private void ClearGraph()
+        {
+            graph_view.ClearGraph();
+        }
+
+        private void NewGraph()
+        {
+            ClearGraph();
+            UpdateFileName(default_filename);
+        }
+
+        #endregion
 
     }
 }

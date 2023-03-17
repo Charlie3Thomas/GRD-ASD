@@ -616,6 +616,25 @@ namespace CT.Windows
             return local_pos;
         }
 
+        public void ClearGraph()
+        {
+            // Remove all elements from graph
+            graphElements.ForEach(graphElement => RemoveElement(graphElement));
+
+            // Clear groups
+            groups.Clear();
+
+            // Clear grouped nodes
+            grouped_nodes.Clear();
+
+            // Clear ungrouped nodes
+            ungrouped_nodes.Clear();
+
+            // Reset error count
+            ID_errors = 0;
+
+        }
+
         #endregion
     }
 }

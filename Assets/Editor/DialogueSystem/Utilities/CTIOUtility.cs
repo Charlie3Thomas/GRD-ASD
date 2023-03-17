@@ -185,6 +185,7 @@ namespace CT.Utilities
                 Name = _node.name,
                 Choices = choices,
                 Text = _node.Text,
+                TipText = _node.TipText,
 
                 // _node.group can be null.
                 // use null-conditional operator to prevent attempt to read from null
@@ -217,6 +218,7 @@ namespace CT.Utilities
             dialogue.Initialise(
                 _node.DialogueName,
                 _node.Text,
+                _node.TipText,
                 ConvertChoiceType(_node.Choices),
                 _node.DialogueType,
                 _node.IsStartNode()
@@ -274,7 +276,8 @@ namespace CT.Utilities
             {
                 CTDialogueChoiceData choice_data = new CTDialogueChoiceData()
                 {
-                    Text = node_choice.Text
+                    Text = node_choice.Text,
+                    TipText= node_choice.TipText
                 };
 
                 dialogue_choices.Add(choice_data);

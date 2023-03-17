@@ -13,6 +13,7 @@ namespace CT.Data
     public class CTDialogueChoiceData
     {
         [field: SerializeField] public string Text { get; set; }
+        [field: SerializeField] public string TipText { get; set; }
         [field: SerializeField] public CTDialogueSO NextDialogue { get; set; }
     }
 
