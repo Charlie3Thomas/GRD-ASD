@@ -1,27 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace CT.Elements
 {
-    using Windows;
+    using Data.Save;
     using Enumerations;
     using Utilities;
-    using Data.Save;
+    using Windows;
 
     public class CTSingleChoiceNode : CTNode
     {
-        public override void Initialise(CTGraphView _ct_graph_view, Vector2 _position)
+        public override void Initialize(string _node_name, CTGraphView _ct_graph_view, Vector2 _pos)
         {
-            base.Initialise(_ct_graph_view, _position);
+            base.Initialize(_node_name, _ct_graph_view, _pos);
 
             DialogueType = CTDialogueType.SingleChoice;
 
             CTChoiceSaveData choice_data = new CTChoiceSaveData()
             {
-                Text = "Next Dialogue",
-                TipText = "Tip"
+                Text = "Next Dialogue"
             };
 
             Choices.Add(choice_data);
@@ -31,12 +28,11 @@ namespace CT.Elements
         {
             base.Draw();
 
-            // Output container
-            foreach (CTChoiceSaveData choice in Choices) 
+            /* OUTPUT CONTAINER */
+
+            foreach (CTChoiceSaveData choice in Choices)
             {
                 Port choice_port = this.CreatePort(choice.Text);
-
-                //choice_port.portName = choice.Text;
 
                 choice_port.userData = choice;
 
@@ -45,6 +41,5 @@ namespace CT.Elements
 
             RefreshExpandedState();
         }
-
     }
 }

@@ -1,21 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using System.Security.Permissions;
 
 namespace CT.Data.Error
 {
-    using CT.Elements;
+    using Elements;
 
     public class CTNodeErrorData
     {
-        public CTErrorData error_data { get; set; }
-        public List<CTNode> nodes { get; set; }
+        public CTErrorData ErrorData { get; set; }
+        public List<CTNode> Nodes { get; set; }
 
-        public CTNodeErrorData() 
-        { 
-            error_data = new CTErrorData();
-            nodes = new List<CTNode>();
+        public CTNodeErrorData()
+        {
+            ErrorData = new CTErrorData();
+            Nodes = new List<CTNode>();
         }
     }
 }

@@ -1,156 +1,127 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor.Experimental.GraphView;
-using UnityEngine.UIElements;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace CT.Elements
 {
-    using Windows;
+    using Data.Save;
     using Enumerations;
     using Utilities;
-    using Data.Save;
-    using System.Linq;
+    using Windows;
 
     public class CTNode : Node
     {
-        public string ID;
+        public string ID { get; set; }
         public string DialogueName { get; set; }
         public List<CTChoiceSaveData> Choices { get; set; }
         public string Text { get; set; }
-
         public string TipText { get; set; }
         public CTDialogueType DialogueType { get; set; }
-
-        public CTGroup group { get; set; }
+        public CTGroup Group { get; set; }
 
         protected CTGraphView graph_view;
+        private Color default_background_colour;
 
-        private Color default_bg;
-
-        public virtual void Initialise(CTGraphView _ct_graph_view, Vector2 _position)
+        public override void BuildContextualMenu(ContextualMenuPopulateEvent _evt)
         {
-            ID = Guid.NewGuid().ToString();
-            DialogueName = "DialogueName";
-            Choices = new List<CTChoiceSaveData>();
-            Text = "Dialogue text";
-            TipText = "Tip";
+            _evt.menu.AppendAction("Disconnect Input Ports", action_event => DisconnectInputPorts());
+            _evt.menu.AppendAction("Disconnect Output Ports", action_event => DisconnectOutputPorts());
 
-            graph_view = _ct_graph_view;
-
-            default_bg = new Color(29.0f / 255.0f, 29.0f / 255.0f, 30.0f / 255.0f);
-
-            SetPosition(new Rect(_position, Vector2.zero));
+            base.BuildContextualMenu(_evt);
         }
 
-        public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
+        public virtual void Initialize(string _node_name, CTGraphView _ct_graph_view, Vector2 _pos)
         {
-            evt.menu.AppendAction("Disconnect all Input Ports", actionEvent => DisconnectAllInputPorts());
-            evt.menu.AppendAction("Disconnect all Output Ports", actionEvent => DisconnectAllOutputPorts());
+            ID = Guid.NewGuid().ToString();
 
-            base.BuildContextualMenu(evt);
+            DialogueName = _node_name;
+            Choices = new List<CTChoiceSaveData>();
+            Text = "Dialogue text.";
+            TipText = "Tip text.";
+
+            SetPosition(new Rect(_pos, Vector2.zero));
+
+            graph_view = _ct_graph_view;
+            default_background_colour = new Color(30f / 255f, 30f / 255f, 30f / 255f);
         }
 
         public virtual void Draw()
         {
-            // Title container
-            TextField dialogue_name_textfield = CTElementUtility.CreateTextField(DialogueName, null, callback =>
+            // Title
+            TextField tf_dialogue_name = CTElementUtility.CreateTextField(DialogueName, null, callback =>
             {
                 TextField target = (TextField) callback.target;
-
                 target.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
 
-                // Check filename valid for node
                 if (string.IsNullOrEmpty(target.value))
                 {
                     if (!string.IsNullOrEmpty(DialogueName))
                     {
-                        ++graph_view.ID_error_total;
+                        ++graph_view.NameErrorsAmount;
                     }
                 }
                 else
                 {
-                    // If filename is valid
                     if (string.IsNullOrEmpty(DialogueName))
                     {
-                        --graph_view.ID_error_total;
+                        --graph_view.NameErrorsAmount;
                     }
                 }
 
-                if (group == null) 
+                if (Group == null)
                 {
                     graph_view.RemoveUngroupedNode(this);
                     DialogueName = target.value;
                     graph_view.AddUngroupedNode(this);
+
                     return;
                 }
 
-                CTGroup current_group = group;
-
-                graph_view.RemoveGroupedNode(this, group);
-
-                DialogueName = callback.newValue;
-
+                CTGroup current_group = Group;
+                graph_view.RemoveGroupedNode(this, Group);
+                DialogueName = target.value;
                 graph_view.AddGroupedNode(this, current_group);
             });
 
+            titleContainer.Insert(0, tf_dialogue_name);
 
-            // Input container
-            titleContainer.Insert(0, dialogue_name_textfield);
-
-            Port input_port = this.CreatePort("Dialogue connection", Orientation.Horizontal, Direction.Input, Port.Capacity.Multi);
-
-            input_port.portName = "Dialogue Connection";
-
+            // Input
+            Port input_port = this.CreatePort("Dialogue Connection", Orientation.Horizontal, Direction.Input, Port.Capacity.Multi);
             inputContainer.Add(input_port);
 
-
-            // Extensions container
-            // Text
+            // Extension
             VisualElement custom_data_container = new VisualElement();
 
+            // Dialogue text
             Foldout text_foldout = CTElementUtility.CreateFoldout("Dialogue Text");
-
-            TextField text_textfield = CTElementUtility.CreateTextArea(Text, null, callback =>
-            {
-                Text = callback.newValue;
-            });
-
-            text_foldout.Add(text_textfield);
+            TextField tf_text = CTElementUtility.CreateTextArea(Text, null, callback => Text = callback.newValue);
+            text_foldout.Add(tf_text);
             custom_data_container.Add(text_foldout);
-            //extensionContainer.Add(custom_data_container);
 
-            // Tip Text
+            // Tip text
             Foldout tip_text_foldout = CTElementUtility.CreateFoldout("Tip Text");
-
-            TextField tip_text_textfield = CTElementUtility.CreateTextArea(TipText, null, callback =>
-            {
-                TipText = callback.newValue;
-            });
-
-            tip_text_foldout.Add(tip_text_textfield);
+            TextField tf_tip_text = CTElementUtility.CreateTextArea(TipText, null, callback => TipText = callback.newValue);
+            tip_text_foldout.Add(tf_tip_text);
             custom_data_container.Add(tip_text_foldout);
 
             extensionContainer.Add(custom_data_container);
-
-            RefreshExpandedState();
-
         }
 
         public void DisconnectAllPorts()
         {
-            DisconnectAllInputPorts();
-            DisconnectAllOutputPorts();
+            DisconnectInputPorts();
+            DisconnectOutputPorts();
         }
 
-        public void DisconnectAllInputPorts()
+        private void DisconnectInputPorts()
         {
-            DisconnectPorts(inputContainer);    
+            DisconnectPorts(inputContainer);
         }
 
-        public void DisconnectAllOutputPorts()
+        private void DisconnectOutputPorts()
         {
             DisconnectPorts(outputContainer);
         }
@@ -165,15 +136,14 @@ namespace CT.Elements
                 }
 
                 graph_view.DeleteElements(port.connections);
-
             }
         }
 
-        public bool IsStartNode()
+        public bool IsStartingNode()
         {
-            // If input port is not connected, this is a start node
-            Port inputPort = (Port) inputContainer.Children().First();
-            return !inputPort.connected;
+            Port input_port = (Port) inputContainer.Children().First();
+
+            return !input_port.connected;
         }
 
         public void SetErrorStyle(Color _colour)
@@ -183,8 +153,7 @@ namespace CT.Elements
 
         public void ResetStyle()
         {
-            mainContainer.style.backgroundColor = default_bg;
+            mainContainer.style.backgroundColor = default_background_colour;
         }
-
     }
 }

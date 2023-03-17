@@ -1,42 +1,36 @@
-using CT.Utilities;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net;
+using System.IO;
 using UnityEditor;
 using UnityEditor.UIElements;
-using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace CT.Windows
 {
+    using System;
+    using Utilities;
+
     public class CTEditorWindow : EditorWindow
     {
-        private CTGraphView graph_view; 
+        private CTGraphView graph_view;
 
-        private readonly string default_filename = "NewDialogueGraph";
+        private readonly string default_file_name = "TreeFileName";
 
-        private static TextField filename_textfield;
+        private static TextField tf_file_name;
+        private Button btn_save;
 
-        private Button save_button;
-
-        [MenuItem("Window/CT/Dialogue Graph")]
+        [MenuItem("Window/CT Dialogue Tree Editor/Dialogue Graph")]
         public static void Open()
         {
-            //Debug.Log("Opening window!");
-
-            CTEditorWindow editor_window = GetWindow<CTEditorWindow>();
-            editor_window.titleContent = new GUIContent("CT Dialogue Graph");
+            GetWindow<CTEditorWindow>("Dialogue Graph");
         }
 
         private void OnEnable()
         {
             AddGraphView();
-            AddToolBar();
+            AddToolbar();
+
             AddStyles();
         }
 
-        #region Style
         private void AddGraphView()
         {
             graph_view = new CTGraphView(this);
@@ -46,89 +40,88 @@ namespace CT.Windows
             rootVisualElement.Add(graph_view);
         }
 
-        private void AddToolBar()
+        private void AddToolbar()
         {
             Toolbar toolbar = new Toolbar();
 
-            filename_textfield = CTElementUtility.CreateTextField(default_filename, "File Name:", callback =>
+            tf_file_name = CTElementUtility.CreateTextField(default_file_name, "File Name:", callback =>
             {
-                filename_textfield.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
+                tf_file_name.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
             });
 
-            save_button = CTElementUtility.CreateButton("Save", () => SaveGraph());
+            btn_save = CTElementUtility.CreateButton("Save", () => Save());
 
-            Button clear_button = CTElementUtility.CreateButton("Clear", () => ClearGraph());
-            Button new_button = CTElementUtility.CreateButton("New", () => NewGraph());
+            Button btn_load = CTElementUtility.CreateButton("Load", () => Load());
+            Button btn_clear = CTElementUtility.CreateButton("Clear", () => Clear());
+            Button btn_new = CTElementUtility.CreateButton("New", () => ResetGraph());
 
-            toolbar.Add(filename_textfield);
-            toolbar.Add(save_button);
-            toolbar.Add(clear_button);
-            toolbar.Add(new_button);
+            toolbar.Add(tf_file_name);
+            toolbar.Add(btn_save);
+            toolbar.Add(btn_load);
+            toolbar.Add(btn_clear);
+            toolbar.Add(btn_new);
 
             rootVisualElement.Add(toolbar);
         }
 
         private void AddStyles()
         {
-            StyleSheet style_sheet = (StyleSheet)EditorGUIUtility.Load("DialogueSystem/CTVariables.uss");
-
-            rootVisualElement.styleSheets.Add(style_sheet);
-        }
-        #endregion
-
-        #region Utility
-
-        public static void UpdateFileName(string _new_file_name)
-        {
-            filename_textfield.value = _new_file_name;
+            rootVisualElement.AddStyleSheets("DialogueSystem/CTVariables.uss");
         }
 
-        public void AllowSave()
+        private void Save()
         {
-            save_button.SetEnabled(true);
-
-            Debug.Log("Saving enabled");
-        }
-
-        public void DenySave()
-        {
-            save_button.SetEnabled(false);
-
-            Debug.Log("Saving disabled");
-        }
-
-        private void SaveGraph()
-        {
-            // Check file name not empty
-            if (string.IsNullOrEmpty(filename_textfield.value))
+            if (string.IsNullOrEmpty(tf_file_name.value))
             {
-                // Display error to user and skip file saving with invalid file name
-                EditorUtility.DisplayDialog
-                (
-                    "INVALID FILE NAME.",
-                    "Please ensure file name is valid!",
-                    "Ok."
-                );
+                EditorUtility.DisplayDialog("Invalid file name.", "Please provide a valid file name.", "Okay");
 
                 return;
             }
 
-            CTIOUtility.Initialise(graph_view, filename_textfield.value);
+            CTIOUtility.Initialize(graph_view, tf_file_name.value);
             CTIOUtility.Save();
         }
 
-        private void ClearGraph()
+        private void Load()
+        {
+            string file_path = EditorUtility.OpenFilePanel("Dialogue Graphs", "Assets/Editor/DialogueSystem/Graphs", "asset");
+
+            if (string.IsNullOrEmpty(file_path))
+            {
+                return;
+            }
+
+            Clear();
+
+            CTIOUtility.Initialize(graph_view, Path.GetFileNameWithoutExtension(file_path));
+            CTIOUtility.Load();
+        }
+
+        private void Clear()
         {
             graph_view.ClearGraph();
         }
 
-        private void NewGraph()
+        private void ResetGraph()
         {
-            ClearGraph();
-            UpdateFileName(default_filename);
+            Clear();
+
+            UpdateFileName(default_file_name);
         }
 
-        #endregion
+        public static void UpdateFileName(string _new_file_name)
+        {
+            tf_file_name.value = _new_file_name;
+        }
 
+        public void AllowSaving()
+        {
+            btn_save.SetEnabled(true);
+        }
+
+        public void DenySaving()
+        {
+            btn_save.SetEnabled(false);
+        }
     }
 }

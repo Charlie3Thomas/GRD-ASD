@@ -1,26 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace CT.Data.Error
 {
     public class CTErrorData
     {
-        public Color color { get; set; }
+        public Color Colour { get; set; }
 
         public CTErrorData()
         {
-            GenerateRandomColour();
+            GenerateRandomColor();
         }
 
-        private void GenerateRandomColour()
+        private void GenerateRandomColor()
         {
-            color = new Color32
-            (
-                (byte)Random.Range(0, 256),
-                (byte)Random.Range(0, 256),
-                (byte)Random.Range(0, 256),
-                255
+            Colour = new Color32(
+                (byte) Random.Range(0, 256),
+                (byte) Random.Range(0, 256),
+                (byte) Random.Range(0, 256),
+                255 // Alpha
             );
         }
     }

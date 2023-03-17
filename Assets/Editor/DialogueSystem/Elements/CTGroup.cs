@@ -1,41 +1,40 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-namespace CT
+namespace CT.Elements
 {
     public class CTGroup : Group
     {
         public string ID { get; set; }
-        public string old_title { get; set; }
-        private Color def_boarder_colour;
-        private float def_boarder_width;
+        public string OldTitle { get; set; }
 
-        public CTGroup(string _group_title, Vector2 _position)
+        private Color default_boarder_colour;
+        private float default_boarder_width;
+
+        public CTGroup(string _group_title, Vector2 _pos)
         {
             ID = Guid.NewGuid().ToString();
+
             title = _group_title;
-            old_title = _group_title;
+            OldTitle = _group_title;
 
-            SetPosition(new Rect(_position, Vector2.zero));
+            SetPosition(new Rect(_pos, Vector2.zero));
 
-            def_boarder_colour = contentContainer.style.borderBottomColor.value;
-            def_boarder_width = contentContainer.style.borderBottomWidth.value;
-
+            default_boarder_colour = contentContainer.style.borderBottomColor.value;
+            default_boarder_width = contentContainer.style.borderBottomWidth.value;
         }
 
-        public void SetErrStyle(Color _colour)
+        public void SetErrorStyle(Color _colour)
         {
             contentContainer.style.borderBottomColor = _colour;
-            contentContainer.style.borderBottomWidth = 1.5f;
+            contentContainer.style.borderBottomWidth = 3.0f;
         }
 
         public void ResetStyle()
         {
-            contentContainer.style.borderBottomColor = def_boarder_colour;
-            contentContainer.style.borderBottomWidth = def_boarder_width;
+            contentContainer.style.borderBottomColor = default_boarder_colour;
+            contentContainer.style.borderBottomWidth = default_boarder_width;
         }
     }
 }

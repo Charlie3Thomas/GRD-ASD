@@ -1,5 +1,4 @@
-using CT.Enumerations;
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +6,7 @@ namespace CT.Data.Save
 {
     using Enumerations;
 
+    [Serializable]
     public class CTNodeSaveData
     {
         [field: SerializeField] public string ID { get; set; }

@@ -1,39 +1,37 @@
-using CT.Elements;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace CT.Elements
 {
-    using Windows;
+    using Data.Save;
     using Enumerations;
     using Utilities;
-    using Data.Save;
+    using Windows;
 
     public class CTMultipleChoiceNode : CTNode
     {
-        public override void Initialise(CTGraphView _ct_graph_view, Vector2 _position)
+        public override void Initialize(string _node_name, CTGraphView _ct_graph_view, Vector2 _pos)
         {
-            base.Initialise(_ct_graph_view, _position);
+            base.Initialize(_node_name, _ct_graph_view, _pos);
 
             DialogueType = CTDialogueType.MultipleChoice;
 
             CTChoiceSaveData choice_data = new CTChoiceSaveData()
             {
-                Text = "New Choice",
-                TipText = "Tip"
+                Text = "New Choice"
             };
 
             Choices.Add(choice_data);
         }
+
         public override void Draw()
         {
             base.Draw();
 
-            // Main container
-            Button add_choice_button = CTElementUtility.CreateButton("Add choice", () =>
+            // Container
+
+            Button btn_add_choice = CTElementUtility.CreateButton("Add Choice", () =>
             {
                 CTChoiceSaveData choice_data = new CTChoiceSaveData()
                 {
@@ -47,10 +45,10 @@ namespace CT.Elements
                 outputContainer.Add(choice_port);
             });
 
-            mainContainer.Insert(1, add_choice_button);
+            mainContainer.Insert(1, btn_add_choice);
 
+            // Outputs
 
-            // Output container
             foreach (CTChoiceSaveData choice in Choices)
             {
                 Port choice_port = CreateChoicePort(choice);
@@ -61,32 +59,22 @@ namespace CT.Elements
             RefreshExpandedState();
         }
 
-        #region Elements
-        private Port CreateChoicePort(object _userdata)
+        private Port CreateChoicePort(object _user_data)
         {
             Port choice_port = this.CreatePort();
 
-            choice_port.userData = _userdata;
+            choice_port.userData = _user_data;
 
-            CTChoiceSaveData choice_data = (CTChoiceSaveData) _userdata;
+            CTChoiceSaveData choice_data = (CTChoiceSaveData) _user_data;
 
-            //choice_port.portName = "";
-
-            Button delete_choice_button = CTElementUtility.CreateButton("X", () =>
+            Button btn_delete_choice = CTElementUtility.CreateButton("X", () =>
             {
-                /*
-                    Remove choices only if there are more than one
-                    If removed choice port is connected, disconnect it
-                    Remove removed choice from choices list
-                    Remove removed choice port from graph
-                 */
-
                 if (Choices.Count == 1)
                 {
                     return;
                 }
 
-                if (choice_port.connected) 
+                if (choice_port.connected)
                 {
                     graph_view.DeleteElements(choice_port.connections);
                 }
@@ -94,21 +82,17 @@ namespace CT.Elements
                 Choices.Remove(choice_data);
 
                 graph_view.RemoveElement(choice_port);
-
             });
 
-            TextField choice_text_field = CTElementUtility.CreateTextField(choice_data.Text, null, callback =>
+            TextField tf_choice = CTElementUtility.CreateTextField(choice_data.Text, null, callback =>
             {
                 choice_data.Text = callback.newValue;
             });
 
-            choice_port.Add(choice_text_field);
-            choice_port.Add(delete_choice_button);
-
-            outputContainer.Add(choice_port);
+            choice_port.Add(tf_choice);
+            choice_port.Add(btn_delete_choice);
 
             return choice_port;
         }
-        #endregion
     }
 }

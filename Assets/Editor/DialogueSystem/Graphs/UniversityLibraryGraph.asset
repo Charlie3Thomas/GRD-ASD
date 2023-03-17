@@ -1,0 +1,891 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
+  m_Name: UniversityLibraryGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: UniversityLibrary
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 481c5e00-6b71-4984-bd7b-a50dc6cdb0c2
+    <Name>k__BackingField: Introduction
+    <Position>k__BackingField: {x: 144, y: -373}
+  - <ID>k__BackingField: 4a3c0634-c74a-4fe9-9a26-1047da7c1ce1
+    <Name>k__BackingField: StudentGreetsLibrarian
+    <Position>k__BackingField: {x: 1082.0001, y: 171}
+  - <ID>k__BackingField: 7885a63e-b2ed-4929-8ef1-b4fb46f36ed2
+    <Name>k__BackingField: CoreOfTheProblem
+    <Position>k__BackingField: {x: 3094.9995, y: 211.00003}
+  - <ID>k__BackingField: ab806b2b-c382-402d-b79f-0563c89ad782
+    <Name>k__BackingField: LookElsewhere
+    <Position>k__BackingField: {x: 6798.0005, y: 92.99997}
+  - <ID>k__BackingField: acedbf45-7d0c-4487-99ba-eaafd9f91849
+    <Name>k__BackingField: TakeAvailablePosition
+    <Position>k__BackingField: {x: 6717.0005, y: 979}
+  - <ID>k__BackingField: 2a3af082-fd60-4315-af54-bcbef77d0840
+    <Name>k__BackingField: SitAtTable
+    <Position>k__BackingField: {x: 9767, y: 998}
+  - <ID>k__BackingField: e435e2e7-c3fd-478c-8148-c7acd3fc0365
+    <Name>k__BackingField: StandUp
+    <Position>k__BackingField: {x: 12281, y: 701.00006}
+  - <ID>k__BackingField: 6397e46e-1f04-4ffb-8691-d90bf8e8d9a9
+    <Name>k__BackingField: Apologise
+    <Position>k__BackingField: {x: 14200.001, y: 437}
+  - <ID>k__BackingField: d47c2c40-d2f0-4d76-a6a8-432e1eee15c9
+    <Name>k__BackingField: StaySilent
+    <Position>k__BackingField: {x: 13954.001, y: 887.0001}
+  - <ID>k__BackingField: ffb31331-910c-499b-9edf-503c1e70a542
+    <Name>k__BackingField: AskAboutSoftware
+    <Position>k__BackingField: {x: 9225, y: -50.999985}
+  - <ID>k__BackingField: 81310bb5-6212-4960-bb45-0be8a36c0c02
+    <Name>k__BackingField: LibrarianComesWith
+    <Position>k__BackingField: {x: 11128.001, y: -39}
+  - <ID>k__BackingField: 9bb42b4c-164d-4468-a961-4668cf699dff
+    <Name>k__BackingField: CanIUseIt
+    <Position>k__BackingField: {x: 12313.001, y: 1203}
+  - <ID>k__BackingField: 0988066f-a07d-4e3a-be1f-d150ab03d6b7
+    <Name>k__BackingField: KeepItDown
+    <Position>k__BackingField: {x: 9214, y: 1200}
+  - <ID>k__BackingField: 97dedb32-3240-48c9-aa0d-b767b23f12e9
+    <Name>k__BackingField: OnComputer
+    <Position>k__BackingField: {x: 17042, y: 140}
+  - <ID>k__BackingField: 85dc4026-a6a3-47d7-8f10-c76927c5d124
+    <Name>k__BackingField: AskStudents
+    <Position>k__BackingField: {x: 18592.998, y: -136}
+  - <ID>k__BackingField: 74189a55-e4f3-41ed-a8fc-f05ac26d4774
+    <Name>k__BackingField: AskLibrarian
+    <Position>k__BackingField: {x: 19745.002, y: 171.00002}
+  - <ID>k__BackingField: 62560f55-f00e-45aa-8066-01ced053d80b
+    <Name>k__BackingField: GoHome
+    <Position>k__BackingField: {x: 18578.002, y: 486.00015}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: b86d0bda-1d9e-4fa7-b349-dfc555e082e5
+    <Name>k__BackingField: Context1
+    <Text>k__BackingField: 'You move further into the room and look for a place to
+      set up. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 3aa4ffc4-1bc2-45fd-8c6f-fee0ef1b8125
+    <GroupID>k__BackingField: 7885a63e-b2ed-4929-8ef1-b4fb46f36ed2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3120, y: 270}
+  - <ID>k__BackingField: 3aa4ffc4-1bc2-45fd-8c6f-fee0ef1b8125
+    <Name>k__BackingField: Context2
+    <Text>k__BackingField: 'The software you need for your exercise is accessible
+      through your personal session, so any workstation will do. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: bcdcb9c4-34b7-4082-8c23-8159c49ce738
+    <GroupID>k__BackingField: 7885a63e-b2ed-4929-8ef1-b4fb46f36ed2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3510, y: 270}
+  - <ID>k__BackingField: bcdcb9c4-34b7-4082-8c23-8159c49ce738
+    <Name>k__BackingField: Context3
+    <Text>k__BackingField: As you look around the room, you quickly realise that,
+      with the exception of one computer that is out of order, there is only one
+      empty seat.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 3d564b65-491f-4b40-8901-2c60ebd19a67
+    <GroupID>k__BackingField: 7885a63e-b2ed-4929-8ef1-b4fb46f36ed2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4183, y: 270}
+  - <ID>k__BackingField: 3d564b65-491f-4b40-8901-2c60ebd19a67
+    <Name>k__BackingField: Context4
+    <Text>k__BackingField: 'You also notice that there are no board separating the
+      desks from each other. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 9392f922-e6bd-4afb-8717-aa856d911103
+    <GroupID>k__BackingField: 7885a63e-b2ed-4929-8ef1-b4fb46f36ed2
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4997, y: 270}
+  - <ID>k__BackingField: 9aba796b-fc05-4d47-814f-1782a291337d
+    <Name>k__BackingField: LookElsewhere
+    <Text>k__BackingField: You decide to turn back while thinking of an alternative
+      for your work.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: aeb6df69-a162-4046-8f36-629424a657c9
+    <GroupID>k__BackingField: ab806b2b-c382-402d-b79f-0563c89ad782
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6823, y: 152}
+  - <ID>k__BackingField: aeb6df69-a162-4046-8f36-629424a657c9
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: As you pass through the entrance, the librarian, seeing
+      you lost in thought, calls out to you.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 46709f6f-803f-4517-a9a1-d6be2c8b3e63
+    <GroupID>k__BackingField: ab806b2b-c382-402d-b79f-0563c89ad782
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7269, y: 152}
+  - <ID>k__BackingField: 41ebd237-c1f0-44b2-8fe2-aca5a794f55a
+    <Name>k__BackingField: TakeAvailablePosition
+    <Text>k__BackingField: You take the available position.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 8c4f837f-9688-4e35-b78a-9d2824788ae4
+    <GroupID>k__BackingField: acedbf45-7d0c-4487-99ba-eaafd9f91849
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6742, y: 1038}
+  - <ID>k__BackingField: 8c4f837f-9688-4e35-b78a-9d2824788ae4
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: 'Seeing you approach, the two students pause, although
+      one cannot find the means to calm his laughter and does not seem quite able
+      to converse with you. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: e34bcc7c-8f4b-41f8-a740-0741249f8276
+    <GroupID>k__BackingField: acedbf45-7d0c-4487-99ba-eaafd9f91849
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7009, y: 1038}
+  - <ID>k__BackingField: 45bb5384-7ba4-4c78-b0cb-85b53130e35e
+    <Name>k__BackingField: SitAtTable
+    <Text>k__BackingField: 'The students fall silent. After a moment of confusion,
+      the student on your left recovers. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ea103fcc-0dd6-4e08-8fc4-442228554803
+    <GroupID>k__BackingField: 2a3af082-fd60-4315-af54-bcbef77d0840
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9792, y: 1057}
+  - <ID>k__BackingField: b3c4cc75-d54c-4c0e-82a6-3a8738d553d1
+    <Name>k__BackingField: KeepItDown
+    <Text>k__BackingField: 'Student on the left (with a detached air): "Hum. Sorry." '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 45bb5384-7ba4-4c78-b0cb-85b53130e35e
+    <GroupID>k__BackingField: 0988066f-a07d-4e3a-be1f-d150ab03d6b7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9239, y: 1259}
+  - <ID>k__BackingField: ea103fcc-0dd6-4e08-8fc4-442228554803
+    <Name>k__BackingField: 3
+    <Text>k__BackingField: 'You do indeed notice that a session is connected. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: fc057c04-a7db-4329-8d27-942cf7d8d196
+    <GroupID>k__BackingField: 2a3af082-fd60-4315-af54-bcbef77d0840
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10321, y: 1057}
+  - <ID>k__BackingField: 21b4fe13-1de9-48f5-a862-363fcad61f0a
+    <Name>k__BackingField: StandUp
+    <Text>k__BackingField: You stand up.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b7628f97-41fa-439c-807c-356f49cefa51
+    <GroupID>k__BackingField: e435e2e7-c3fd-478c-8148-c7acd3fc0365
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 12306, y: 760}
+  - <ID>k__BackingField: ed8bd65d-0573-480e-938a-432af3106b84
+    <Name>k__BackingField: 3
+    <Text>k__BackingField: 'You nod, the student on the left turns to his computer
+      and logs off. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: af9e714d-046a-40c2-b7fc-81aaaeaa2ef3
+    <GroupID>k__BackingField: 6397e46e-1f04-4ffb-8691-d90bf8e8d9a9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 15307, y: 496}
+  - <ID>k__BackingField: b7628f97-41fa-439c-807c-356f49cefa51
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: 'As you turn to walk away, you come face to face with
+      a person you had not heard approaching. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: bf801c9a-d9ee-4bcb-b3c1-f616ea5cb2ea
+    <GroupID>k__BackingField: e435e2e7-c3fd-478c-8148-c7acd3fc0365
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 12596, y: 760}
+  - <ID>k__BackingField: 73b92cdd-7851-4464-b848-8af2fd92c62c
+    <Name>k__BackingField: Apologise
+    <Text>k__BackingField: 'Student who just arrived: "No worries."'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 053d8d1e-7370-4bab-86bd-b7b82b616775
+    <GroupID>k__BackingField: 6397e46e-1f04-4ffb-8691-d90bf8e8d9a9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14225, y: 496}
+  - <ID>k__BackingField: 053d8d1e-7370-4bab-86bd-b7b82b616775
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: The student pauses, seems to hesitate for a moment, then
+      resumes.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 5cfd4053-883b-4ca7-9f51-f4a1cfbd64e3
+    <GroupID>k__BackingField: 6397e46e-1f04-4ffb-8691-d90bf8e8d9a9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14495, y: 496}
+  - <ID>k__BackingField: 63900f0e-2e84-4dcf-9b2f-d404b018d19d
+    <Name>k__BackingField: StaySilent
+    <Text>k__BackingField: 'Although you are avoiding his gaze, you cannot find an
+      opening to slip away. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: a3a89e34-cc57-479b-b380-f3863bee0570
+    <GroupID>k__BackingField: d47c2c40-d2f0-4d76-a6a8-432e1eee15c9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 13979, y: 946}
+  - <ID>k__BackingField: a3a89e34-cc57-479b-b380-f3863bee0570
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: A quick glance at the two members of his study group is
+      enough for him to interpret the situation.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b02ff1ae-2fdc-4e2e-bab2-128f39154cfb
+    <GroupID>k__BackingField: d47c2c40-d2f0-4d76-a6a8-432e1eee15c9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14459, y: 946}
+  - <ID>k__BackingField: 5cfd4053-883b-4ca7-9f51-f4a1cfbd64e3
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: Anyway, we didn't need it. If you want we can leave you
+      one.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ed8bd65d-0573-480e-938a-432af3106b84
+    <GroupID>k__BackingField: 6397e46e-1f04-4ffb-8691-d90bf8e8d9a9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14917, y: 496}
+  - <ID>k__BackingField: fc057c04-a7db-4329-8d27-942cf7d8d196
+    <Name>k__BackingField: 4
+    <Text>k__BackingField: 'However, no software or browser seems to be open on it. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: cb702117-9cd2-4118-8853-6b2194ec8acd
+    <GroupID>k__BackingField: 2a3af082-fd60-4315-af54-bcbef77d0840
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10653, y: 1057}
+  - <ID>k__BackingField: cb702117-9cd2-4118-8853-6b2194ec8acd
+    <Name>k__BackingField: 5
+    <Text>k__BackingField: 'You also notice that there is no equipment cluttering
+      up the desktop. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: c4c04490-26b3-4177-ae06-ba7e91c80a54
+    <GroupID>k__BackingField: 2a3af082-fd60-4315-af54-bcbef77d0840
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11018, y: 1057}
+  - <ID>k__BackingField: c4c04490-26b3-4177-ae06-ba7e91c80a54
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: 'This does not suggest a very committed work. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Stand Up.
+      <NodeID>k__BackingField: 21b4fe13-1de9-48f5-a862-363fcad61f0a
+    - <Text>k__BackingField: '"This is the only place I found available. It''s really
+        not possible for me to use it?"'
+      <NodeID>k__BackingField: 58166e00-a822-419b-8500-5c7258205c3e
+    - <Text>k__BackingField: 'Student: "Sorry, I thought the computer was free."'
+      <NodeID>k__BackingField: 58166e00-a822-419b-8500-5c7258205c3e
+    <GroupID>k__BackingField: 2a3af082-fd60-4315-af54-bcbef77d0840
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 11461, y: 1057}
+  - <ID>k__BackingField: 58166e00-a822-419b-8500-5c7258205c3e
+    <Name>k__BackingField: CanIUseIt
+    <Text>k__BackingField: 'Student on the left: "Ah, no. A friend will come back."'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ceaa534b-199a-4e95-bc17-07638d848681
+    <GroupID>k__BackingField: 9bb42b4c-164d-4468-a961-4668cf699dff
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 12338, y: 1262}
+  - <ID>k__BackingField: 31ef2b7d-d911-4cf2-b77a-ea1b8625d783
+    <Name>k__BackingField: AskAboutSoftware
+    <Text>k__BackingField: 'Documentalist: "Of course, the computers in the computer
+      room are available for that.'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: acce6572-9e36-41f1-8ff3-c34ebec32b34
+    <GroupID>k__BackingField: ffb31331-910c-499b-9edf-503c1e70a542
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9250, y: 8}
+  - <ID>k__BackingField: 500612ad-f8e8-4870-8882-9b52f4e49731
+    <Name>k__BackingField: LibrarianComesWithYou
+    <Text>k__BackingField: 'Librarian: "I will accompany you."'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 83da8e79-c70a-4887-b3bd-5a775e926336
+    <GroupID>k__BackingField: 81310bb5-6212-4960-bb45-0be8a36c0c02
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11153, y: 20}
+  - <ID>k__BackingField: 83da8e79-c70a-4887-b3bd-5a775e926336
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: 'The librarian, at these words, gets up and leads you
+      to the computer area. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 63c2e608-459d-4dca-a8c6-f2bd80789758
+    <GroupID>k__BackingField: 81310bb5-6212-4960-bb45-0be8a36c0c02
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11427, y: 20}
+  - <ID>k__BackingField: 63c2e608-459d-4dca-a8c6-f2bd80789758
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: Noticing immediately the two students around whom there
+      is a very lively atmosphere, she approaches.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: bed6330b-e7e0-4517-9ce7-b69bb1a2010a
+    <GroupID>k__BackingField: 81310bb5-6212-4960-bb45-0be8a36c0c02
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 11902, y: 20}
+  - <ID>k__BackingField: bed6330b-e7e0-4517-9ce7-b69bb1a2010a
+    <Name>k__BackingField: 3
+    <Text>k__BackingField: 'Silence is quickly established and only a simple reminder
+      of the essential rules of the library is necessary. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 05b012b1-9ddc-42b2-96bf-8a09d6db77b3
+    <GroupID>k__BackingField: 81310bb5-6212-4960-bb45-0be8a36c0c02
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 12548, y: 20}
+  - <ID>k__BackingField: 05b012b1-9ddc-42b2-96bf-8a09d6db77b3
+    <Name>k__BackingField: 4
+    <Text>k__BackingField: 'She then took the opportunity to question them. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 20db9cb1-fa82-42eb-aaec-6f5eb989b697
+    <GroupID>k__BackingField: 81310bb5-6212-4960-bb45-0be8a36c0c02
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 13209, y: 20}
+  - <ID>k__BackingField: eb1e98cd-fb0b-4d0c-a872-3f94e04ee53d
+    <Name>k__BackingField: GoBack
+    <Text>k__BackingField: You go back into the room.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 500612ad-f8e8-4870-8882-9b52f4e49731
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 10654, y: 176}
+  - <ID>k__BackingField: d4406702-87a6-42c6-9e77-5dc899781343
+    <Name>k__BackingField: Introduction
+    <Text>k__BackingField: 'Documentalist: "Hello, welcome."'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: '"Hello" - Without looking at the librarian'
+      <NodeID>k__BackingField: b86d0bda-1d9e-4fa7-b349-dfc555e082e5
+    - <Text>k__BackingField: '"Hello" - Looking at the librarian'
+      <NodeID>k__BackingField: 296598f4-ff0e-479c-abda-ca12285ff41b
+    - <Text>k__BackingField: Do not answer, and continue on your way.
+      <NodeID>k__BackingField: b86d0bda-1d9e-4fa7-b349-dfc555e082e5
+    <GroupID>k__BackingField: 481c5e00-6b71-4984-bd7b-a50dc6cdb0c2
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 169, y: -314}
+  - <ID>k__BackingField: 296598f4-ff0e-479c-abda-ca12285ff41b
+    <Name>k__BackingField: StudentGreetsLibrarian
+    <Text>k__BackingField: 'Librarian: "If you need any information, I am available,
+      do not hesitate to ask for help."'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: '"Thanks, that''s nice."'
+      <NodeID>k__BackingField: 8a0897bf-42e2-4bcb-b9c9-7b2ba96791dc
+    - <Text>k__BackingField: '"No. It''s all good, thanks."'
+      <NodeID>k__BackingField: 8a0897bf-42e2-4bcb-b9c9-7b2ba96791dc
+    - <Text>k__BackingField: '"Yes, I have a question."'
+      <NodeID>k__BackingField: 74ed253a-88b4-445f-8872-60afb8995617
+    <GroupID>k__BackingField: 4a3c0634-c74a-4fe9-9a26-1047da7c1ce1
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1107, y: 230}
+  - <ID>k__BackingField: 74ed253a-88b4-445f-8872-60afb8995617
+    <Name>k__BackingField: StudentApproachesLibrarian
+    <Text>k__BackingField: The student approaches the librarian to ask her a question
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b7791e3f-fab1-4b50-931b-c6d6990f16a7
+    <GroupID>k__BackingField: 4a3c0634-c74a-4fe9-9a26-1047da7c1ce1
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1634, y: 462}
+  - <ID>k__BackingField: 0e362c7c-895a-4f9b-9048-90d677eba3c8
+    <Name>k__BackingField: OnComputer
+    <Text>k__BackingField: 'You have successfully logged out of the previous user''s
+      session and now want to log in to your session. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 367b6de1-1d3f-4b49-81dc-1c68fed5fb40
+    <GroupID>k__BackingField: 97dedb32-3240-48c9-aa0d-b767b23f12e9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 17067, y: 223}
+  - <ID>k__BackingField: 367b6de1-1d3f-4b49-81dc-1c68fed5fb40
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: 'You enter your username but can''t remember your password,
+      so you are looking for a way to retrieve it or log in another way. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Ask for help from students sitting around the available
+        computer.
+      <NodeID>k__BackingField: 66e4c8b6-8b0e-4815-a816-eabdf636afb4
+    - <Text>k__BackingField: Ask the librarian for help.
+      <NodeID>k__BackingField: f724670a-ad07-4cd9-a7d1-bc9d79dc5b61
+    - <Text>k__BackingField: 'Go home. '
+      <NodeID>k__BackingField: c4afb13d-a32c-41da-90cf-fbbe4e9fd549
+    <GroupID>k__BackingField: 97dedb32-3240-48c9-aa0d-b767b23f12e9
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 17721, y: 199}
+  - <ID>k__BackingField: 66e4c8b6-8b0e-4815-a816-eabdf636afb4
+    <Name>k__BackingField: AskStudents
+    <Text>k__BackingField: '"Excuse me, I forgot my login password, could you please
+      lend me yours?"'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0b3c1a0f-570d-46a5-b9ed-95a59394ac75
+    <GroupID>k__BackingField: 85dc4026-a6a3-47d7-8f10-c76927c5d124
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 18618, y: -77}
+  - <ID>k__BackingField: b02ff1ae-2fdc-4e2e-bab2-128f39154cfb
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: 'Student who has just arrived: "The room is full. If you
+      want a computer we can leave one for you if you want."'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ca845e88-4283-4ce4-99e0-521d67817031
+    <GroupID>k__BackingField: d47c2c40-d2f0-4d76-a6a8-432e1eee15c9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 15056, y: 946}
+  - <ID>k__BackingField: ca845e88-4283-4ce4-99e0-521d67817031
+    <Name>k__BackingField: 3
+    <Text>k__BackingField: 'You nod, the student on the left turns to his computer
+      and logs off. He stands up and leaves the room to you. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Simply thank him.
+      <NodeID>k__BackingField: dcf849be-114e-4ed0-860f-76ae3fd9985c
+    <GroupID>k__BackingField: d47c2c40-d2f0-4d76-a6a8-432e1eee15c9
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 15740, y: 946}
+  - <ID>k__BackingField: dcf849be-114e-4ed0-860f-76ae3fd9985c
+    <Name>k__BackingField: 4
+    <Text>k__BackingField: You simply thank him for it.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0e362c7c-895a-4f9b-9048-90d677eba3c8
+    <GroupID>k__BackingField: d47c2c40-d2f0-4d76-a6a8-432e1eee15c9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 16410, y: 946}
+  - <ID>k__BackingField: af9e714d-046a-40c2-b7fc-81aaaeaa2ef3
+    <Name>k__BackingField: 4
+    <Text>k__BackingField: He stands up and leaves the room to you.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Simply thank him.
+      <NodeID>k__BackingField: eef30ec7-1df8-4399-8797-9fb3b2cb5846
+    <GroupID>k__BackingField: 6397e46e-1f04-4ffb-8691-d90bf8e8d9a9
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 15735, y: 496}
+  - <ID>k__BackingField: eef30ec7-1df8-4399-8797-9fb3b2cb5846
+    <Name>k__BackingField: 5
+    <Text>k__BackingField: 'You simply thank him. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0e362c7c-895a-4f9b-9048-90d677eba3c8
+    <GroupID>k__BackingField: 6397e46e-1f04-4ffb-8691-d90bf8e8d9a9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 16087, y: 496}
+  - <ID>k__BackingField: bf801c9a-d9ee-4bcb-b3c1-f616ea5cb2ea
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: She seems surprised to see you coming out of this place.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: '"Sorry, I thought the computer was free."'
+      <NodeID>k__BackingField: 73b92cdd-7851-4464-b848-8af2fd92c62c
+    - <Text>k__BackingField: 'Say nothing and wait for a reaction from the student
+        who has just arrived. '
+      <NodeID>k__BackingField: 63900f0e-2e84-4dcf-9b2f-d404b018d19d
+    <GroupID>k__BackingField: e435e2e7-c3fd-478c-8148-c7acd3fc0365
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 13195, y: 760}
+  - <ID>k__BackingField: ceaa534b-199a-4e95-bc17-07638d848681
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: '"On the other hand, we don''t really need three computers."'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: af798b89-ff04-40f3-8157-104590737ef6
+    <GroupID>k__BackingField: 9bb42b4c-164d-4468-a961-4668cf699dff
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 12722, y: 1262}
+  - <ID>k__BackingField: af798b89-ff04-40f3-8157-104590737ef6
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: '"If you want I can leave you mine."'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 9bb42b4c-164d-4468-a961-4668cf699dff
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 13140, y: 1262}
+  - <ID>k__BackingField: 20db9cb1-fa82-42eb-aaec-6f5eb989b697
+    <Name>k__BackingField: 5
+    <Text>k__BackingField: 'Documentalist: "This computer doesn''t seem to be used.
+      Would it be possible for you to release it?" '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: d492f738-98e0-475b-904f-16de7262116a
+    <GroupID>k__BackingField: 81310bb5-6212-4960-bb45-0be8a36c0c02
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 13557, y: 20}
+  - <ID>k__BackingField: d492f738-98e0-475b-904f-16de7262116a
+    <Name>k__BackingField: 6
+    <Text>k__BackingField: The tone leaves little room for discussion.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 05165808-18fc-4cf2-8fd5-47a51aaf8cfc
+    <GroupID>k__BackingField: 81310bb5-6212-4960-bb45-0be8a36c0c02
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14178, y: 20}
+  - <ID>k__BackingField: 05165808-18fc-4cf2-8fd5-47a51aaf8cfc
+    <Name>k__BackingField: 7
+    <Text>k__BackingField: The students do this, log off and let the student access
+      the computer.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 0e362c7c-895a-4f9b-9048-90d677eba3c8
+    <GroupID>k__BackingField: 81310bb5-6212-4960-bb45-0be8a36c0c02
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 14481, y: 20}
+  - <ID>k__BackingField: acce6572-9e36-41f1-8ff3-c34ebec32b34
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: Um, it's very busy today. Come back to see me if you can't
+      find a place.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: '"That''s right, when I passed by I saw that there were
+        none."'
+      <NodeID>k__BackingField: 500612ad-f8e8-4870-8882-9b52f4e49731
+    - <Text>k__BackingField: Answer "OK, thank you" and return to the room
+      <NodeID>k__BackingField: 500612ad-f8e8-4870-8882-9b52f4e49731
+    - <Text>k__BackingField: 'Do not answer and return to the room '
+      <NodeID>k__BackingField: eb1e98cd-fb0b-4d0c-a872-3f94e04ee53d
+    <GroupID>k__BackingField: ffb31331-910c-499b-9edf-503c1e70a542
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 9792, y: 8}
+  - <ID>k__BackingField: e34bcc7c-8f4b-41f8-a740-0741249f8276
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: The other questions you with his eyes.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Sit at the available computer table.
+      <NodeID>k__BackingField: 45bb5384-7ba4-4c78-b0cb-85b53130e35e
+    - <Text>k__BackingField: 'Address the students sitting around the available station:
+        "Excuse me. Is this seat free?"'
+      <NodeID>k__BackingField: 45bb5384-7ba4-4c78-b0cb-85b53130e35e
+    - <Text>k__BackingField: 'Address the students sitting around the available position:
+        "Excuse me. I think you should keep your voice down, you might disturb the
+        others."'
+      <NodeID>k__BackingField: b3c4cc75-d54c-4c0e-82a6-3a8738d553d1
+    <GroupID>k__BackingField: acedbf45-7d0c-4487-99ba-eaafd9f91849
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 7938, y: 1038}
+  - <ID>k__BackingField: 46709f6f-803f-4517-a9a1-d6be2c8b3e63
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: 'Librarian: "Excuse me. You seem to be looking for something,
+      can I help you?'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: '"Yes, I would have needed access to the software "VS
+        Code" I understand it is on the student sessions. Do you know how I could
+        access it?'
+      <NodeID>k__BackingField: 31ef2b7d-d911-4cf2-b77a-ea1b8625d783
+    - <Text>k__BackingField: '"I was looking for a free computer, but students are
+        making a lot of noise around the only one that seems to be available."'
+      <NodeID>k__BackingField: 31ef2b7d-d911-4cf2-b77a-ea1b8625d783
+    - <Text>k__BackingField: 'Say "No, thank you, that''s fine" and go back to the
+        room. '
+      <NodeID>k__BackingField: eb1e98cd-fb0b-4d0c-a872-3f94e04ee53d
+    <GroupID>k__BackingField: ab806b2b-c382-402d-b79f-0563c89ad782
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 7836, y: 152}
+  - <ID>k__BackingField: 9392f922-e6bd-4afb-8717-aa856d911103
+    <Name>k__BackingField: Context5
+    <Text>k__BackingField: Moreover, on either side of the available space, two students,
+      half-busy on their respective computers, are chatting happily at a volume that
+      you find quite high for such a place.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: There is no room for me here, I'll look elsewhere.
+      <NodeID>k__BackingField: 9aba796b-fc05-4d47-814f-1782a291337d
+    - <Text>k__BackingField: Move towards the available position
+      <NodeID>k__BackingField: 41ebd237-c1f0-44b2-8fe2-aca5a794f55a
+    <GroupID>k__BackingField: 7885a63e-b2ed-4929-8ef1-b4fb46f36ed2
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 5498, y: 270}
+  - <ID>k__BackingField: 8a0897bf-42e2-4bcb-b9c9-7b2ba96791dc
+    <Name>k__BackingField: StudentLooksForComputerStation
+    <Text>k__BackingField: The student leaves the reception and starts looking for
+      a computer station.
+    <TipText>k__BackingField: "When you enter a BU, the person at the reception desk
+      works here and is available to give you information, so it is common practice
+      to greet them. \nA 'hello' in response to theirs is sufficient, if they don't
+      say 'hello', you can initiate it."
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b86d0bda-1d9e-4fa7-b349-dfc555e082e5
+    <GroupID>k__BackingField: 4a3c0634-c74a-4fe9-9a26-1047da7c1ce1
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1706, y: 230}
+  - <ID>k__BackingField: b7791e3f-fab1-4b50-931b-c6d6990f16a7
+    <Name>k__BackingField: StudentAsksQuestion
+    <Text>k__BackingField: The student approaches the librarian to ask her a question
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 984bfcd7-619d-4b8c-a16d-c4f8e79f923d
+    <GroupID>k__BackingField: 4a3c0634-c74a-4fe9-9a26-1047da7c1ce1
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2006, y: 462}
+  - <ID>k__BackingField: 984bfcd7-619d-4b8c-a16d-c4f8e79f923d
+    <Name>k__BackingField: LibrarianAnswers
+    <Text>k__BackingField: Yes indeed, you can use the computers.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: b86d0bda-1d9e-4fa7-b349-dfc555e082e5
+    <GroupID>k__BackingField: 4a3c0634-c74a-4fe9-9a26-1047da7c1ce1
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2379, y: 462}
+  - <ID>k__BackingField: 0b3c1a0f-570d-46a5-b9ed-95a59394ac75
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: 'Other student: "Yes, no problem, but don''t forget to
+      log out when you''re done."'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: '"Okay, thank you, that''s very kind of you."'
+      <NodeID>k__BackingField: 60203b79-5c07-483a-899e-28a510c69886
+    <GroupID>k__BackingField: 85dc4026-a6a3-47d7-8f10-c76927c5d124
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 19085, y: -77}
+  - <ID>k__BackingField: 60203b79-5c07-483a-899e-28a510c69886
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: The student logs in to their session, you can start working.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 85dc4026-a6a3-47d7-8f10-c76927c5d124
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 19578, y: -77}
+  - <ID>k__BackingField: f724670a-ad07-4cd9-a7d1-bc9d79dc5b61
+    <Name>k__BackingField: AskLibrarian
+    <Text>k__BackingField: You ask the librarian for help.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Excuse me, I forgot my password to log in to my session,
+        can you help me to log in?
+      <NodeID>k__BackingField: 4deadf0d-81a6-4428-bcc1-2abeedf39154
+    <GroupID>k__BackingField: 74189a55-e4f3-41ed-a8fc-f05ac26d4774
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 19770, y: 230}
+  - <ID>k__BackingField: 4deadf0d-81a6-4428-bcc1-2abeedf39154
+    <Name>k__BackingField: 1
+    <Text>k__BackingField: 'Librarian: "Yes I can help you."'
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 00a2118e-dc52-4817-b192-ab63b014f68c
+    <GroupID>k__BackingField: 74189a55-e4f3-41ed-a8fc-f05ac26d4774
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 20487, y: 254}
+  - <ID>k__BackingField: 00a2118e-dc52-4817-b192-ab63b014f68c
+    <Name>k__BackingField: 2
+    <Text>k__BackingField: I have access codes for students who have forgotten their
+      password.
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: bf720f44-5ddf-4e9d-8d1c-6efd68451d04
+    <GroupID>k__BackingField: 74189a55-e4f3-41ed-a8fc-f05ac26d4774
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 20767, y: 254}
+  - <ID>k__BackingField: bf720f44-5ddf-4e9d-8d1c-6efd68451d04
+    <Name>k__BackingField: 3
+    <Text>k__BackingField: 'I will need your student card. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Very well, thank you for your help. Here is my student
+        card.
+      <NodeID>k__BackingField: 27a4d7d6-3884-4950-b085-c03fbbf4e25c
+    <GroupID>k__BackingField: 74189a55-e4f3-41ed-a8fc-f05ac26d4774
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 21198, y: 254}
+  - <ID>k__BackingField: 27a4d7d6-3884-4950-b085-c03fbbf4e25c
+    <Name>k__BackingField: 4
+    <Text>k__BackingField: 'The librarian allows you to log in, you can start working. '
+    <TipText>k__BackingField: Tip text.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 74189a55-e4f3-41ed-a8fc-f05ac26d4774
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 21763, y: 254}
+  - <ID>k__BackingField: c4afb13d-a32c-41da-90cf-fbbe4e9fd549
+    <Name>k__BackingField: GoHome
+    <Text>k__BackingField: Perhaps this isn't the best idea.
+    <TipText>k__BackingField: The librarian, whose office is located at the library
+      reception desk, is at your disposal to give you information or help you. Do
+      not hesitate to ask her if you encounter any difficulties.
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: f724670a-ad07-4cd9-a7d1-bc9d79dc5b61
+    <GroupID>k__BackingField: 62560f55-f00e-45aa-8066-01ced053d80b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 18603, y: 545}
+  <OldGroupNames>k__BackingField:
+  - Introduction
+  - StudentGreetsLibrarian
+  - CoreOfTheProblem
+  - LookElsewhere
+  - TakeAvailablePosition
+  - SitAtTable
+  - StandUp
+  - Apologise
+  - StaySilent
+  - AskAboutSoftware
+  - LibrarianComesWith
+  - CanIUseIt
+  - KeepItDown
+  - OnComputer
+  - AskStudents
+  - AskLibrarian
+  - GoHome
+  <OldUngroupedNodeNames>k__BackingField:
+  - GoBack
+  <OldGroupedNodeNames>k__BackingField:
+    list:
+    - Key: CoreOfTheProblem
+      Value:
+      - Context1
+      - Context2
+      - Context3
+      - Context4
+      - Context5
+    - Key: LookElsewhere
+      Value:
+      - LookElsewhere
+      - 1
+      - 2
+    - Key: TakeAvailablePosition
+      Value:
+      - TakeAvailablePosition
+      - 1
+      - 2
+    - Key: SitAtTable
+      Value:
+      - SitAtTable
+      - 3
+      - 4
+      - 5
+      - 1
+    - Key: KeepItDown
+      Value:
+      - KeepItDown
+    - Key: StandUp
+      Value:
+      - StandUp
+      - 1
+      - 2
+    - Key: Apologise
+      Value:
+      - 3
+      - Apologise
+      - 1
+      - 2
+      - 4
+      - 5
+    - Key: StaySilent
+      Value:
+      - StaySilent
+      - 1
+      - 2
+      - 3
+      - 4
+    - Key: CanIUseIt
+      Value:
+      - CanIUseIt
+      - 1
+      - 2
+    - Key: AskAboutSoftware
+      Value:
+      - AskAboutSoftware
+      - DialogueName
+    - Key: LibrarianComesWith
+      Value:
+      - LibrarianComesWithYou
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+    - Key: Introduction
+      Value:
+      - Introduction
+    - Key: StudentGreetsLibrarian
+      Value:
+      - StudentGreetsLibrarian
+      - StudentApproachesLibrarian
+      - StudentLooksForComputerStation
+      - StudentAsksQuestion
+      - LibrarianAnswers
+    - Key: OnComputer
+      Value:
+      - OnComputer
+      - 1
+    - Key: AskStudents
+      Value:
+      - AskStudents
+      - 1
+      - 2
+    - Key: AskLibrarian
+      Value:
+      - AskLibrarian
+      - 1
+      - 2
+      - 3
+      - 4
+    - Key: GoHome
+      Value:
+      - GoHome

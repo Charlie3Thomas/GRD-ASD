@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: StudentGreetsLibrarian
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: StudentGreetsLibrarian
+  <Text>k__BackingField: 'Librarian: "If you need any information, I am available,
+    do not hesitate to ask for help."'
+  <TipText>k__BackingField: Tip text.
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: '"Thanks, that''s nice."'
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e6f3460b6e3ed014e961c25a2e63d78f, type: 2}
+  - <Text>k__BackingField: '"No. It''s all good, thanks."'
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e6f3460b6e3ed014e961c25a2e63d78f, type: 2}
+  - <Text>k__BackingField: '"Yes, I have a question."'
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: dde9ace40e0f28f498691c768bc68b11, type: 2}
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0

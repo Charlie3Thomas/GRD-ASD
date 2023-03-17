@@ -1,44 +1,39 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
-using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace CT.Utilities
 {
-    using CT.Elements;
+    using Elements;
+
     public static class CTElementUtility
     {
-        public static Button CreateButton(string _text, Action _on_click = null)
+        public static Button CreateButton(string _text, Action _onclick = null)
         {
-            Button button = new Button(_on_click)
+            Button button = new Button(_onclick)
             {
                 text = _text
             };
 
             return button;
-
         }
+
         public static Foldout CreateFoldout(string _title, bool _collapsed = false)
         {
             Foldout foldout = new Foldout()
             {
                 text = _title,
-                value = _collapsed
+                value = !_collapsed
             };
 
-            return foldout; 
+            return foldout;
         }
 
-        public static Port CreatePort(this CTNode _node, string _port_name = "", 
-                                        Orientation _orientation = Orientation.Horizontal, 
-                                        Direction _direction = Direction.Output, 
-                                        Port.Capacity _capacity = Port.Capacity.Single)
+        public static Port CreatePort(this CTNode _node, string _port_name = "", Orientation _orientation = Orientation.Horizontal, Direction _dir = Direction.Output, Port.Capacity _capacity = Port.Capacity.Single)
         {
-            Port port = _node.InstantiatePort(_orientation, _direction, _capacity, typeof(bool));
-            port.portName = _port_name;
+            Port port = _node.InstantiatePort(_orientation, _dir, _capacity, typeof(bool));
 
+            port.portName = _port_name;
 
             return port;
         }
@@ -53,7 +48,7 @@ namespace CT.Utilities
 
             if (_on_value_changed != null)
             {
-                text_field.RegisterCallback(_on_value_changed);
+                text_field.RegisterValueChangedCallback(_on_value_changed);
             }
 
             return text_field;
@@ -62,7 +57,9 @@ namespace CT.Utilities
         public static TextField CreateTextArea(string _value = null, string _label = null, EventCallback<ChangeEvent<string>> _on_value_changed = null)
         {
             TextField text_area = CreateTextField(_value, _label, _on_value_changed);
+
             text_area.multiline = true;
+
             return text_area;
         }
     }
