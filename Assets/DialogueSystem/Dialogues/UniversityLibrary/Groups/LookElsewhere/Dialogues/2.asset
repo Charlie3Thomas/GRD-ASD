@@ -23,7 +23,7 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: d4008803230c27f47908724e97d6546e, type: 2}
   - <Text>k__BackingField: '"I was looking for a free computer, but students are
       making a lot of noise around the only one that seems to be available."'
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d4008803230c27f47908724e97d6546e, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 171ebdb74bb143245b03b55a98550921, type: 2}
   - <Text>k__BackingField: 'Say "No, thank you, that''s fine" and go back to the
       room. '
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9ad11068004b5ba46bed3d1d408c6f67, type: 2}
