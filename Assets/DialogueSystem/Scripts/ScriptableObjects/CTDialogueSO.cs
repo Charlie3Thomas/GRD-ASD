@@ -15,7 +15,7 @@ namespace CT.ScriptableObjects
         [field: SerializeField] public CTDialogueType DialogueType { get; set; }
         [field: SerializeField] public bool IsStartingDialogue { get; set; }
 
-        public void Initialize(string _dlog_name, string _text, string _tip_text, List<CTDialogueChoiceData> _choices, CTDialogueType _dlog_type, bool _is_dlog_start)
+        public void Initialise(string _dlog_name, string _text, string _tip_text, List<CTDialogueChoiceData> _choices, CTDialogueType _dlog_type, bool _is_dlog_start)
         {
             DialogueName = _dlog_name;
             Text = _text;

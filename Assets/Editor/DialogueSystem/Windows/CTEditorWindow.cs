@@ -78,7 +78,7 @@ namespace CT.Windows
                 return;
             }
 
-            CTIOUtility.Initialize(graph_view, tf_file_name.value);
+            CTIOUtility.Initialise(graph_view, tf_file_name.value);
             CTIOUtility.Save();
         }
 
@@ -93,7 +93,7 @@ namespace CT.Windows
 
             Clear();
 
-            CTIOUtility.Initialize(graph_view, Path.GetFileNameWithoutExtension(file_path));
+            CTIOUtility.Initialise(graph_view, Path.GetFileNameWithoutExtension(file_path));
             CTIOUtility.Load();
         }
 

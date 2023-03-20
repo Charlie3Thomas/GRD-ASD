@@ -153,7 +153,7 @@ namespace CT.Windows
 
             CTNode node = (CTNode) Activator.CreateInstance(node_type);
 
-            node.Initialize(_node_name, this, _pos);
+            node.Initialise(_node_name, this, _pos);
 
             if (_draw)
             {

@@ -12,9 +12,9 @@ namespace CT.Data.Save
         [field: SerializeField] public List<string> OldUngroupedNodeNames { get; set; }
         [field: SerializeField] public SerializableDictionary<string, List<string>> OldGroupedNodeNames { get; set; }
 
-        public void Initialize(string fileName)
+        public void Initialise(string _file_name)
         {
-            FileName = fileName;
+            FileName = _file_name;
 
             Groups = new List<CTGroupSaveData>();
             Nodes = new List<CTNodeSaveData>();

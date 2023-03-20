@@ -29,7 +29,7 @@ namespace CT.Utilities
         private static Dictionary<string, CTGroup> loaded_groups;
         private static Dictionary<string, CTNode> loaded_nodes;
 
-        public static void Initialize(CTGraphView _ct_graph_view, string _graph_name)
+        public static void Initialise(CTGraphView _ct_graph_view, string _graph_name)
         {
             graph_view = _ct_graph_view;
 
@@ -54,7 +54,7 @@ namespace CT.Utilities
 
             CTGraphSaveDataSO graph_data = CreateAsset<CTGraphSaveDataSO>("Assets/Editor/DialogueSystem/Graphs", $"{graph_file_name}Graph");
 
-            graph_data.Initialize(graph_file_name);
+            graph_data.Initialise(graph_file_name);
 
             CTDialogueContainerSO dlog_container = CreateAsset<CTDialogueContainerSO>(container_folder_path, graph_file_name);
 
@@ -129,8 +129,8 @@ namespace CT.Utilities
 
         private static void SaveNodes(CTGraphSaveDataSO _graph_data, CTDialogueContainerSO _dialogue_container)
         {
-            SerializableDictionary<string, List<string>> _grouped_node_names = new SerializableDictionary<string, List<string>>();
-            List<string> _ungrouped_node_names = new List<string>();
+            SerializableDictionary<string, List<string>> grouped_node_names = new SerializableDictionary<string, List<string>>();
+            List<string> ungrouped_node_names = new List<string>();
 
             foreach (CTNode node in nodes)
             {
@@ -139,18 +139,18 @@ namespace CT.Utilities
 
                 if (node.Group != null)
                 {
-                    _grouped_node_names.AddItem(node.Group.title, node.DialogueName);
+                    grouped_node_names.AddItem(node.Group.title, node.DialogueName);
 
                     continue;
                 }
 
-                _ungrouped_node_names.Add(node.DialogueName);
+                ungrouped_node_names.Add(node.DialogueName);
             }
 
             UpdateDialoguesChoicesConnections();
 
-            UpdateOldGroupedNodes(_grouped_node_names, _graph_data);
-            UpdateOldUngroupedNodes(_ungrouped_node_names, _graph_data);
+            UpdateOldGroupedNodes(grouped_node_names, _graph_data);
+            UpdateOldUngroupedNodes(ungrouped_node_names, _graph_data);
         }
 
         private static void SaveNodeToGraph(CTNode _node, CTGraphSaveDataSO _graph_data)
@@ -189,7 +189,7 @@ namespace CT.Utilities
                 _dlog_container.UngroupedDialogues.Add(dialogue);
             }
 
-            dialogue.Initialize(
+            dialogue.Initialise(
                 _node.DialogueName,
                 _node.Text,
                 _node.TipText,
@@ -413,11 +413,14 @@ namespace CT.Utilities
 
         public static void CreateFolder(string _parent_folder_path, string _new_folder_name)
         {
+            // If folder exists
             if (AssetDatabase.IsValidFolder($"{_parent_folder_path}/{_new_folder_name}"))
             {
+                // Exit
                 return;
             }
 
+            // Crease tolder at path
             AssetDatabase.CreateFolder(_parent_folder_path, _new_folder_name);
         }
 
@@ -431,10 +434,13 @@ namespace CT.Utilities
         {
             string full_path = $"{_path}/{_asset_name}.asset";
 
+            // Try load asset
             _T asset = LoadAsset<_T>(_path, _asset_name);
 
+            // If asset is null it does not currently exist
             if (asset == null)
             {
+                // Create asset if it does not exist
                 asset = ScriptableObject.CreateInstance<_T>();
 
                 AssetDatabase.CreateAsset(asset, full_path);
@@ -443,9 +449,9 @@ namespace CT.Utilities
             return asset;
         }
 
-        public static _T LoadAsset<_T>(string _path, string assetName) where _T : ScriptableObject
+        public static _T LoadAsset<_T>(string _path, string _asset_name) where _T : ScriptableObject
         {
-            string full_path = $"{_path}/{assetName}.asset";
+            string full_path = $"{_path}/{_asset_name}.asset";
 
             return AssetDatabase.LoadAssetAtPath<_T>(full_path);
         }

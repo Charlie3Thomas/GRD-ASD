@@ -11,9 +11,9 @@ namespace CT.Elements
 
     public class CTMultipleChoiceNode : CTNode
     {
-        public override void Initialize(string _node_name, CTGraphView _ct_graph_view, Vector2 _pos)
+        public override void Initialise(string _node_name, CTGraphView _ct_graph_view, Vector2 _pos)
         {
-            base.Initialize(_node_name, _ct_graph_view, _pos);
+            base.Initialise(_node_name, _ct_graph_view, _pos);
 
             DialogueType = CTDialogueType.MultipleChoice;
 

@@ -33,7 +33,7 @@ namespace CT.Elements
             base.BuildContextualMenu(_evt);
         }
 
-        public virtual void Initialize(string _node_name, CTGraphView _ct_graph_view, Vector2 _pos)
+        public virtual void Initialise(string _node_name, CTGraphView _ct_graph_view, Vector2 _pos)
         {
             ID = Guid.NewGuid().ToString();
 
