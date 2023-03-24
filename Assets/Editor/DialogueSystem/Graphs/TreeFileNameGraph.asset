@@ -12,10 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
   m_Name: TreeFileNameGraph
   m_EditorClassIdentifier: 
-  <FileName>k__BackingField: TreeFileName
-  <Groups>k__BackingField: []
-  <Nodes>k__BackingField: []
-  <OldGroupNames>k__BackingField: []
-  <OldUngroupedNodeNames>k__BackingField: []
-  <OldGroupedNodeNames>k__BackingField:
-    list: []
+  <file_name>k__BackingField: TreeFileName
+  <list_groups>k__BackingField:
+  - <ID>k__BackingField: c2f30bd9-b4f1-4cfb-bb67-be8c548ed495
+    <title>k__BackingField: GroupTitle
+    <pos>k__BackingField: {x: 594, y: 252}
+  <list_nodes>k__BackingField:
+  - <ID>k__BackingField: 82f7a6aa-88db-4ccc-8475-e65a63bb3750
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 
+    <group_ID>k__BackingField: 
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 1059, y: 479}
+  - <ID>k__BackingField: b942eff3-9230-4f8d-9c7e-715cc768b72d
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: 82f7a6aa-88db-4ccc-8475-e65a63bb3750
+    <group_ID>k__BackingField: c2f30bd9-b4f1-4cfb-bb67-be8c548ed495
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 619, y: 311}
+  <list_previous_group_titles>k__BackingField:
+  - GroupTitle
+  <list_previous_ungrouped_titles>k__BackingField:
+  - DialogueTitle
+  <list_previous_grouped_titles>k__BackingField:
+    m_keys:
+    - GroupTitle
