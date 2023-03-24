@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caaa76378291a144d849f29230be0a5a, type: 3}
   m_Name: TreeFileName
   m_EditorClassIdentifier: 
-  <FileName>k__BackingField: TreeFileName
-  <DialogueGroups>k__BackingField:
-    list: []
-  <UngroupedDialogues>k__BackingField: []
+  <file_name>k__BackingField: TreeFileName
+  <dictionary_dlog_groups>k__BackingField:
+    m_keys:
+    - {fileID: 11400000, guid: 0fc79620059118945abffc3765b02c19, type: 2}
+  <list_ungrouped_dlogs>k__BackingField:
+  - {fileID: 11400000, guid: 22f5d71f759e7024388bb708494f0be3, type: 2}

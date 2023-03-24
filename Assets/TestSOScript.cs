@@ -59,20 +59,20 @@ namespace CT
             //Debug.Log("current_dlog.TipText : " + current_dlog.TipText);
 
             // UI Text
-            text_UI.text = current_dlog.Text;
+            text_UI.text = current_dlog.dlog_text;
 
             // UI Buttons
             // Need something more elegant but this is fine for testing purposes.
-            if (current_dlog.DialogueType == Enumerations.CTDialogueType.MultipleChoice)
+            if (current_dlog.dlog_type == Enumerations.CTDialogueType.MultipleChoice)
             {
-                if (current_dlog.Choices.Count > 0)
-                    test_button_1.GetComponentInChildren<TextMeshProUGUI>().text = string.IsNullOrEmpty(current_dlog.Choices[0].Text) ? "" : current_dlog.Choices[0].Text;
+                if (current_dlog.list_dlog_choices.Count > 0)
+                    test_button_1.GetComponentInChildren<TextMeshProUGUI>().text = string.IsNullOrEmpty(current_dlog.list_dlog_choices[0].text) ? "" : current_dlog.list_dlog_choices[0].text;
 
-                if (current_dlog.Choices.Count > 1)
-                    test_button_2.GetComponentInChildren<TextMeshProUGUI>().text = string.IsNullOrEmpty(current_dlog.Choices[1].Text) ? "" : current_dlog.Choices[1].Text;
+                if (current_dlog.list_dlog_choices.Count > 1)
+                    test_button_2.GetComponentInChildren<TextMeshProUGUI>().text = string.IsNullOrEmpty(current_dlog.list_dlog_choices[1].text) ? "" : current_dlog.list_dlog_choices[1].text;
 
-                if (current_dlog.Choices.Count > 2)
-                    test_button_3.GetComponentInChildren<TextMeshProUGUI>().text = string.IsNullOrEmpty(current_dlog.Choices[2].Text) ? "" : current_dlog.Choices[2].Text;
+                if (current_dlog.list_dlog_choices.Count > 2)
+                    test_button_3.GetComponentInChildren<TextMeshProUGUI>().text = string.IsNullOrEmpty(current_dlog.list_dlog_choices[2].text) ? "" : current_dlog.list_dlog_choices[2].text;
 
             }
             //else
@@ -86,7 +86,7 @@ namespace CT
 
         private void OnOptionChosen(int _choice_index)
         {
-            CTDialogueSO next_dlog = current_dlog.Choices[_choice_index].NextDialogue;
+            CTDialogueSO next_dlog = current_dlog.list_dlog_choices[_choice_index].next_dlog_node;
 
             if  (next_dlog == null) 
             {
