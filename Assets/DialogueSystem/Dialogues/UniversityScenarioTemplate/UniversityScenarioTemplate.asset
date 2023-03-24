@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caaa76378291a144d849f29230be0a5a, type: 3}
+  m_Name: UniversityScenarioTemplate
+  m_EditorClassIdentifier: 
+  <file_name>k__BackingField: UniversityScenarioTemplate
+  <dictionary_dlog_groups>k__BackingField:
+    m_keys:
+    - {fileID: 11400000, guid: ba1d63c2b3bad7d45b24328fdaebc193, type: 2}
+    - {fileID: 11400000, guid: 2f1e5af89056b2f4baf9dd93a61a806c, type: 2}
+    - {fileID: 11400000, guid: bdfb30828b021df4cb4121e4335d3b1a, type: 2}
+    - {fileID: 11400000, guid: 1b351bbe9dc6fec4c83368a637b8808e, type: 2}
+    - {fileID: 11400000, guid: 0c8e0ebfd556f1f40b5e3d660f39fe13, type: 2}
+    - {fileID: 11400000, guid: 82bc4262393d4f4428ab52aefbea6a71, type: 2}
+    - {fileID: 11400000, guid: c6361f036cb48d348a77e6eda51e23e8, type: 2}
+    - {fileID: 11400000, guid: 30d5f12bb89497e4290f146fa6df2c35, type: 2}
+    - {fileID: 11400000, guid: 72ce052ff2583e84c8c8a14613d9d453, type: 2}
+    - {fileID: 11400000, guid: 362a23e2da2812d40962deeb6389b05a, type: 2}
+    - {fileID: 11400000, guid: b6b47be49e2c91d49ad421bf2738fa84, type: 2}
+    - {fileID: 11400000, guid: 6ba9f49b1546b8748ae0d1cb7000c134, type: 2}
+    - {fileID: 11400000, guid: f2c28e4dbee57984c8cc1a829c93c35c, type: 2}
+    - {fileID: 11400000, guid: 75f930ead0d320f41aa606c41dce98da, type: 2}
+    - {fileID: 11400000, guid: e95821aaef9c1d74f8e939ea5dbf8252, type: 2}
+    - {fileID: 11400000, guid: 2205bea701cffff42ae29cfe499fb1a9, type: 2}
+    - {fileID: 11400000, guid: cbc86111690669f4ca73a18849a2759f, type: 2}
+    - {fileID: 11400000, guid: bbc27c3666925854fa65418ff4458cc1, type: 2}
+    - {fileID: 11400000, guid: fd27681064e01574f862da29149395c4, type: 2}
+    - {fileID: 11400000, guid: e61901d924327da4d87d635f391fbe79, type: 2}
+    - {fileID: 11400000, guid: 4c0ad4d7f3481cd4cbd5a10ab2f04891, type: 2}
+    - {fileID: 11400000, guid: 9c0e3662b41ae1949b4ff39d0a1b56bd, type: 2}
+    - {fileID: 11400000, guid: e3b5e3e0537231b4cb1fb8ba1a27dc6a, type: 2}
+    - {fileID: 11400000, guid: d9f687947b6beee4b8f665e313b9766d, type: 2}
+    - {fileID: 11400000, guid: 04fabe7cbd4f89f498695b58c18528ab, type: 2}
+    - {fileID: 11400000, guid: 602f509eeb5e04c4abf717f92390dc9a, type: 2}
+    - {fileID: 11400000, guid: 4f38a14badf515a42abdfc6a89bad429, type: 2}
+    - {fileID: 11400000, guid: 8a6a82702cdae1645bb265b2b42e9062, type: 2}
+    - {fileID: 11400000, guid: 97177cae097aca64c8d0b1fb392ffea2, type: 2}
+  <list_ungrouped_dlogs>k__BackingField: []

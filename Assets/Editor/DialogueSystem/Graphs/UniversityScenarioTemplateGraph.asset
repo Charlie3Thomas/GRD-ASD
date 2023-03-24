@@ -1,0 +1,490 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
+  m_Name: UniversityScenarioTemplateGraph
+  m_EditorClassIdentifier: 
+  <file_name>k__BackingField: UniversityScenarioTemplate
+  <list_groups>k__BackingField:
+  - <ID>k__BackingField: efa26f6d-5e3e-48a5-b61d-e228a6469206
+    <title>k__BackingField: 1x1
+    <pos>k__BackingField: {x: -65.000015, y: -70}
+  - <ID>k__BackingField: a9a09493-85f6-441d-a357-c0ad764050fa
+    <title>k__BackingField: 1x1x2
+    <pos>k__BackingField: {x: 666.00006, y: 480.99997}
+  - <ID>k__BackingField: 407414b2-dd78-43b4-a516-13f8592567e6
+    <title>k__BackingField: 1x1x2x1
+    <pos>k__BackingField: {x: 803.99994, y: 1306}
+  - <ID>k__BackingField: 1e5935aa-3268-41c7-9635-ed66e770df42
+    <title>k__BackingField: 1x1x2x2
+    <pos>k__BackingField: {x: 1241.9999, y: 1073.9999}
+  - <ID>k__BackingField: 48e1299d-3c38-4786-99f7-1928b0ce0bbc
+    <title>k__BackingField: 1x1x2x3
+    <pos>k__BackingField: {x: 1591.9999, y: 813.99994}
+  - <ID>k__BackingField: 7b38e3e0-9770-4a4b-b039-7d57926890ce
+    <title>k__BackingField: 1x1x3
+    <pos>k__BackingField: {x: 2070.9998, y: 307.99994}
+  - <ID>k__BackingField: 6d147162-21ea-484b-825e-10f021c5ecc8
+    <title>k__BackingField: 1x1x1
+    <pos>k__BackingField: {x: -81, y: 1540}
+  - <ID>k__BackingField: b5b180ce-8cdb-46cb-a2c1-b301e1985f1c
+    <title>k__BackingField: 1x2
+    <pos>k__BackingField: {x: 1799.9998, y: 1624.9999}
+  - <ID>k__BackingField: 5973385f-3211-4031-b408-a847c28f3c86
+    <title>k__BackingField: 1x2x2
+    <pos>k__BackingField: {x: 3156, y: 1762.0001}
+  - <ID>k__BackingField: 75c84662-f67e-4768-847e-ffdecc5a2796
+    <title>k__BackingField: 1x2x1
+    <pos>k__BackingField: {x: 1278, y: 2147}
+  - <ID>k__BackingField: 9155c48f-a2ea-4d8e-a5bd-75d468852e48
+    <title>k__BackingField: 1x2x1x3
+    <pos>k__BackingField: {x: 2231.9998, y: 2296.9998}
+  - <ID>k__BackingField: e5f73af7-6746-462f-b293-3f947be2c10f
+    <title>k__BackingField: 1x2x1x1
+    <pos>k__BackingField: {x: 1733, y: 2880}
+  - <ID>k__BackingField: e1de9fd6-f421-428c-97af-5b844eda0b1e
+    <title>k__BackingField: 1x2x1x2
+    <pos>k__BackingField: {x: 806, y: 2855}
+  - <ID>k__BackingField: a817e097-efe5-44a2-ada0-583ac5067607
+    <title>k__BackingField: 1x2x1x1x3
+    <pos>k__BackingField: {x: 2523, y: 2814}
+  - <ID>k__BackingField: 6dfcb1c3-2e7a-439f-b0fb-99bcb9d56679
+    <title>k__BackingField: 1x2x1x1x1
+    <pos>k__BackingField: {x: 1631.0001, y: 3768.9998}
+  - <ID>k__BackingField: 0adf8b19-3a45-4785-81f6-2f3d80cac1f5
+    <title>k__BackingField: 1x2x1x1x2
+    <pos>k__BackingField: {x: 2824, y: 3337}
+  - <ID>k__BackingField: bb592596-f6f8-4887-861d-85bdeaaf7b89
+    <title>k__BackingField: 1x3
+    <pos>k__BackingField: {x: 4305, y: 4518}
+  - <ID>k__BackingField: 075e9d3f-3247-48ed-b7ac-045688ad9efd
+    <title>k__BackingField: 1x2x2x2
+    <pos>k__BackingField: {x: 3974, y: 2659}
+  - <ID>k__BackingField: 71ae12a6-d071-4ece-b667-904129e2d1f6
+    <title>k__BackingField: 1x2x2x3
+    <pos>k__BackingField: {x: 4400, y: 2032}
+  - <ID>k__BackingField: f322c5a0-82a8-45ca-83c8-0c17391087b6
+    <title>k__BackingField: 1x2x2x1
+    <pos>k__BackingField: {x: 5205, y: 1534.9999}
+  - <ID>k__BackingField: e80df3d0-3bce-41e7-a29c-e12fb8482963
+    <title>k__BackingField: 1x2x2x1x3
+    <pos>k__BackingField: {x: 4926, y: 2658}
+  - <ID>k__BackingField: 3b52b785-444b-4fb1-8c78-e06938d5858c
+    <title>k__BackingField: 1x2x2x1x2
+    <pos>k__BackingField: {x: 5707.9995, y: 2510}
+  - <ID>k__BackingField: f5a7049b-bbfc-40d5-a6fb-293c3d118464
+    <title>k__BackingField: 1x2x2x1x1
+    <pos>k__BackingField: {x: 6532.9995, y: 2097.9998}
+  - <ID>k__BackingField: da78bc90-566e-4fbe-99df-b8db694226f9
+    <title>k__BackingField: 1x2x2x1x1x1
+    <pos>k__BackingField: {x: 5899, y: 3122}
+  - <ID>k__BackingField: be23d9cd-e6ff-4e16-84ab-28aac941fa75
+    <title>k__BackingField: 1x2x2x1x1x2
+    <pos>k__BackingField: {x: 6639, y: 3501}
+  - <ID>k__BackingField: 5612815b-ead2-485b-89a7-f2a851b1167f
+    <title>k__BackingField: 1x3x1
+    <pos>k__BackingField: {x: 4135.9995, y: 5622.9995}
+  - <ID>k__BackingField: 85e66d71-6c70-451f-825c-cc59a22fd84d
+    <title>k__BackingField: 1x3x2
+    <pos>k__BackingField: {x: 4996.9995, y: 5397.9995}
+  - <ID>k__BackingField: 9d2469b2-2852-4dab-b412-a141efc2f317
+    <title>k__BackingField: 1x3x3
+    <pos>k__BackingField: {x: 5686.9995, y: 5114.9995}
+  - <ID>k__BackingField: a2e55460-fe70-4fcc-a85f-4fc99952d749
+    <title>k__BackingField: 2
+    <pos>k__BackingField: {x: 5518, y: 6292.9995}
+  <list_nodes>k__BackingField:
+  - <ID>k__BackingField: 190b6a55-ce0d-47de-8e8e-17dab46f9d38
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 7eab2812-68d1-4f36-b83e-ff43bf10bbf3
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 43e18623-1ade-4a11-af1b-1cc12fe154eb
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 6a33235b-5bd6-42ee-963f-c7dc341ee9e2
+    <group_ID>k__BackingField: efa26f6d-5e3e-48a5-b61d-e228a6469206
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: -40, y: -11}
+  - <ID>k__BackingField: 43e18623-1ade-4a11-af1b-1cc12fe154eb
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: d920db28-0e0d-45b7-9abe-15a68738d1e8
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 0f010236-5213-4970-b163-33a38c4ddec8
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 303334dd-97e3-47b5-9cd0-b34a4e3210bb
+    <group_ID>k__BackingField: a9a09493-85f6-441d-a357-c0ad764050fa
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 691, y: 540}
+  - <ID>k__BackingField: 7eab2812-68d1-4f36-b83e-ff43bf10bbf3
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: 7e472a21-3a45-48d5-9c25-15e323fdaa41
+    <group_ID>k__BackingField: 7b38e3e0-9770-4a4b-b039-7d57926890ce
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 2096, y: 367}
+  - <ID>k__BackingField: 6a33235b-5bd6-42ee-963f-c7dc341ee9e2
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: 7e472a21-3a45-48d5-9c25-15e323fdaa41
+    <group_ID>k__BackingField: 6d147162-21ea-484b-825e-10f021c5ecc8
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: -56, y: 1599}
+  - <ID>k__BackingField: 303334dd-97e3-47b5-9cd0-b34a4e3210bb
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: 7e472a21-3a45-48d5-9c25-15e323fdaa41
+    <group_ID>k__BackingField: 407414b2-dd78-43b4-a516-13f8592567e6
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 829, y: 1365}
+  - <ID>k__BackingField: 0f010236-5213-4970-b163-33a38c4ddec8
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: 7e472a21-3a45-48d5-9c25-15e323fdaa41
+    <group_ID>k__BackingField: 1e5935aa-3268-41c7-9635-ed66e770df42
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 1267, y: 1133}
+  - <ID>k__BackingField: d920db28-0e0d-45b7-9abe-15a68738d1e8
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: 7e472a21-3a45-48d5-9c25-15e323fdaa41
+    <group_ID>k__BackingField: 48e1299d-3c38-4786-99f7-1928b0ce0bbc
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 1617, y: 873}
+  - <ID>k__BackingField: 7e472a21-3a45-48d5-9c25-15e323fdaa41
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 509d2ba8-7665-4535-83c4-640785063f9e
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 6728e9bf-f3f7-4736-8264-8d54fa0dd027
+    <group_ID>k__BackingField: b5b180ce-8cdb-46cb-a2c1-b301e1985f1c
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 1825, y: 1684}
+  - <ID>k__BackingField: 509d2ba8-7665-4535-83c4-640785063f9e
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: d9ccd3b6-367c-484a-b5d6-e976efddafe6
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: d65c317f-b5da-4a3f-99eb-9a6bf2ca9888
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 53224610-de83-4921-8409-268a4e2dd962
+    <group_ID>k__BackingField: 5973385f-3211-4031-b408-a847c28f3c86
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 3181, y: 1821}
+  - <ID>k__BackingField: 6728e9bf-f3f7-4736-8264-8d54fa0dd027
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: d3c9d798-cc73-406d-b2b2-998da74b0b88
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: deb615b3-71d2-4d58-ab78-f74fe5710e14
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: f4dc4150-fe25-4f16-b1a3-683b23501f44
+    <group_ID>k__BackingField: 75c84662-f67e-4768-847e-ffdecc5a2796
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 1303, y: 2206}
+  - <ID>k__BackingField: deb615b3-71d2-4d58-ab78-f74fe5710e14
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: ff60d1cb-6c12-49f6-921b-bda072f093bd
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: dd85b17b-e760-482b-962e-f61d60bb5c22
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: c2661fcb-0071-4cbc-8ee0-5a4adb1bd3a5
+    <group_ID>k__BackingField: e5f73af7-6746-462f-b293-3f947be2c10f
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 1758, y: 2939}
+  - <ID>k__BackingField: f4dc4150-fe25-4f16-b1a3-683b23501f44
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: c2661fcb-0071-4cbc-8ee0-5a4adb1bd3a5
+    <group_ID>k__BackingField: e1de9fd6-f421-428c-97af-5b844eda0b1e
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 831, y: 2914}
+  - <ID>k__BackingField: ff60d1cb-6c12-49f6-921b-bda072f093bd
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: 509d2ba8-7665-4535-83c4-640785063f9e
+    <group_ID>k__BackingField: a817e097-efe5-44a2-ada0-583ac5067607
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 2548, y: 2873}
+  - <ID>k__BackingField: c2661fcb-0071-4cbc-8ee0-5a4adb1bd3a5
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: dc4c9c72-4cf4-48d4-af6c-3d6049de5c05
+    <group_ID>k__BackingField: 6dfcb1c3-2e7a-439f-b0fb-99bcb9d56679
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 1656, y: 3828}
+  - <ID>k__BackingField: dd85b17b-e760-482b-962e-f61d60bb5c22
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: 509d2ba8-7665-4535-83c4-640785063f9e
+    <group_ID>k__BackingField: 0adf8b19-3a45-4785-81f6-2f3d80cac1f5
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 2849, y: 3396}
+  - <ID>k__BackingField: dc4c9c72-4cf4-48d4-af6c-3d6049de5c05
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: ae83fcb2-d50f-4e7f-bd6d-a0cac24faf09
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 07da1f57-62ba-4774-bb7b-ca9c1ac191be
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 7e1a9c64-bc81-4b86-a513-62a4cd61ff61
+    <group_ID>k__BackingField: bb592596-f6f8-4887-861d-85bdeaaf7b89
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 4330, y: 4577}
+  - <ID>k__BackingField: d3c9d798-cc73-406d-b2b2-998da74b0b88
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: 509d2ba8-7665-4535-83c4-640785063f9e
+    <group_ID>k__BackingField: 9155c48f-a2ea-4d8e-a5bd-75d468852e48
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 2257, y: 2356}
+  - <ID>k__BackingField: 53224610-de83-4921-8409-268a4e2dd962
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: dc4c9c72-4cf4-48d4-af6c-3d6049de5c05
+    <group_ID>k__BackingField: 075e9d3f-3247-48ed-b7ac-045688ad9efd
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 3999, y: 2718}
+  - <ID>k__BackingField: d65c317f-b5da-4a3f-99eb-9a6bf2ca9888
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: d9ccd3b6-367c-484a-b5d6-e976efddafe6
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 53224610-de83-4921-8409-268a4e2dd962
+    <group_ID>k__BackingField: 71ae12a6-d071-4ece-b667-904129e2d1f6
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 4425, y: 2091}
+  - <ID>k__BackingField: d9ccd3b6-367c-484a-b5d6-e976efddafe6
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: a21720b8-6438-4dd3-ba29-fc2428296b59
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 9fab1e4d-831c-469d-8808-baa1fd558f5a
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 895e924c-249f-4205-92a8-da48f9546695
+    <group_ID>k__BackingField: f322c5a0-82a8-45ca-83c8-0c17391087b6
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 5230, y: 1594}
+  - <ID>k__BackingField: 895e924c-249f-4205-92a8-da48f9546695
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: dc4c9c72-4cf4-48d4-af6c-3d6049de5c05
+    <group_ID>k__BackingField: e80df3d0-3bce-41e7-a29c-e12fb8482963
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 4951, y: 2717}
+  - <ID>k__BackingField: 9fab1e4d-831c-469d-8808-baa1fd558f5a
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: dc4c9c72-4cf4-48d4-af6c-3d6049de5c05
+    <group_ID>k__BackingField: 3b52b785-444b-4fb1-8c78-e06938d5858c
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 5733, y: 2569}
+  - <ID>k__BackingField: 3b3fb7ba-6c7d-40d8-be62-7fc2b2322742
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: dc4c9c72-4cf4-48d4-af6c-3d6049de5c05
+    <group_ID>k__BackingField: da78bc90-566e-4fbe-99df-b8db694226f9
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 5924, y: 3181}
+  - <ID>k__BackingField: bd4317e7-0299-4c8d-80d9-f902f695a5de
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: dc4c9c72-4cf4-48d4-af6c-3d6049de5c05
+    <group_ID>k__BackingField: be23d9cd-e6ff-4e16-84ab-28aac941fa75
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 6664, y: 3560}
+  - <ID>k__BackingField: a21720b8-6438-4dd3-ba29-fc2428296b59
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: bd4317e7-0299-4c8d-80d9-f902f695a5de
+    - <text>k__BackingField: '''Dialogue option leading to next node :'''
+      <node_ID>k__BackingField: 3b3fb7ba-6c7d-40d8-be62-7fc2b2322742
+    <group_ID>k__BackingField: f5a7049b-bbfc-40d5-a6fb-293c3d118464
+    <dlog_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 6558, y: 2157}
+  - <ID>k__BackingField: 7e1a9c64-bc81-4b86-a513-62a4cd61ff61
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: b6950402-0759-45dd-a76c-40a339a5fcd4
+    <group_ID>k__BackingField: 5612815b-ead2-485b-89a7-f2a851b1167f
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 4161, y: 5682}
+  - <ID>k__BackingField: 07da1f57-62ba-4774-bb7b-ca9c1ac191be
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: b6950402-0759-45dd-a76c-40a339a5fcd4
+    <group_ID>k__BackingField: 85e66d71-6c70-451f-825c-cc59a22fd84d
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 5022, y: 5457}
+  - <ID>k__BackingField: ae83fcb2-d50f-4e7f-bd6d-a0cac24faf09
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: b6950402-0759-45dd-a76c-40a339a5fcd4
+    <group_ID>k__BackingField: 9d2469b2-2852-4dab-b412-a141efc2f317
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 5712, y: 5174}
+  - <ID>k__BackingField: b6950402-0759-45dd-a76c-40a339a5fcd4
+    <title>k__BackingField: DialogueTitle
+    <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+    <dlog_tip_text>k__BackingField: 
+    <list_choices>k__BackingField:
+    - <text>k__BackingField: 'Output port leading to next node :'
+      <node_ID>k__BackingField: 
+    <group_ID>k__BackingField: a2e55460-fe70-4fcc-a85f-4fc99952d749
+    <dlog_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 5543, y: 6352}
+  <list_previous_group_titles>k__BackingField:
+  - 1x1
+  - 1x1x2
+  - 1x1x2x1
+  - 1x1x2x2
+  - 1x1x2x3
+  - 1x1x3
+  - 1x1x1
+  - 1x2
+  - 1x2x2
+  - 1x2x1
+  - 1x2x1x3
+  - 1x2x1x1
+  - 1x2x1x2
+  - 1x2x1x1x3
+  - 1x2x1x1x1
+  - 1x2x1x1x2
+  - 1x3
+  - 1x2x2x2
+  - 1x2x2x3
+  - 1x2x2x1
+  - 1x2x2x1x3
+  - 1x2x2x1x2
+  - 1x2x2x1x1
+  - 1x2x2x1x1x1
+  - 1x2x2x1x1x2
+  - 1x3x1
+  - 1x3x2
+  - 1x3x3
+  - 2
+  <list_previous_ungrouped_titles>k__BackingField: []
+  <list_previous_grouped_titles>k__BackingField:
+    m_keys:
+    - 1x1
+    - 1x1x2
+    - 1x1x3
+    - 1x1x1
+    - 1x1x2x1
+    - 1x1x2x2
+    - 1x1x2x3
+    - 1x2
+    - 1x2x2
+    - 1x2x1
+    - 1x2x1x1
+    - 1x2x1x2
+    - 1x2x1x1x3
+    - 1x2x1x1x1
+    - 1x2x1x1x2
+    - 1x3
+    - 1x2x1x3
+    - 1x2x2x2
+    - 1x2x2x3
+    - 1x2x2x1
+    - 1x2x2x1x3
+    - 1x2x2x1x2
+    - 1x2x2x1x1x1
+    - 1x2x2x1x1x2
+    - 1x2x2x1x1
+    - 1x3x1
+    - 1x3x2
+    - 1x3x3
+    - 2
