@@ -17,7 +17,7 @@ MonoBehaviour:
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
   - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 4019267a0bb04c74c9da9e0a446a5bdb, type: 2}
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 966ec65e10acb76458a07782c7616c1c, type: 2}
   - <text>k__BackingField: '''Dialogue option leading to next node :'''
     <next_dlog_node>k__BackingField: {fileID: 11400000, guid: ab70d323ff2428f428363caee5df8e34, type: 2}
   <dlog_type>k__BackingField: 1

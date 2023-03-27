@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: DialogueTitle
   m_EditorClassIdentifier: 
   <dlog_title>k__BackingField: DialogueTitle
-  <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+  <dlog_text>k__BackingField: 'Librarian: Yes indeed, you can use the computers.'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
   - <text>k__BackingField: 'Output port leading to next node :'
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: ad0ec85e7779cf14881bb65657bbce4a, type: 2}
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 958ded9b0ff5cf9498475aaaec61cd6e, type: 2}
   <dlog_type>k__BackingField: 0
   <is_starting_dlog>k__BackingField: 0

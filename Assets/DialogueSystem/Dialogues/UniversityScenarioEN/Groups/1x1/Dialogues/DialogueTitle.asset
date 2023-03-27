@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: DialogueTitle
   m_EditorClassIdentifier: 
   <dlog_title>k__BackingField: DialogueTitle
-  <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+  <dlog_text>k__BackingField: 'Documentalist : "Hello, welcome."'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
+  - <text>k__BackingField: Do not answer and continue on your way.
     <next_dlog_node>k__BackingField: {fileID: 11400000, guid: ea9826e6c1e70aa49940a547fa0730c9, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 595efb8e4deccd745a1a3953c5e52e1c, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
+  - <text>k__BackingField: '"Hello", looking at the librarian.'
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 5d2398f2c520edc429cbd3a86cfe22dd, type: 2}
+  - <text>k__BackingField: '"Hello", without looking at the librarian.'
     <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 06c5be29ddbe4844a86bf95786f9ad0d, type: 2}
   <dlog_type>k__BackingField: 1
-  <is_starting_dlog>k__BackingField: 1
+  <is_starting_dlog>k__BackingField: 0

@@ -77,8 +77,8 @@ namespace CT.Windows
             this.AddManipulator(new SelectionDragger());
             this.AddManipulator(new RectangleSelector());
 
-            this.AddManipulator(CreateNodeContextualMenu("Add single-choice Node", CTDialogueType.SingleChoice));
-            this.AddManipulator(CreateNodeContextualMenu("Add multi-choice Node", CTDialogueType.MultipleChoice));
+            this.AddManipulator(CreateNodeContextualMenu("Add narration Node", CTDialogueType.SingleChoice));
+            this.AddManipulator(CreateNodeContextualMenu("Add user-choice Node", CTDialogueType.MultipleChoice));
 
             this.AddManipulator(CreateGroupContextualMenu());
         }

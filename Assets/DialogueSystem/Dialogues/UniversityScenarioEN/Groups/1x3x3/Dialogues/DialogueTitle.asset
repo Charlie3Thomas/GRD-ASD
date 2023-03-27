@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <dlog_title>k__BackingField: DialogueTitle
   <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
-  <dlog_tip_text>k__BackingField: 
+  <dlog_tip_text>k__BackingField: 'The librarian, whose office is located at the
+    library reception desk, is at your disposal to give you information or help you.
+    Do not hesitate to ask her if you encounter any difficulties. '
   <list_dlog_choices>k__BackingField:
   - <text>k__BackingField: 'Output port leading to next node :'
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 0aa472b5ca2068f4e83d5b4a6b2d628b, type: 2}
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 801d4681b688980419f67fd8deb85fd9, type: 2}
   <dlog_type>k__BackingField: 0
   <is_starting_dlog>k__BackingField: 0

@@ -16,11 +16,12 @@ MonoBehaviour:
   <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
+  - <text>k__BackingField: 'Go home. '
     <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 5a3c035793eff1f4bbc79dd141b27878, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: eb00dc58b9474d4469280519931887e0, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 0072e59e11a47f04881856b545772589, type: 2}
+  - <text>k__BackingField: Ask the librarian for help.
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 801d4681b688980419f67fd8deb85fd9, type: 2}
+  - <text>k__BackingField: Ask for help from students sitting around the available
+      computer
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: a7c4dcc5014e74741b7ba6e01171c078, type: 2}
   <dlog_type>k__BackingField: 1
   <is_starting_dlog>k__BackingField: 0

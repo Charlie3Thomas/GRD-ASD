@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 4
+  m_EditorClassIdentifier: 
+  <dlog_title>k__BackingField: 4
+  <dlog_text>k__BackingField: 'I will need your student card. '
+  <dlog_tip_text>k__BackingField: 
+  <list_dlog_choices>k__BackingField:
+  - <text>k__BackingField: 'Very well, thank you for your help. Here is my student
+      card. '
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 2c0e5a720668f3840896cba6be6fc6d4, type: 2}
+  <dlog_type>k__BackingField: 1
+  <is_starting_dlog>k__BackingField: 0

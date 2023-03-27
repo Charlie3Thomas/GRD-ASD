@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  <dlog_title>k__BackingField: 2
+  <dlog_text>k__BackingField: 'Librarian: "If you need any information, I am available,
+    do not hesitate."'
+  <dlog_tip_text>k__BackingField: 
+  <list_dlog_choices>k__BackingField:
+  - <text>k__BackingField: Thanks, that's nice.
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 3317dac0edbe01b44b7722f2340c58dd, type: 2}
+  - <text>k__BackingField: No, it's all good thanks.
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 9d0bd5e418c9fed489a649a874763e95, type: 2}
+  - <text>k__BackingField: Yes, I have a question.
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 595efb8e4deccd745a1a3953c5e52e1c, type: 2}
+  <dlog_type>k__BackingField: 1
+  <is_starting_dlog>k__BackingField: 0

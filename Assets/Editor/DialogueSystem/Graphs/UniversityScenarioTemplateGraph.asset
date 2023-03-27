@@ -16,37 +16,37 @@ MonoBehaviour:
   <list_groups>k__BackingField:
   - <ID>k__BackingField: efa26f6d-5e3e-48a5-b61d-e228a6469206
     <title>k__BackingField: 1x1
-    <pos>k__BackingField: {x: -65.000015, y: -70}
+    <pos>k__BackingField: {x: -65, y: -70}
   - <ID>k__BackingField: a9a09493-85f6-441d-a357-c0ad764050fa
     <title>k__BackingField: 1x1x2
-    <pos>k__BackingField: {x: 666.00006, y: 480.99997}
+    <pos>k__BackingField: {x: 666, y: 481}
   - <ID>k__BackingField: 407414b2-dd78-43b4-a516-13f8592567e6
     <title>k__BackingField: 1x1x2x1
-    <pos>k__BackingField: {x: 803.99994, y: 1306}
+    <pos>k__BackingField: {x: 804, y: 1306}
   - <ID>k__BackingField: 1e5935aa-3268-41c7-9635-ed66e770df42
     <title>k__BackingField: 1x1x2x2
-    <pos>k__BackingField: {x: 1241.9999, y: 1073.9999}
+    <pos>k__BackingField: {x: 1242, y: 1074}
   - <ID>k__BackingField: 48e1299d-3c38-4786-99f7-1928b0ce0bbc
     <title>k__BackingField: 1x1x2x3
-    <pos>k__BackingField: {x: 1591.9999, y: 813.99994}
+    <pos>k__BackingField: {x: 1592, y: 814}
   - <ID>k__BackingField: 7b38e3e0-9770-4a4b-b039-7d57926890ce
     <title>k__BackingField: 1x1x3
-    <pos>k__BackingField: {x: 2070.9998, y: 307.99994}
+    <pos>k__BackingField: {x: 2071, y: 308}
   - <ID>k__BackingField: 6d147162-21ea-484b-825e-10f021c5ecc8
     <title>k__BackingField: 1x1x1
     <pos>k__BackingField: {x: -81, y: 1540}
   - <ID>k__BackingField: b5b180ce-8cdb-46cb-a2c1-b301e1985f1c
     <title>k__BackingField: 1x2
-    <pos>k__BackingField: {x: 1799.9998, y: 1624.9999}
+    <pos>k__BackingField: {x: 1800, y: 1625}
   - <ID>k__BackingField: 5973385f-3211-4031-b408-a847c28f3c86
     <title>k__BackingField: 1x2x2
-    <pos>k__BackingField: {x: 3156, y: 1762.0001}
+    <pos>k__BackingField: {x: 3156, y: 1762}
   - <ID>k__BackingField: 75c84662-f67e-4768-847e-ffdecc5a2796
     <title>k__BackingField: 1x2x1
     <pos>k__BackingField: {x: 1278, y: 2147}
   - <ID>k__BackingField: 9155c48f-a2ea-4d8e-a5bd-75d468852e48
     <title>k__BackingField: 1x2x1x3
-    <pos>k__BackingField: {x: 2231.9998, y: 2296.9998}
+    <pos>k__BackingField: {x: 2232, y: 2297}
   - <ID>k__BackingField: e5f73af7-6746-462f-b293-3f947be2c10f
     <title>k__BackingField: 1x2x1x1
     <pos>k__BackingField: {x: 1733, y: 2880}
@@ -58,7 +58,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 2523, y: 2814}
   - <ID>k__BackingField: 6dfcb1c3-2e7a-439f-b0fb-99bcb9d56679
     <title>k__BackingField: 1x2x1x1x1
-    <pos>k__BackingField: {x: 1631.0001, y: 3768.9998}
+    <pos>k__BackingField: {x: 1631, y: 3769}
   - <ID>k__BackingField: 0adf8b19-3a45-4785-81f6-2f3d80cac1f5
     <title>k__BackingField: 1x2x1x1x2
     <pos>k__BackingField: {x: 2824, y: 3337}
@@ -73,16 +73,16 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4400, y: 2032}
   - <ID>k__BackingField: f322c5a0-82a8-45ca-83c8-0c17391087b6
     <title>k__BackingField: 1x2x2x1
-    <pos>k__BackingField: {x: 5205, y: 1534.9999}
+    <pos>k__BackingField: {x: 5205, y: 1535}
   - <ID>k__BackingField: e80df3d0-3bce-41e7-a29c-e12fb8482963
     <title>k__BackingField: 1x2x2x1x3
     <pos>k__BackingField: {x: 4926, y: 2658}
   - <ID>k__BackingField: 3b52b785-444b-4fb1-8c78-e06938d5858c
     <title>k__BackingField: 1x2x2x1x2
-    <pos>k__BackingField: {x: 5707.9995, y: 2510}
+    <pos>k__BackingField: {x: 5708, y: 2510}
   - <ID>k__BackingField: f5a7049b-bbfc-40d5-a6fb-293c3d118464
     <title>k__BackingField: 1x2x2x1x1
-    <pos>k__BackingField: {x: 6532.9995, y: 2097.9998}
+    <pos>k__BackingField: {x: 6533, y: 2098}
   - <ID>k__BackingField: da78bc90-566e-4fbe-99df-b8db694226f9
     <title>k__BackingField: 1x2x2x1x1x1
     <pos>k__BackingField: {x: 5899, y: 3122}
@@ -91,16 +91,16 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 6639, y: 3501}
   - <ID>k__BackingField: 5612815b-ead2-485b-89a7-f2a851b1167f
     <title>k__BackingField: 1x3x1
-    <pos>k__BackingField: {x: 4135.9995, y: 5622.9995}
+    <pos>k__BackingField: {x: 4136, y: 5623}
   - <ID>k__BackingField: 85e66d71-6c70-451f-825c-cc59a22fd84d
     <title>k__BackingField: 1x3x2
-    <pos>k__BackingField: {x: 4996.9995, y: 5397.9995}
+    <pos>k__BackingField: {x: 4997, y: 5398}
   - <ID>k__BackingField: 9d2469b2-2852-4dab-b412-a141efc2f317
     <title>k__BackingField: 1x3x3
-    <pos>k__BackingField: {x: 5686.9995, y: 5114.9995}
+    <pos>k__BackingField: {x: 5687, y: 5115}
   - <ID>k__BackingField: a2e55460-fe70-4fcc-a85f-4fc99952d749
     <title>k__BackingField: 2
-    <pos>k__BackingField: {x: 5518, y: 6292.9995}
+    <pos>k__BackingField: {x: 5518, y: 6293}
   <list_nodes>k__BackingField:
   - <ID>k__BackingField: 190b6a55-ce0d-47de-8e8e-17dab46f9d38
     <title>k__BackingField: DialogueTitle

@@ -13,14 +13,10 @@ MonoBehaviour:
   m_Name: DialogueTitle
   m_EditorClassIdentifier: 
   <dlog_title>k__BackingField: DialogueTitle
-  <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+  <dlog_text>k__BackingField: The student approaches the librarian to ask her a question.
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 3317dac0edbe01b44b7722f2340c58dd, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 9d0bd5e418c9fed489a649a874763e95, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
+  - <text>k__BackingField: Can we use the computers in the computer room freely?
     <next_dlog_node>k__BackingField: {fileID: 11400000, guid: ca61ef993dbf723428b63d4bb5e2407a, type: 2}
   <dlog_type>k__BackingField: 1
   <is_starting_dlog>k__BackingField: 0
