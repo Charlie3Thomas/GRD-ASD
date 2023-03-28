@@ -27,6 +27,6 @@ public class GlobalEventManager : MonoBehaviour
 
     public void LoadDialogScene()
     {
-        SceneManager.LoadScene("Dialog");
+        SceneManager.LoadScene("Dialog 1");
     }
 }
