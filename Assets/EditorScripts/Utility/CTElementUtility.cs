@@ -1,6 +1,9 @@
+using UnityEngine;
+using System.Collections;
 using System;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine.UIElements;
+using System.Collections.Generic;
 
 namespace CT.Utils
 {
@@ -61,6 +64,19 @@ namespace CT.Utils
             text_area.multiline = true;
 
             return text_area;
+        }
+
+        public static DropdownField CreateDropdownField(string _title, List<string> _choices, int _index, EventCallback<ChangeEvent<DropdownField>> _on_value_changed = null)
+        {
+            DropdownField drop_down = new DropdownField()
+            {
+                choices = _choices,
+                index = _index
+            };
+
+            drop_down.label = _title;
+
+            return drop_down;
         }
     }
 }

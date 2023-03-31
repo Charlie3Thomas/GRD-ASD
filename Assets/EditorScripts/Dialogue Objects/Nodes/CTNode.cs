@@ -10,6 +10,12 @@ namespace CT.Components
 {
     using Data.Save;
     using Enumerations;
+    using Unity.PlasticSCM.Editor.WebApi;
+    using Unity.VisualScripting;
+    using UnityEditor;
+    using UnityEditor.PackageManager;
+    using UnityEngine.TextCore.Text;
+    using UnityEngine.UI;
     using Utils;
     using Windows;
 
@@ -22,9 +28,14 @@ namespace CT.Components
         public string dlog_tip_text { get; set; }
         public CTDialogueType dlog_type { get; set; }
         public CTGroup group { get; set; }
+        public string active_character { get; set; }
+        public int dropdown_index { get; set; }
 
         protected CTGraphView graph_view;
         private Color default_background_colour;
+
+        // Character selection
+        List<string> characters = new List<string>() { "narrator", "oingo", "boingo" };
 
         #region Initialise
 
@@ -46,6 +57,7 @@ namespace CT.Components
 
             graph_view = _ct_graph_view;
             default_background_colour = new Color(30f / 255f, 30f / 255f, 30f / 255f);
+
         }
 
         public virtual void Draw()
@@ -95,6 +107,16 @@ namespace CT.Components
             // Extension
             VisualElement custom_data_container = new VisualElement();
 
+            // Character drop down selection
+            //Debug.Log($"CTNode.Draw. Dropdown index is {dropdown_index}");
+            DropdownField drop_down = CTElementUtility.CreateDropdownField("Character", characters, dropdown_index);
+            drop_down.RegisterValueChangedCallback(OnDropDownValueChanged);
+            //DropdownField drop_down = new DropdownField();
+            //drop_down = CTElementUtility.CreateDropdownField("Character", characters, dropdown_index, callback => drop_down.index = callback.newValue.index);
+            //drop_down.index = dropdown_index;
+            //drop_down.RegisterValueChangedCallback(OnDropDownValueChanged);
+            custom_data_container.Add(drop_down);
+
             // Dialogue text
             Foldout text_foldout = CTElementUtility.CreateFoldout("Node Dialogue");
             TextField tf_text = CTElementUtility.CreateTextArea(dlog_text, null, callback => dlog_text = callback.newValue);
@@ -105,19 +127,21 @@ namespace CT.Components
             Foldout tip_text_foldout = CTElementUtility.CreateFoldout("Node Tip");
             TextField tf_tip_text = CTElementUtility.CreateTextArea(dlog_tip_text, null, callback => dlog_tip_text = callback.newValue);
             tip_text_foldout.Add(tf_tip_text);
-            custom_data_container.Add(tip_text_foldout);
+            custom_data_container.Add(tip_text_foldout);            
 
             extensionContainer.Add(custom_data_container);
         }
 
+        
+
         // Creates override context menu on right click for nodes
-        public override void BuildContextualMenu(ContextualMenuPopulateEvent _evt)
+        public override void BuildContextualMenu(ContextualMenuPopulateEvent _event)
         {
             // Context menu options with coresponding callback functions
-            _evt.menu.AppendAction("Disconnect Input Port", action_event => DisconnectInputPorts());
-            _evt.menu.AppendAction("Disconnect Output Port(s)", action_event => DisconnectOutputPorts());
+            _event.menu.AppendAction("Disconnect Input Port", action_event => DisconnectInputPorts());
+            _event.menu.AppendAction("Disconnect Output Port(s)", action_event => DisconnectOutputPorts());
 
-            base.BuildContextualMenu(_evt);
+            base.BuildContextualMenu(_event);
         }
 
         #endregion
@@ -174,6 +198,23 @@ namespace CT.Components
         {
             // Disconnects all output ports on a node/selected nodes
             DisconnectPorts(outputContainer);
+        }
+
+        private void OnDropDownValueChanged(ChangeEvent<string> _event)
+        {
+            //Debug.LogError($"Dropdown value changed to {_event.newValue}");
+            active_character = _event.newValue;
+
+            for (int i = 0; i < characters.Count; i++)
+            {
+                //Debug.LogError($"{active_character} {characters[i]}");
+                if (active_character == characters[i])
+                {
+                    //Debug.Log("Match found!");
+                    dropdown_index = i;
+                    //Debug.Log("Dropdown index set to " + dropdown_index);
+                }
+            }
         }
 
         #endregion

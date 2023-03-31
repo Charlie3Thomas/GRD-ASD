@@ -12,6 +12,7 @@ namespace CT.Utils
     using Components;
     using ScriptableObjects;
     using Windows;
+    using System.Xml.Linq;
 
     public static class CTIOUtility
     {
@@ -152,6 +153,8 @@ namespace CT.Utils
                 dlog_text = _node.dlog_text,
                 dlog_tip_text = _node.dlog_tip_text,
                 group_ID = _node.group?.ID,
+                character = _node.active_character,
+                dropdown_index = _node.dropdown_index,
                 dlog_type = _node.dlog_type,
                 pos = _node.GetPosition().position
             };
@@ -182,6 +185,8 @@ namespace CT.Utils
                 _node.dlog_tip_text,
                 ConvertNodeChoicesToDialogueChoices(_node.list_dlog_choices),
                 _node.dlog_type,
+                _node.active_character,
+                _node.dropdown_index,
                 _node.IsStartingNode()
             );
 
@@ -298,10 +303,8 @@ namespace CT.Utils
             if (graph_data == null)
             {
                 EditorUtility.DisplayDialog(
-                    "Could not load the requested file!",
-                    "The file at the following path could not be found:\n\n" +
-                    $"\"Assets/Editor/DialogueSystem/Graphs/{graph_file_name}\".\n\n" +
-                    "Ensure you chose the right file type from the folder path mentioned above.",
+                    "Could not load the graph data!",
+                    "Either the wrong file was chosen, or the file does not exist at that path.",
                     "Okay"
                 );
 
@@ -339,6 +342,10 @@ namespace CT.Utils
                 node.list_dlog_choices = choices;
                 node.dlog_text = node_data.dlog_text;
                 node.dlog_tip_text = node_data.dlog_tip_text;
+                node.active_character = node_data.character;
+                node.dropdown_index = node_data.dropdown_index;
+
+                //Debug.Log($"CTIOUtility.LoadNodes. node.active_character : {node.dropdown_index}. node_data.character : {node_data.dropdown_index}");
 
                 node.Draw();
 
