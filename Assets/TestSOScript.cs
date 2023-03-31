@@ -9,6 +9,7 @@ using TMPro;
 namespace CT
 {
     using Data;
+    using DG.Tweening;
 
     public class TestSOScript : MonoBehaviour
     {
@@ -21,6 +22,14 @@ namespace CT
         [SerializeField] private Button test_button_3;
 
         [SerializeField] private CTDialogueSO current_dlog;
+
+        public GameObject[] selection;
+
+        public int currentSelection = 0;
+
+        private int currentmoveincount = 0;
+
+        public RectTransform student, librarian;
 
         private void Awake()
         {
@@ -75,13 +84,49 @@ namespace CT
                     test_button_3.GetComponentInChildren<TextMeshProUGUI>().text = string.IsNullOrEmpty(current_dlog.list_dlog_choices[2].text) ? "" : current_dlog.list_dlog_choices[2].text;
 
             }
+
+            if (test_button_1.GetComponentInChildren<TextMeshProUGUI>().text == "")
+            {
+                test_button_1.gameObject.SetActive(false);
+            }
+            else
+            {
+                test_button_1.gameObject.SetActive(true);
+                currentSelection = 0;
+                UpdateSelection();
+            }
+
+            if (test_button_2.GetComponentInChildren<TextMeshProUGUI>().text == "")
+            {
+                test_button_2.gameObject.SetActive(false);
+            }
+            else
+            {
+                test_button_2.gameObject.SetActive(true);
+                currentSelection = 0;
+                UpdateSelection();
+            }
+
+            if (test_button_3.GetComponentInChildren<TextMeshProUGUI>().text == "")
+            {
+                test_button_3.gameObject.SetActive(false);
+            }
+            else
+            {
+                test_button_3.gameObject.SetActive(true);
+                currentSelection = 0;
+                UpdateSelection();
+            }
+
+
+
             //else
             //{
             //    test_button_1.GetComponentInChildren<TextMeshProUGUI>().text = "";
             //    test_button_2.GetComponentInChildren<TextMeshProUGUI>().text = "";
             //    test_button_3.GetComponentInChildren<TextMeshProUGUI>().text = "";
             //}
-            
+
         }
 
         private void OnOptionChosen(int _choice_index)
@@ -114,5 +159,100 @@ namespace CT
         {
             OnOptionChosen(2);
         }
+
+        public void ChooseEnter()
+        {
+            if(test_button_1.GetComponentInChildren<TextMeshProUGUI>().text == "" &&
+               test_button_2.GetComponentInChildren<TextMeshProUGUI>().text == "" &&
+               test_button_3.GetComponentInChildren<TextMeshProUGUI>().text == "")
+            {
+                OnOptionChosen(0);
+                currentmoveincount++;
+
+                if(currentmoveincount > 1)
+                {
+                    //move in student
+
+                    student.DOAnchorPos(new Vector2(-502, 69), 0.5f)
+                    .SetEase(Ease.Linear);
+                        
+                }
+
+
+                if (currentmoveincount > 2)
+                {
+                    //move in librarian
+                    librarian.DOAnchorPos(new Vector2(662, 31), 0.5f)
+                    .SetEase(Ease.Linear);
+                }
+
+            }
+
+            //if (currentSelection == 0)
+            //{
+            //    OnOptionChosen(0);
+            //}
+            //if (currentSelection == 1)
+            //{
+            //    OnOptionChosen(1);
+            //}
+            //if (currentSelection == 2)
+            //{
+            //    OnOptionChosen(2);
+            //}
+
+        }
+
+        public void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.KeypadEnter))
+            {
+                ChooseEnter();
+            }
+
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                currentSelection = currentSelection - 1;
+                if (currentSelection < 0)
+                {
+                    currentSelection = 2;
+                }
+                UpdateSelection();
+            }
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                currentSelection = currentSelection + 1;
+                if (currentSelection > 2)
+                {
+                    currentSelection = 0;
+                }
+                UpdateSelection();
+            }
+
+        }
+
+        private void UpdateSelection()
+        {
+            for(int i = 0; i < selection.Length; i++)
+            {
+                selection[i].SetActive(false);
+            }
+
+            if (test_button_1.GetComponentInChildren<TextMeshProUGUI>().text == "")
+            {
+                selection[0].SetActive(false);
+            }
+            if (test_button_2.GetComponentInChildren<TextMeshProUGUI>().text == "")
+            {
+                selection[1].SetActive(false);
+            }
+            if (test_button_3.GetComponentInChildren<TextMeshProUGUI>().text == "")
+            {
+                selection[2].SetActive(false);
+            }
+
+            selection[currentSelection].SetActive(true);
+        }
+
     }
 }
