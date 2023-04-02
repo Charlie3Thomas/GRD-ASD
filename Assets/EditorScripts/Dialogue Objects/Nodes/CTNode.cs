@@ -8,14 +8,9 @@ using UnityEngine.UIElements;
 
 namespace CT.Components
 {
+    using CT.Utilis;
     using Data.Save;
     using Enumerations;
-    using Unity.PlasticSCM.Editor.WebApi;
-    using Unity.VisualScripting;
-    using UnityEditor;
-    using UnityEditor.PackageManager;
-    using UnityEngine.TextCore.Text;
-    using UnityEngine.UI;
     using Utils;
     using Windows;
 
@@ -35,7 +30,7 @@ namespace CT.Components
         private Color default_background_colour;
 
         // Character selection
-        List<string> characters = new List<string>() { "narrator", "oingo", "boingo" };
+        List<string> characters;
 
         #region Initialise
 
@@ -52,6 +47,11 @@ namespace CT.Components
             // Default text for tip input field in graph view
             // Should remain an empty string as will be used for checking if Tip UI should be viewable in game
             dlog_tip_text = "";
+
+            characters = new List<string>();
+
+            foreach (NodeCharacter c in (NodeCharacter[]) Enum.GetValues(typeof(NodeCharacter)))
+                characters.Add(c.ToString());
 
             SetPosition(new Rect(_pos, Vector2.zero));
 
