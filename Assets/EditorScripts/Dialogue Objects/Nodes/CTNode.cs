@@ -24,13 +24,16 @@ namespace CT.Components
         public CTDialogueType dlog_type { get; set; }
         public CTGroup group { get; set; }
         public string active_character { get; set; }
-        public int dropdown_index { get; set; }
+        public string active_bg { get; set; }
+        public int char_dropdown_index { get; set; }
+        public int bg_dropdown_index { get; set; }
 
         protected CTGraphView graph_view;
         private Color default_background_colour;
 
         // Character selection
-        List<string> characters;
+        private List<string> characters;
+        private List<string> backgrounds;
 
         #region Initialise
 
@@ -49,9 +52,15 @@ namespace CT.Components
             dlog_tip_text = "";
 
             characters = new List<string>();
-
+            backgrounds = new List<string>();
             foreach (NodeCharacter c in (NodeCharacter[]) Enum.GetValues(typeof(NodeCharacter)))
                 characters.Add(c.ToString());
+
+            foreach (Backgrounds bg in (Backgrounds[])Enum.GetValues(typeof(Backgrounds)))
+            {
+                Debug.Log("BG==>" + bg);
+                backgrounds.Add(bg.ToString());
+            }
 
             SetPosition(new Rect(_pos, Vector2.zero));
 
@@ -109,13 +118,18 @@ namespace CT.Components
 
             // Character drop down selection
             //Debug.Log($"CTNode.Draw. Dropdown index is {dropdown_index}");
-            DropdownField drop_down = CTElementUtility.CreateDropdownField("Character", characters, dropdown_index);
-            drop_down.RegisterValueChangedCallback(OnDropDownValueChanged);
+            DropdownField char_drop_down = CTElementUtility.CreateDropdownField("Character", characters, char_dropdown_index);
+            char_drop_down.RegisterValueChangedCallback(OnCharacterDropDownValueChanged);
             //DropdownField drop_down = new DropdownField();
             //drop_down = CTElementUtility.CreateDropdownField("Character", characters, dropdown_index, callback => drop_down.index = callback.newValue.index);
             //drop_down.index = dropdown_index;
             //drop_down.RegisterValueChangedCallback(OnDropDownValueChanged);
-            custom_data_container.Add(drop_down);
+            custom_data_container.Add(char_drop_down);
+
+            // Background drop down selection
+            DropdownField bg_drop_down = CTElementUtility.CreateDropdownField("Background", backgrounds, bg_dropdown_index);
+            bg_drop_down.RegisterValueChangedCallback(OnBGDropDownValueChanged);
+            custom_data_container.Add(bg_drop_down);
 
             // Dialogue text
             Foldout text_foldout = CTElementUtility.CreateFoldout("Node Dialogue");
@@ -200,7 +214,7 @@ namespace CT.Components
             DisconnectPorts(outputContainer);
         }
 
-        private void OnDropDownValueChanged(ChangeEvent<string> _event)
+        private void OnCharacterDropDownValueChanged(ChangeEvent<string> _event)
         {
             //Debug.LogError($"Dropdown value changed to {_event.newValue}");
             active_character = _event.newValue;
@@ -211,7 +225,24 @@ namespace CT.Components
                 if (active_character == characters[i])
                 {
                     //Debug.Log("Match found!");
-                    dropdown_index = i;
+                    char_dropdown_index = i;
+                    //Debug.Log("Dropdown index set to " + dropdown_index);
+                }
+            }
+        }
+
+        private void OnBGDropDownValueChanged(ChangeEvent<string> _event)
+        {
+            //Debug.LogError($"Dropdown value changed to {_event.newValue}");
+            active_bg = _event.newValue;
+
+            for (int i = 0; i < backgrounds.Count; i++)
+            {
+                //Debug.LogError($"{active_character} {characters[i]}");
+                if (active_bg == backgrounds[i])
+                {
+                    //Debug.Log("Match found!");
+                    bg_dropdown_index = i;
                     //Debug.Log("Dropdown index set to " + dropdown_index);
                 }
             }

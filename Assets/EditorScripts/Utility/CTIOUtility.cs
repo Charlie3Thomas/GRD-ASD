@@ -154,7 +154,9 @@ namespace CT.Utils
                 dlog_tip_text = _node.dlog_tip_text,
                 group_ID = _node.group?.ID,
                 character = _node.active_character,
-                dropdown_index = _node.dropdown_index,
+                background = _node.active_bg,
+                char_dropdown_index = _node.char_dropdown_index,
+                bg_dropdown_index = _node.bg_dropdown_index,
                 dlog_type = _node.dlog_type,
                 pos = _node.GetPosition().position
             };
@@ -186,7 +188,9 @@ namespace CT.Utils
                 ConvertNodeChoicesToDialogueChoices(_node.list_dlog_choices),
                 _node.dlog_type,
                 _node.active_character,
-                _node.dropdown_index,
+                _node.char_dropdown_index,
+                _node.active_bg,
+                _node.bg_dropdown_index,
                 _node.IsStartingNode()
             );
 
@@ -343,7 +347,9 @@ namespace CT.Utils
                 node.dlog_text = node_data.dlog_text;
                 node.dlog_tip_text = node_data.dlog_tip_text;
                 node.active_character = node_data.character;
-                node.dropdown_index = node_data.dropdown_index;
+                node.active_bg = node_data.background;
+                node.char_dropdown_index = node_data.char_dropdown_index;
+                node.bg_dropdown_index = node_data.bg_dropdown_index;
 
                 //Debug.Log($"CTIOUtility.LoadNodes. node.active_character : {node.dropdown_index}. node_data.character : {node_data.dropdown_index}");
 
