@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -56,7 +57,8 @@ namespace CT.UI.Engine
         [Header("UI Prefabs")]
         [SerializeField] private GameObject image_prefab;
         [SerializeField] private GameObject text_prefab;
-        [SerializeField] private GameObject button_prefab;
+        [SerializeField] private GameObject tip_bttn_prefab;
+        [SerializeField] private GameObject txt_bttn_prefab;
 
         // Anchor Points
         [Header("Anchor Points")]
@@ -103,7 +105,7 @@ namespace CT.UI.Engine
         private void InstantiateRevealTipButton()
         {
             // Instantiate tip button and place at fixed position on the screen
-            show_tip_button = Instantiate(button_prefab, tip_anchor_point);
+            show_tip_button = Instantiate(txt_bttn_prefab, tip_anchor_point);
             show_tip_button.GetComponentInChildren<TextMeshProUGUI>().text = "";
             ResizeButtonToTextureScale(show_tip_button.GetComponent<UnityEngine.UI.Button>());
         }
@@ -111,7 +113,7 @@ namespace CT.UI.Engine
         private void InstantiateNextDialogueButton()
         {
             // Instantiate next button and place at fixed position on the screen
-            next_button = Instantiate(button_prefab, dlog_choices_centre);
+            next_button = Instantiate(txt_bttn_prefab, dlog_choices_centre);
 
             ResizeButtonToTextureScale(next_button.GetComponent<UnityEngine.UI.Button>());
         }
@@ -136,11 +138,14 @@ namespace CT.UI.Engine
             for (int i = 0; i < _button_count; i++)
             {
                 // Add offset to dlog_choices_centre
-                GameObject button = Instantiate(button_prefab, dlog_choices_centre);
+                GameObject button = Instantiate(txt_bttn_prefab, dlog_choices_centre);
                 button.GetComponentInChildren<TextMeshProUGUI>().text = "";
                 choices_buttons.Add(button);
-                button.transform.position += new Vector3(0.0f, i * 35.0f, 0.0f);
+                button.transform.position += new Vector3(0.0f, i * 75.0f, 0.0f);
                 ResizeButtonToTextureScale(button.GetComponent<UnityEngine.UI.Button>());
+                button.GetComponentInChildren<UnityEngine.UI.Button>().GetComponentInChildren<TextMeshProUGUI>().text =
+                    "Hello, I'm an Oingo Boingo man in an Flingo Flongo world.";
+                ScaleButtonWithText(button.GetComponentInChildren<UnityEngine.UI.Button>());
             }
         }
 
@@ -221,11 +226,21 @@ namespace CT.UI.Engine
         {
             // Get the size of button texture
             Texture2D texture = _button.GetComponent<UnityEngine.UI.Image>().sprite.texture;
-            Vector2 textureSize = new Vector2(texture.width, texture.height);
+            Vector2 textureSize = new Vector2(texture.width, texture.height * 2);
 
             // Set size of button to match texture
             RectTransform rectTransform = _button.GetComponent<RectTransform>();
             rectTransform.sizeDelta = textureSize;
+        }
+
+        private void ScaleButtonWithText(UnityEngine.UI.Button _button)
+        {
+            // Get the width of the text
+            float text_count = _button.GetComponentInChildren<TextMeshProUGUI>().text.Count();
+
+            // Set the width of the button based on the text width
+            RectTransform rect_transform = _button.GetComponent<RectTransform>();
+            rect_transform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, text_count * 25f);
         }
 
         #endregion
