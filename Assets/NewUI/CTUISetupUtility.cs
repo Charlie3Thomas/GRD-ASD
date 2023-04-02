@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
-namespace CT
+namespace CT.UI.Engine
 {
     public class CTUISetupUtility : MonoBehaviour
     {
@@ -63,6 +63,7 @@ namespace CT
         [SerializeField] private Transform background_anchor_point;
         [SerializeField] private Transform character_anchor_point;
         [SerializeField] private Transform tip_anchor_point;
+        [SerializeField] private Transform dlog_choices_centre;
 
         // UI Elements
         private GameObject background;
@@ -75,9 +76,14 @@ namespace CT
         {
             background = new GameObject();
             character = new GameObject();
+            show_tip_button = new GameObject();
+            next_button = new GameObject();
+            choices_buttons = new List<GameObject>();
+
             InstantiateNewBackground(0);
             InstantiateNewCharacter(0);
             InstantiateRevealTipButton();
+            InstantiateChoiceButton(5);
         }
 
         private void Update()
@@ -88,6 +94,8 @@ namespace CT
                 InstantiateNewBackground(index);
                 index = Random.Range(0, character_sprites.Count);
                 InstantiateNewCharacter(index);
+                index = Random.Range(1, 6);
+                InstantiateChoiceButton(index);
             }
         }
 
@@ -103,28 +111,37 @@ namespace CT
         private void InstantiateNextDialogueButton()
         {
             // Instantiate next button and place at fixed position on the screen
-            show_tip_button = Instantiate(button_prefab, this.transform);
+            next_button = Instantiate(button_prefab, dlog_choices_centre);
 
-            ResizeButtonToTextureScale(show_tip_button.GetComponent<UnityEngine.UI.Button>());
+            ResizeButtonToTextureScale(next_button.GetComponent<UnityEngine.UI.Button>());
         }
 
-        private void InstantiateChoiceButton()
+        private void InstantiateChoiceButton(int _button_count)
         {
-            // Instantiate button
-            // Add button to list
-            // Set button text to choice text#
-            // Iterate though list and place buttons in a row with nice spacing
-        }
+            if (_button_count < 0)
+            {
+                Debug.LogError("Cannot have negative buttons!");
+                return;
+            }
 
-        private void ResizeButtonToTextureScale(UnityEngine.UI.Button _button)
-        {
-            // Get the size of button texture
-            Texture2D texture = _button.GetComponent<UnityEngine.UI.Image>().sprite.texture;
-            Vector2 textureSize = new Vector2(texture.width, texture.height);
+            List<GameObject> to_remove = new List<GameObject>(choices_buttons);
 
-            // Set size of button to match texture
-            RectTransform rectTransform = _button.GetComponent<RectTransform>();
-            rectTransform.sizeDelta = textureSize;
+            // Clear old list
+            foreach (GameObject go in to_remove)
+            {
+                Destroy(go);
+                choices_buttons.Remove(go);
+            }
+
+            for (int i = 0; i < _button_count; i++)
+            {
+                // Add offset to dlog_choices_centre
+                GameObject button = Instantiate(button_prefab, dlog_choices_centre);
+                button.GetComponentInChildren<TextMeshProUGUI>().text = "";
+                choices_buttons.Add(button);
+                button.transform.position += new Vector3(0.0f, i * 35.0f, 0.0f);
+                ResizeButtonToTextureScale(button.GetComponent<UnityEngine.UI.Button>());
+            }
         }
 
         #endregion
@@ -132,7 +149,6 @@ namespace CT
 
         #region Sprite Methods
         #region Character Methods
-
         private void InstantiateNewCharacter(int _index)
         {
             // Ensure index is within range
@@ -143,11 +159,6 @@ namespace CT
             character = Instantiate(image_prefab, character_anchor_point); // Instantiate image object
             character.GetComponent<UnityEngine.UI.Image>().sprite = ConvertTexture2DToSprite(character_sprites[_index]); // Set sprite
             SetAnchors(character);
-        }
-
-        private void SetCharacterPosition()
-        {
-
         }
 
         #endregion
@@ -204,6 +215,17 @@ namespace CT
             }
 
             return true;
+        }
+
+        private void ResizeButtonToTextureScale(UnityEngine.UI.Button _button)
+        {
+            // Get the size of button texture
+            Texture2D texture = _button.GetComponent<UnityEngine.UI.Image>().sprite.texture;
+            Vector2 textureSize = new Vector2(texture.width, texture.height);
+
+            // Set size of button to match texture
+            RectTransform rectTransform = _button.GetComponent<RectTransform>();
+            rectTransform.sizeDelta = textureSize;
         }
 
         #endregion
