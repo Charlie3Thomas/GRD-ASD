@@ -1,5 +1,6 @@
 using CT.Data;
 using CT.ScriptableObjects;
+using CT.UI.Engine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ namespace CT.Utilis
 {
     public class CTNodeIOUtility : MonoBehaviour
     {
+        [SerializeField] private CTUISetupUtility UI_setup;
 
         [SerializeField] private CTDialogueSO starting_node;
         [SerializeField] private CTDialogueSO current_node;
@@ -21,10 +23,21 @@ namespace CT.Utilis
         [SerializeField] private bool tip;
         [SerializeField] private bool is_end_node;
 
-        private void Start()
+        private void OnEnable()
         {
             current_node = starting_node;
             ReadNodeInformation();
+        }
+
+        private void Start()
+        {
+            //current_node_dlog = "";
+            //current_node_tip = "";
+            //current_node_choices = new List<CTDialogueChoiceData>();
+            //current_character = "";
+            //tip = false;
+            //is_end_node = false;
+            
         }
 
         private void Update()
@@ -37,22 +50,27 @@ namespace CT.Utilis
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 OnOptionChosen(0);
+                UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 OnOptionChosen(1);
+                UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 OnOptionChosen(2);
+                UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 OnOptionChosen(3);
+                UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha5))
             {
                 OnOptionChosen(4);
+                UI_setup.RefreshUI();
             }
         }
 
@@ -65,7 +83,7 @@ namespace CT.Utilis
             current_character = current_node.active_character;
 
             // If current node is a narration node
-            if (current_node.dlog_type == Enumerations.CTDialogueType.SingleChoice)
+            if (current_node.dlog_type == Enumerations.CTDialogueType.Narration)
                 next_node = current_node.list_dlog_choices[0].next_dlog_node; // There is only one choice in a narration node
             // If current node is a choice node
             // do not set next node yet as we need to wait for player to choose an option
@@ -98,7 +116,7 @@ namespace CT.Utilis
             if (current_node.list_dlog_choices.Count > 0)
             {
                 // If current node is a narration node
-                if (current_node.dlog_type == Enumerations.CTDialogueType.SingleChoice)
+                if (current_node.dlog_type == Enumerations.CTDialogueType.Narration)
                 {
                     // Set current node to next node at index
                     // Hard coded at 0 as there is only one choice in a narration node
@@ -107,7 +125,7 @@ namespace CT.Utilis
                 else // If current node is a choice node
                 {
                     // Set current node to next node at index
-                    CTDialogueSO next_node = current_node.list_dlog_choices[_choice_index].next_dlog_node;
+                    next_node = current_node.list_dlog_choices[_choice_index].next_dlog_node;
                 }
 
                 current_node = next_node;
@@ -152,6 +170,11 @@ namespace CT.Utilis
         public string GetChoiceText(int _index)
         {
             return current_node_choices[_index].text;
+        }
+
+        public CT.Enumerations.CTDialogueType GetNodeType()
+        {
+            return current_node.dlog_type;
         }
 
         // Get current character

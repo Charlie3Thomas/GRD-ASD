@@ -15,6 +15,6 @@ MonoBehaviour:
   <file_name>k__BackingField: CharacterDropdownTest
   <dictionary_dlog_groups>k__BackingField:
     m_keys:
-    - {fileID: 11400000, guid: 90073bbcaf4b2a542934f5e11001865c, type: 2}
+    - {fileID: 11400000, guid: b1f70157244d9374e84b3540583eda89, type: 2}
     - {fileID: 11400000, guid: 04759cd26dd0e9642a458a5714b1b925, type: 2}
   <list_ungrouped_dlogs>k__BackingField: []

@@ -15,7 +15,7 @@ namespace CT.Components
         {
             base.Initialise(_node_name, _ct_graph_view, _pos);
 
-            dlog_type = CTDialogueType.MultipleChoice;
+            dlog_type = CTDialogueType.Choice;
 
             CTChoiceSaveData choice_data = new CTChoiceSaveData()
             {

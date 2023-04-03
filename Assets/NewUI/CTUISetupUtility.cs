@@ -1,3 +1,5 @@
+using CT.Data;
+using CT.Utilis;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +10,7 @@ using UnityEngine.UIElements;
 
 namespace CT.UI.Engine
 {
+    [RequireComponent(typeof(CTNodeIOUtility))]
     public class CTUISetupUtility : MonoBehaviour
     {
         /*
@@ -39,6 +42,8 @@ namespace CT.UI.Engine
         choice_button
         next_button
          */
+
+        [SerializeField] private CTNodeIOUtility node_data;
 
         // Character sprites
         [SerializeField] private List<Texture2D> character_sprites;
@@ -85,26 +90,39 @@ namespace CT.UI.Engine
             narration = new GameObject();
             choices_buttons = new List<GameObject>();
 
-            InstantiateNewBackground(0);
-            InstantiateNewCharacter(0);
-            InstantiateRevealTipButton();
-            InstantiateChoiceButton(5);
-            InstantiateNarrationWindow();
+            RefreshUI();
         }
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                int index = Random.Range(0, location_sprites.Count);
-                InstantiateNewBackground(index);
-                index = Random.Range(0, character_sprites.Count);
-                InstantiateNewCharacter(index);
-                index = Random.Range(1, 6);
-                InstantiateChoiceButton(index);
-                InstantiateNarrationWindow();
-            }
+            //if (Input.GetKeyDown(KeyCode.Space))
+            //{
+            //    int index = Random.Range(0, location_sprites.Count);
+            //    InstantiateNewBackground(index);
+            //    index = Random.Range(0, character_sprites.Count);
+            //    InstantiateNewCharacter(index);
+            //    index = Random.Range(1, 6);
+            //    InstantiateChoiceButton(index);
+            //    InstantiateNarrationWindow();
+            //}
+            
         }
+
+        public void RefreshUI()
+        {
+            // Instantiate new background
+            InstantiateNewBackground(0); // Use index from node
+
+            // Instantiate new character
+            InstantiateNewCharacter(0); // Use index from node
+
+            // Instantiate new choices
+            InstantiateChoiceButton(node_data.GetDlogChoices().Count); // Use index from node
+
+            // Instantiate new narration
+            InstantiateNarrationWindow(node_data.GetDlogText()); // Use text from node
+        }
+
 
         #region Button Methods
         private void InstantiateRevealTipButton()
@@ -140,26 +158,33 @@ namespace CT.UI.Engine
                 choices_buttons.Remove(go);
             }
 
+            // Exit after clearnig choices if the node type is Narration
+            if (node_data.GetNodeType() == Enumerations.CTDialogueType.Narration)
+                return;
+
+            List<CTDialogueChoiceData> choices = node_data.GetDlogChoices();
+
             for (int i = 0; i < _button_count; i++)
             {
+                int index = _button_count - i - 1;
+
                 // Add offset to dlog_choices_centre
                 GameObject button = Instantiate(txt_bttn_prefab, dlog_choices_centre);
-                button.GetComponentInChildren<TextMeshProUGUI>().text = "";
+                button.GetComponentInChildren<TextMeshProUGUI>().text = choices[index].text;
                 choices_buttons.Add(button);
                 button.transform.position += new Vector3(0.0f, i * 35.0f, 0.0f);
                 ResizeButtonToTextureScale(button.GetComponent<UnityEngine.UI.Button>(), 2);
-                button.GetComponentInChildren<UnityEngine.UI.Button>().GetComponentInChildren<TextMeshProUGUI>().text =
-                    "Hello, I'm an Oingo Boingo man in an Flingo Flongo world.";
+                //button.GetComponentInChildren<UnityEngine.UI.Button>().GetComponentInChildren<TextMeshProUGUI>().text =
+                //    "Hello, I'm an Oingo Boingo man in an Flingo Flongo world.";
                 ScaleButtonWithText(button.GetComponentInChildren<UnityEngine.UI.Button>());
             }
         }
 
-        private void InstantiateNarrationWindow()
+        private void InstantiateNarrationWindow(string _dlog)
         {
             Destroy(narration);
             narration = Instantiate(text_prefab, narration_anchor_point);
-            narration.GetComponentInChildren<TextMeshProUGUI>().text = "" +
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+            narration.GetComponentInChildren<TextMeshProUGUI>().text = _dlog;
             ResizeButtonToTextureScale(narration.GetComponent<UnityEngine.UI.Button>(), 4);
             ScaleButtonWithText(narration.GetComponentInChildren<UnityEngine.UI.Button>());
         }
@@ -196,7 +221,8 @@ namespace CT.UI.Engine
             background.GetComponent<UnityEngine.UI.Image>().sprite = ConvertTexture2DToSprite(location_sprites[_index]); // Set sprite
             SetAnchors(background);
             StretchToFillCanvas(background.GetComponent<UnityEngine.UI.Image>(), this.gameObject.GetComponent<Canvas>());
-            background.transform.parent = background_anchor_point;
+            //background.transform.parent = background_anchor_point;
+            background.transform.SetParent(background_anchor_point);
         }
 
         private void StretchToFillCanvas(UnityEngine.UI.Image _image, Canvas _canvas)
