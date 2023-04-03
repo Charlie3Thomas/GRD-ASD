@@ -331,6 +331,8 @@ namespace CT.Utils
                 group.ID = group_data.ID;
 
                 loaded_groups.Add(group.ID, group);
+
+                Debug.Log("Loaded Group");
             }
         }
 
@@ -343,15 +345,15 @@ namespace CT.Utils
                 CTNode node = graph_view.CreateNode(node_data.title, node_data.dlog_type, node_data.pos, false);
 
                 node.ID = node_data.ID;
-                node.list_dlog_choices = choices;
+                node.list_dlog_choices = node_data.list_choices;
                 node.dlog_text = node_data.dlog_text;
                 node.dlog_tip_text = node_data.dlog_tip_text;
+                node.dlog_type = node_data.dlog_type; //
                 node.active_character = node_data.character;
                 node.active_bg = node_data.background;
                 node.char_dropdown_index = node_data.char_dropdown_index;
                 node.bg_dropdown_index = node_data.bg_dropdown_index;
 
-                //Debug.Log($"CTIOUtility.LoadNodes. node.active_character : {node.dropdown_index}. node_data.character : {node_data.dropdown_index}");
 
                 node.Draw();
 

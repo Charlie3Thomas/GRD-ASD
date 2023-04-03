@@ -17,6 +17,7 @@ namespace CT.Data.Save
             file_name = _file_name;
 
             list_groups = new List<CTGroupSaveData>();
+
             list_nodes = new List<CTNodeSaveData>();
         }
     }

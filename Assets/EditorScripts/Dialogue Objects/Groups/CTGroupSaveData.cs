@@ -6,8 +6,8 @@ namespace CT.Data.Save
     [Serializable]
     public class CTGroupSaveData
     {
-        [field: SerializeField] public string ID { get; set; }
-        [field: SerializeField] public string title { get; set; }
-        [field: SerializeField] public Vector2 pos { get; set; }
+        [SerializeField] public string ID { get; set; }
+        [SerializeField] public string title { get; set; }
+        [SerializeField] public Vector2 pos { get; set; }
     }
 }

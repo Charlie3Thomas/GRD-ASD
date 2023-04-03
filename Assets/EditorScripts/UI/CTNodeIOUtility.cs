@@ -50,26 +50,31 @@ namespace CT.Utilis
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 OnOptionChosen(0);
+
                 UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 OnOptionChosen(1);
+
                 UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 OnOptionChosen(2);
+
                 UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 OnOptionChosen(3);
+
                 UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha5))
             {
                 OnOptionChosen(4);
+
                 UI_setup.RefreshUI();
             }
         }
@@ -79,11 +84,13 @@ namespace CT.Utilis
         {
             // Read current node information
             current_node_dlog = current_node.dlog_text;
+
             current_node_choices = current_node.list_dlog_choices;
+
             current_character = current_node.active_character;
 
             // If current node is a narration node
-            if (current_node.dlog_type == Enumerations.CTDialogueType.Narration)
+            if (current_node.dlog_type == Enumerations.CTDialogueType.SingleChoice)
                 next_node = current_node.list_dlog_choices[0].next_dlog_node; // There is only one choice in a narration node
             // If current node is a choice node
             // do not set next node yet as we need to wait for player to choose an option
@@ -93,11 +100,13 @@ namespace CT.Utilis
             if (current_node.dlog_tip_text != "" ) 
             {
                 current_node_tip = current_node.dlog_tip_text;
+
                 tip = true;
             }
             else
             {
                 current_node_tip = "";
+
                 tip = false;
             }
             
@@ -109,6 +118,7 @@ namespace CT.Utilis
             if (CheckIfEndNode())
             {
                 Debug.Log("End node is reached, no further dialogue");
+
                 return;
             }
 
@@ -116,7 +126,7 @@ namespace CT.Utilis
             if (current_node.list_dlog_choices.Count > 0)
             {
                 // If current node is a narration node
-                if (current_node.dlog_type == Enumerations.CTDialogueType.Narration)
+                if (current_node.dlog_type == Enumerations.CTDialogueType.SingleChoice)
                 {
                     // Set current node to next node at index
                     // Hard coded at 0 as there is only one choice in a narration node
@@ -129,6 +139,7 @@ namespace CT.Utilis
                 }
 
                 current_node = next_node;
+
                 ReadNodeInformation();
             }
         }

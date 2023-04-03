@@ -77,8 +77,8 @@ namespace CT.Windows
             this.AddManipulator(new SelectionDragger());
             this.AddManipulator(new RectangleSelector());
 
-            this.AddManipulator(CreateNodeContextualMenu("Add narration Node", CTDialogueType.Narration));
-            this.AddManipulator(CreateNodeContextualMenu("Add user-choice Node", CTDialogueType.Choice));
+            this.AddManipulator(CreateNodeContextualMenu("Add narration Node", CTDialogueType.SingleChoice));
+            this.AddManipulator(CreateNodeContextualMenu("Add user-choice Node", CTDialogueType.MultipleChoice));
 
             this.AddManipulator(CreateGroupContextualMenu());
         }
@@ -516,8 +516,9 @@ namespace CT.Windows
         private IManipulator CreateNodeContextualMenu(string _action_title, CTDialogueType _dlog_type)
         {
             ContextualMenuManipulator context_menu_manipulator = new ContextualMenuManipulator(
-                menu_event => menu_event.menu.AppendAction(_action_title, action_event => AddElement(CreateNode("DialogueTitle", _dlog_type, GetLocalMousePosition(action_event.eventInfo.localMousePosition))))
-            );
+                menu_event => menu_event.menu.AppendAction(_action_title, action_event => 
+                AddElement(CreateNode("DialogueTitle", _dlog_type, 
+                GetLocalMousePosition(action_event.eventInfo.localMousePosition)))));
 
             return context_menu_manipulator;
         }

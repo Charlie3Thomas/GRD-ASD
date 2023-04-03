@@ -1,48 +1,17 @@
 using CT.Data;
 using CT.Utilis;
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
+
 
 namespace CT.UI.Engine
 {
     [RequireComponent(typeof(CTNodeIOUtility))]
     public class CTUISetupUtility : MonoBehaviour
     {
-        /*
-         
-        REFERENCE TO ASSETS FOR TEN DIFFERETN CHARACTERS
-        narrator (no asset required)
-        Character_0 (asset - unique to each scenario)
-        Character_1 (asset - unique to each scenario)
-        Character_2 (asset - unique to each scenario)
-        Character_3 (asset - unique to each scenario)
-        Character_4 (asset - unique to each scenario)
-        Character_5 (asset - unique to each scenario)
-        Character_6 (asset - unique to each scenario)
-        Character_7 (asset - unique to each scenario)
-        Character_8 (asset - unique to each scenario)
-        Character_9 (asset - unique to each scenario)
-
-        REERENCE TO ASSETS FOR FIVE DIFFERENT LOCATION BACKGROUNDS
-        Location_0 (asset - unique to each scenario)
-        Location_1 (asset - unique to each scenario)
-        Location_2 (asset - unique to each scenario)
-        Location_3 (asset - unique to each scenario)
-        Location_4 (asset - unique to each scenario)
-
-        REFERENCE TO ASSETS FOR UI ELEMENTS
-        text_box
-        tip_text_box         
-        show_tip_ui
-        choice_button
-        next_button
-         */
-
         [SerializeField] private CTNodeIOUtility node_data;
 
         // Character sprites
@@ -50,13 +19,6 @@ namespace CT.UI.Engine
 
         // Location sprites
         [SerializeField] private List<Texture2D> location_sprites;
-
-        // UI Prefab Elements
-        //[SerializeField] TMPro.TextMeshProUGUI text_box;        
-        //[SerializeField] TMPro.TextMeshProUGUI tip_text_box;    
-        //[SerializeField] UnityEngine.UI.Button next_button;     
-        //[SerializeField] UnityEngine.UI.Button choice_button;   
-        //[SerializeField] UnityEngine.UI.Button show_tip_ui;
 
         // Prefabs
         [Header("UI Prefabs")]
@@ -84,10 +46,15 @@ namespace CT.UI.Engine
         private void Start()
         {
             background = new GameObject();
+
             character = new GameObject();
+
             show_tip_button = new GameObject();
+
             next_button = new GameObject();
+
             narration = new GameObject();
+
             choices_buttons = new List<GameObject>();
 
             RefreshUI();
@@ -95,17 +62,6 @@ namespace CT.UI.Engine
 
         private void Update()
         {
-            //if (Input.GetKeyDown(KeyCode.Space))
-            //{
-            //    int index = Random.Range(0, location_sprites.Count);
-            //    InstantiateNewBackground(index);
-            //    index = Random.Range(0, character_sprites.Count);
-            //    InstantiateNewCharacter(index);
-            //    index = Random.Range(1, 6);
-            //    InstantiateChoiceButton(index);
-            //    InstantiateNarrationWindow();
-            //}
-            
         }
 
         public void RefreshUI()
@@ -129,7 +85,9 @@ namespace CT.UI.Engine
         {
             // Instantiate tip button and place at fixed position on the screen
             show_tip_button = Instantiate(txt_bttn_prefab, tip_anchor_point);
+
             show_tip_button.GetComponentInChildren<TextMeshProUGUI>().text = "";
+
             ResizeButtonToTextureScale(show_tip_button.GetComponent<UnityEngine.UI.Button>(), 1);
         }
 
@@ -146,6 +104,7 @@ namespace CT.UI.Engine
             if (_button_count < 0)
             {
                 Debug.LogError("Cannot have negative buttons!");
+
                 return;
             }
 
@@ -155,11 +114,12 @@ namespace CT.UI.Engine
             foreach (GameObject go in to_remove)
             {
                 Destroy(go);
+
                 choices_buttons.Remove(go);
             }
 
             // Exit after clearnig choices if the node type is Narration
-            if (node_data.GetNodeType() == Enumerations.CTDialogueType.Narration)
+            if (node_data.GetNodeType() == Enumerations.CTDialogueType.SingleChoice)
                 return;
 
             List<CTDialogueChoiceData> choices = node_data.GetDlogChoices();
@@ -170,22 +130,33 @@ namespace CT.UI.Engine
 
                 // Add offset to dlog_choices_centre
                 GameObject button = Instantiate(txt_bttn_prefab, dlog_choices_centre);
+
                 button.GetComponentInChildren<TextMeshProUGUI>().text = choices[index].text;
+
                 choices_buttons.Add(button);
+
                 button.transform.position += new Vector3(0.0f, i * 35.0f, 0.0f);
+
                 ResizeButtonToTextureScale(button.GetComponent<UnityEngine.UI.Button>(), 2);
-                //button.GetComponentInChildren<UnityEngine.UI.Button>().GetComponentInChildren<TextMeshProUGUI>().text =
-                //    "Hello, I'm an Oingo Boingo man in an Flingo Flongo world.";
+
                 ScaleButtonWithText(button.GetComponentInChildren<UnityEngine.UI.Button>());
+
+                button.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(OnChoiceButtonClick);
+
+                //button.name = index.ToString();
             }
         }
 
         private void InstantiateNarrationWindow(string _dlog)
         {
             Destroy(narration);
+
             narration = Instantiate(text_prefab, narration_anchor_point);
-            narration.GetComponentInChildren<TextMeshProUGUI>().text = _dlog;
+
+            narration.GetComponentInChildren<TextMeshProUGUI>().text = $"{node_data.GetCharacter()}: {_dlog}";
+
             ResizeButtonToTextureScale(narration.GetComponent<UnityEngine.UI.Button>(), 4);
+
             ScaleButtonWithText(narration.GetComponentInChildren<UnityEngine.UI.Button>());
         }
 
@@ -202,7 +173,9 @@ namespace CT.UI.Engine
             Destroy(character.gameObject);
 
             character = Instantiate(image_prefab, character_anchor_point); // Instantiate image object
+            
             character.GetComponent<UnityEngine.UI.Image>().sprite = ConvertTexture2DToSprite(character_sprites[_index]); // Set sprite
+            
             SetAnchors(character);
         }
 
@@ -218,9 +191,13 @@ namespace CT.UI.Engine
             Destroy(background.gameObject);
 
             background = Instantiate(image_prefab, this.transform); // Instantiate image object
+
             background.GetComponent<UnityEngine.UI.Image>().sprite = ConvertTexture2DToSprite(location_sprites[_index]); // Set sprite
+            
             SetAnchors(background);
+
             StretchToFillCanvas(background.GetComponent<UnityEngine.UI.Image>(), this.gameObject.GetComponent<Canvas>());
+
             //background.transform.parent = background_anchor_point;
             background.transform.SetParent(background_anchor_point);
         }
@@ -228,13 +205,27 @@ namespace CT.UI.Engine
         private void StretchToFillCanvas(UnityEngine.UI.Image _image, Canvas _canvas)
         {
             RectTransform rt = _image.GetComponent<RectTransform>();
+
             rt.anchorMin = new Vector2(0, 0); // set anchorMin to the center of the parent
+
             rt.anchorMax = new Vector2(1, 1); // set anchorMax to the center of the parent
+
             rt.pivot = new Vector2(0.5f, 0.5f); // set pivot to the center of the element
+
             rt.sizeDelta = new Vector2(0, 0);
+
             rt.anchoredPosition = new Vector2(0, 0);
         }
         #endregion
+        #endregion
+
+        #region Button Methods
+        private void OnChoiceButtonClick()
+        {
+            Debug.Log("Choice button clicked!");
+
+        }
+
         #endregion
 
 
@@ -247,8 +238,11 @@ namespace CT.UI.Engine
         private void SetAnchors(GameObject _g)
         {
             RectTransform rt = _g.GetComponent<RectTransform>();
+
             rt.anchorMin = new Vector2(0.5f, 0.5f); // set anchorMin to the center of the parent
+
             rt.anchorMax = new Vector2(0.5f, 0.5f); // set anchorMax to the center of the parent
+
             rt.pivot = new Vector2(0.5f, 0.5f); // set pivot to the center of the element
         }
 
@@ -257,6 +251,7 @@ namespace CT.UI.Engine
             if (_index < 0 || _index > _list.Count)
             {
                 Debug.LogError("Index out of range");
+
                 return false;
             }
 
@@ -267,10 +262,12 @@ namespace CT.UI.Engine
         {
             // Get the size of button texture
             Texture2D texture = _button.GetComponent<UnityEngine.UI.Image>().sprite.texture;
+
             Vector2 textureSize = new Vector2(texture.width, texture.height * _height);
 
             // Set size of button to match texture
             RectTransform rectTransform = _button.GetComponent<RectTransform>();
+
             rectTransform.sizeDelta = textureSize;
         }
 
@@ -281,7 +278,21 @@ namespace CT.UI.Engine
 
             // Set the width of the button based on the text width
             RectTransform rect_transform = _button.GetComponent<RectTransform>();
+
             rect_transform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, text_count * 15f);
+        }
+
+        private int CompareCharacterStringWithEnum(string _name)
+        {             
+            foreach (NodeCharacter cha in (NodeCharacter[]) Enum.GetValues(typeof(NodeCharacter)))
+            {
+                if (cha.ToString() == _name)
+                {
+                    return (int)cha;
+                }
+            }
+
+            return -1;
         }
 
         #endregion
