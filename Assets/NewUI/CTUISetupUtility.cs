@@ -66,12 +66,14 @@ namespace CT.UI.Engine
         [SerializeField] private Transform character_anchor_point;
         [SerializeField] private Transform tip_anchor_point;
         [SerializeField] private Transform dlog_choices_centre;
+        [SerializeField] private Transform narration_anchor_point;
 
         // UI Elements
         private GameObject background;
         private GameObject character;
         private GameObject show_tip_button;
         private GameObject next_button;
+        private GameObject narration;
         private List<GameObject> choices_buttons;
 
         private void Start()
@@ -80,12 +82,14 @@ namespace CT.UI.Engine
             character = new GameObject();
             show_tip_button = new GameObject();
             next_button = new GameObject();
+            narration = new GameObject();
             choices_buttons = new List<GameObject>();
 
             InstantiateNewBackground(0);
             InstantiateNewCharacter(0);
             InstantiateRevealTipButton();
             InstantiateChoiceButton(5);
+            InstantiateNarrationWindow();
         }
 
         private void Update()
@@ -98,6 +102,7 @@ namespace CT.UI.Engine
                 InstantiateNewCharacter(index);
                 index = Random.Range(1, 6);
                 InstantiateChoiceButton(index);
+                InstantiateNarrationWindow();
             }
         }
 
@@ -107,7 +112,7 @@ namespace CT.UI.Engine
             // Instantiate tip button and place at fixed position on the screen
             show_tip_button = Instantiate(txt_bttn_prefab, tip_anchor_point);
             show_tip_button.GetComponentInChildren<TextMeshProUGUI>().text = "";
-            ResizeButtonToTextureScale(show_tip_button.GetComponent<UnityEngine.UI.Button>());
+            ResizeButtonToTextureScale(show_tip_button.GetComponent<UnityEngine.UI.Button>(), 1);
         }
 
         private void InstantiateNextDialogueButton()
@@ -115,7 +120,7 @@ namespace CT.UI.Engine
             // Instantiate next button and place at fixed position on the screen
             next_button = Instantiate(txt_bttn_prefab, dlog_choices_centre);
 
-            ResizeButtonToTextureScale(next_button.GetComponent<UnityEngine.UI.Button>());
+            ResizeButtonToTextureScale(next_button.GetComponent<UnityEngine.UI.Button>(), 1);
         }
 
         private void InstantiateChoiceButton(int _button_count)
@@ -141,12 +146,22 @@ namespace CT.UI.Engine
                 GameObject button = Instantiate(txt_bttn_prefab, dlog_choices_centre);
                 button.GetComponentInChildren<TextMeshProUGUI>().text = "";
                 choices_buttons.Add(button);
-                button.transform.position += new Vector3(0.0f, i * 75.0f, 0.0f);
-                ResizeButtonToTextureScale(button.GetComponent<UnityEngine.UI.Button>());
+                button.transform.position += new Vector3(0.0f, i * 35.0f, 0.0f);
+                ResizeButtonToTextureScale(button.GetComponent<UnityEngine.UI.Button>(), 2);
                 button.GetComponentInChildren<UnityEngine.UI.Button>().GetComponentInChildren<TextMeshProUGUI>().text =
                     "Hello, I'm an Oingo Boingo man in an Flingo Flongo world.";
                 ScaleButtonWithText(button.GetComponentInChildren<UnityEngine.UI.Button>());
             }
+        }
+
+        private void InstantiateNarrationWindow()
+        {
+            Destroy(narration);
+            narration = Instantiate(text_prefab, narration_anchor_point);
+            narration.GetComponentInChildren<TextMeshProUGUI>().text = "" +
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+            ResizeButtonToTextureScale(narration.GetComponent<UnityEngine.UI.Button>(), 4);
+            ScaleButtonWithText(narration.GetComponentInChildren<UnityEngine.UI.Button>());
         }
 
         #endregion
@@ -222,11 +237,11 @@ namespace CT.UI.Engine
             return true;
         }
 
-        private void ResizeButtonToTextureScale(UnityEngine.UI.Button _button)
+        private void ResizeButtonToTextureScale(UnityEngine.UI.Button _button, int _height)
         {
             // Get the size of button texture
             Texture2D texture = _button.GetComponent<UnityEngine.UI.Image>().sprite.texture;
-            Vector2 textureSize = new Vector2(texture.width, texture.height * 2);
+            Vector2 textureSize = new Vector2(texture.width, texture.height * _height);
 
             // Set size of button to match texture
             RectTransform rectTransform = _button.GetComponent<RectTransform>();
@@ -240,7 +255,7 @@ namespace CT.UI.Engine
 
             // Set the width of the button based on the text width
             RectTransform rect_transform = _button.GetComponent<RectTransform>();
-            rect_transform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, text_count * 25f);
+            rect_transform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, text_count * 15f);
         }
 
         #endregion
