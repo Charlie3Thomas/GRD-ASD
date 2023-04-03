@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
+  m_Name: TreeNameGraph
+  m_EditorClassIdentifier: 
+  <file_name>k__BackingField: TreeName
+  <groups>k__BackingField:
+  - <ID>k__BackingField: 1dd7408e-7f81-42c2-bea5-217dcb3873f8
+    <name>k__BackingField: START
+    <pos>k__BackingField: {x: 80.00001, y: 86.999985}
+  - <ID>k__BackingField: 3404e21e-d44f-44cf-9ae3-cbdafc71c982
+    <name>k__BackingField: END
+    <pos>k__BackingField: {x: 417.99997, y: 78}
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 6fd69dc3-2f42-4861-8104-fba8ee77cc46
+    <name>k__BackingField: 2
+    <text>k__BackingField: Hello, I am "Character_0"
+    <options>k__BackingField:
+    - <text>k__BackingField: Option 1
+      <node_ID>k__BackingField: 
+    - <text>k__BackingField: Option 2
+      <node_ID>k__BackingField: 
+    - <text>k__BackingField: Option 3
+      <node_ID>k__BackingField: 
+    - <text>k__BackingField: Option 4
+      <node_ID>k__BackingField: 
+    <group_ID>k__BackingField: 3404e21e-d44f-44cf-9ae3-cbdafc71c982
+    <node_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 443, y: 137}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 5c49e85f-d537-4645-90d8-0abfd4f4bb9b
+    <name>k__BackingField: 1
+    <text>k__BackingField: I am the Narrator, I have a tip for you.
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 6fd69dc3-2f42-4861-8104-fba8ee77cc46
+    <group_ID>k__BackingField: 1dd7408e-7f81-42c2-bea5-217dcb3873f8
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 105, y: 146}
+    <character>k__BackingField: 
+    <background>k__BackingField: 
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  <previous_group_names>k__BackingField:
+  - START
+  - END
+  <previous_ungrouped_node_names>k__BackingField: []
+  <previous_grouped_node_names>k__BackingField:
+    m_keys:
+    - END
+    - START
