@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caaa76378291a144d849f29230be0a5a, type: 3}
+  m_Name: UniversityScenarioEN
+  m_EditorClassIdentifier: 
+  <file_name>k__BackingField: UniversityScenarioEN
+  <node_groups>k__BackingField:
+    m_keys:
+    - {fileID: 11400000, guid: dc4d01321e1a595459df7cf30c37cc6a, type: 2}
+    - {fileID: 11400000, guid: 91e730aaef074b24591c8ad63d95ec46, type: 2}
+    - {fileID: 11400000, guid: e7ced943346c0f844b8c373549dc9ead, type: 2}
+    - {fileID: 11400000, guid: ea587a131c63b064fae7ace38cb7d0a8, type: 2}
+    - {fileID: 11400000, guid: 293bca964a17a134e9e640b19d62dbc3, type: 2}
+    - {fileID: 11400000, guid: a362725b64ca6e54cbfc6632a944efa4, type: 2}
+    - {fileID: 11400000, guid: a0689204b1aa4e04bb11f9e26b2dc291, type: 2}
+    - {fileID: 11400000, guid: 0ce79c18cf95bf642a963f8083044f10, type: 2}
+    - {fileID: 11400000, guid: 2df319b672b1f134d996b6c54e069111, type: 2}
+    - {fileID: 11400000, guid: 11bb7a5c5568b924ebca0601075bf7bb, type: 2}
+    - {fileID: 11400000, guid: a5f757b7e15d8e947babf6e8cb104136, type: 2}
+    - {fileID: 11400000, guid: 99cb6d1c664152b4c8c61d9a97fedd51, type: 2}
+    - {fileID: 11400000, guid: 2222f7649a24eac4ea322d387d0dd899, type: 2}
+    - {fileID: 11400000, guid: cdcc90825bc55074fa9964e9d89e7cf0, type: 2}
+    - {fileID: 11400000, guid: f21c9e3b88d2de442a4ef32adcd6a81f, type: 2}
+    - {fileID: 11400000, guid: 5c2d291de3c424c448bf3612886a7949, type: 2}
+    - {fileID: 11400000, guid: 79c68a23d1badfb40bb4c1e913759ca7, type: 2}
+    - {fileID: 11400000, guid: 172e4ca6c24ac9d4eb3d6ae62dd787bb, type: 2}
+    - {fileID: 11400000, guid: 7c63201ff7ad61d4d8edc153125456fd, type: 2}
+    - {fileID: 11400000, guid: 810c192960435a14e80cdc7f085a463b, type: 2}
+    - {fileID: 11400000, guid: c1e896b60cc5ac647899c38a88d25ef4, type: 2}
+    - {fileID: 11400000, guid: ef412b15e2ad7974581ada336fdd719a, type: 2}
+  <ungrouped_nodes>k__BackingField: []

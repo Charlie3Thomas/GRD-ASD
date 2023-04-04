@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 6
+  m_EditorClassIdentifier: 
+  <node_name>k__BackingField: 6
+  <text>k__BackingField: 'Documentaliste : "Bonjour, bienvenue."'
+  <options>k__BackingField:
+  - <text>k__BackingField: Saluer en passant
+    <next_node>k__BackingField: {fileID: 11400000, guid: 16497571028590943ada957f9dd786cf, type: 2}
+  - <text>k__BackingField: "S'arr\xEAter pour saluer"
+    <next_node>k__BackingField: {fileID: 11400000, guid: c3ae9fc11976eb04ab939f31f119be7f, type: 2}
+  - <text>k__BackingField: Continuer silencieusement son chemin
+    <next_node>k__BackingField: {fileID: 11400000, guid: d08c14897483d2c4ea53655854a12d53, type: 2}
+  <type>k__BackingField: 1
+  <is_start>k__BackingField: 0
+  <tip_text>k__BackingField: 
+  <character>k__BackingField: 
+  <background>k__BackingField: 
+  <char_dropdown_index>k__BackingField: 0
+  <bg_dropdown_index>k__BackingField: 0
