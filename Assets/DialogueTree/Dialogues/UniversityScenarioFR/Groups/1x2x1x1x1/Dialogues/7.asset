@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 7
+  m_EditorClassIdentifier: 
+  <node_name>k__BackingField: 7
+  <text>k__BackingField: "Le ton ne laisse que peu de place \xE0 la discussion. Les
+    \xE9tudiants s'ex\xE9cutent, ferment la session et vous laissent acc\xE9der au
+    poste."
+  <options>k__BackingField:
+  - <text>k__BackingField: Next Node
+    <next_node>k__BackingField: {fileID: 11400000, guid: 540db700524585742b6267363cf1c509, type: 2}
+  <type>k__BackingField: 0
+  <is_start>k__BackingField: 0
+  <tip_text>k__BackingField: 
+  <character>k__BackingField: 
+  <background>k__BackingField: 
+  <char_dropdown_index>k__BackingField: 0
+  <bg_dropdown_index>k__BackingField: 0
