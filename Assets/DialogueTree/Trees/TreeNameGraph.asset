@@ -16,23 +16,60 @@ MonoBehaviour:
   <groups>k__BackingField:
   - <ID>k__BackingField: 1dd7408e-7f81-42c2-bea5-217dcb3873f8
     <name>k__BackingField: START
-    <pos>k__BackingField: {x: 80.00001, y: 86.999985}
+    <pos>k__BackingField: {x: 80, y: 87}
   - <ID>k__BackingField: 3404e21e-d44f-44cf-9ae3-cbdafc71c982
     <name>k__BackingField: END
-    <pos>k__BackingField: {x: 417.99997, y: 78}
+    <pos>k__BackingField: {x: 418, y: 78}
+  - <ID>k__BackingField: 608c5753-f304-4a1e-ade8-bafd5d03c507
+    <name>k__BackingField: HotDrink
+    <pos>k__BackingField: {x: 1245, y: -417}
+  - <ID>k__BackingField: 6bbaebd6-c265-4599-86a1-9367c93e62d5
+    <name>k__BackingField: ColdDrink
+    <pos>k__BackingField: {x: 1245, y: -24}
+  - <ID>k__BackingField: 42cc13a8-6ae9-431e-b251-3e8410a6820f
+    <name>k__BackingField: NoDrink
+    <pos>k__BackingField: {x: 1200, y: 642}
+  - <ID>k__BackingField: 9212daeb-5c32-4f7c-b556-aaf47a80934c
+    <name>k__BackingField: NotHungry
+    <pos>k__BackingField: {x: 2006, y: 827}
+  - <ID>k__BackingField: 6c416de6-c6ae-4ede-86b4-c6fe1d5bdda4
+    <name>k__BackingField: DoMind
+    <pos>k__BackingField: {x: 1302, y: 1107}
+  - <ID>k__BackingField: b0ed5a9e-5fc9-40b4-ad12-87ba6d2322d5
+    <name>k__BackingField: Continue
+    <pos>k__BackingField: {x: 2016, y: 1191}
+  - <ID>k__BackingField: 4facac11-222b-47f2-a4dd-ca74c5d18363
+    <name>k__BackingField: MilkAndSugar
+    <pos>k__BackingField: {x: 1752, y: -279}
+  - <ID>k__BackingField: a4ff8010-4b42-49fd-b9a8-29b3c0d28ac1
+    <name>k__BackingField: HowManySugars
+    <pos>k__BackingField: {x: 2503, y: -257}
+  - <ID>k__BackingField: 0fb92422-8b4e-47c5-bcba-b6f140394a52
+    <name>k__BackingField: Neither
+    <pos>k__BackingField: {x: 2533, y: 182}
+  - <ID>k__BackingField: 5bf95bcf-057e-4d67-9824-07855f9dc8e1
+    <name>k__BackingField: NodeGroup
+    <pos>k__BackingField: {x: 3074, y: -620}
+  - <ID>k__BackingField: b4bf0253-59a5-4ec9-916d-99ba9a78ee93
+    <name>k__BackingField: CustomSugars
+    <pos>k__BackingField: {x: 3161, y: -198}
+  - <ID>k__BackingField: d270f21a-72b3-44c4-89a6-00ef0d7c66c4
+    <name>k__BackingField: Food
+    <pos>k__BackingField: {x: 2040, y: 508}
   <nodes>k__BackingField:
   - <ID>k__BackingField: 6fd69dc3-2f42-4861-8104-fba8ee77cc46
     <name>k__BackingField: 2
-    <text>k__BackingField: Hello, I am "Character_0"
+    <text>k__BackingField: Can I get you something to drink?
     <options>k__BackingField:
-    - <text>k__BackingField: Option 1
-      <node_ID>k__BackingField: 
-    - <text>k__BackingField: Option 2
-      <node_ID>k__BackingField: 
-    - <text>k__BackingField: Option 3
-      <node_ID>k__BackingField: 
-    - <text>k__BackingField: Option 4
-      <node_ID>k__BackingField: 
+    - <text>k__BackingField: Yes, I'll have some coffee thank you.
+      <node_ID>k__BackingField: cfa08a1e-c773-4a6f-83a1-ab2c382576fe
+    - <text>k__BackingField: Yes, I would like some tea please.
+      <node_ID>k__BackingField: cfa08a1e-c773-4a6f-83a1-ab2c382576fe
+    - <text>k__BackingField: Yes, just water please.
+      <node_ID>k__BackingField: decbf9b1-6c34-44d5-a816-220277c2f782
+    - <text>k__BackingField: I wouldn't like anything to drink at the moment, thank
+        you.
+      <node_ID>k__BackingField: d8f48b94-1e4e-42cc-aa3e-5c66b1d3939b
     <group_ID>k__BackingField: 3404e21e-d44f-44cf-9ae3-cbdafc71c982
     <node_type>k__BackingField: 1
     <pos>k__BackingField: {x: 443, y: 137}
@@ -42,24 +79,236 @@ MonoBehaviour:
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 5c49e85f-d537-4645-90d8-0abfd4f4bb9b
-    <name>k__BackingField: 1
-    <text>k__BackingField: I am the Narrator, I have a tip for you.
+    <name>k__BackingField: START
+    <text>k__BackingField: Hello, I am Character 0
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 6fd69dc3-2f42-4861-8104-fba8ee77cc46
     <group_ID>k__BackingField: 1dd7408e-7f81-42c2-bea5-217dcb3873f8
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 105, y: 146}
-    <character>k__BackingField: 
+    <character>k__BackingField: Character_0
     <background>k__BackingField: 
-    <char_dropdown_index>k__BackingField: 0
+    <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: cfa08a1e-c773-4a6f-83a1-ab2c382576fe
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: Certainly, I'll get you a mug for that.
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: c4dcb721-8001-4b03-94d2-a14c8d15129c
+    <group_ID>k__BackingField: 608c5753-f304-4a1e-ade8-bafd5d03c507
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 1270, y: -358}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: decbf9b1-6c34-44d5-a816-220277c2f782
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: Certainly, I'll get you a glass for that.
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: c4dcb721-8001-4b03-94d2-a14c8d15129c
+    <group_ID>k__BackingField: 6bbaebd6-c265-4599-86a1-9367c93e62d5
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 1270, y: 35}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 4160e82b-bd71-49d6-8e9f-39d340eb2db8
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: That's okay! I've got snacks if you change your mind.
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 
+    <group_ID>k__BackingField: 9212daeb-5c32-4f7c-b556-aaf47a80934c
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 2031, y: 886}
+    <character>k__BackingField: 
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: ea1f278d-78c9-433a-858a-f4548c912e09
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: Are you certain you wish to say this?
+    <options>k__BackingField:
+    - <text>k__BackingField: No, take me back.
+      <node_ID>k__BackingField: d8f48b94-1e4e-42cc-aa3e-5c66b1d3939b
+    - <text>k__BackingField: Yes.
+      <node_ID>k__BackingField: faf05a68-9779-4c20-8c20-23023e0a17a7
+    <group_ID>k__BackingField: 6c416de6-c6ae-4ede-86b4-c6fe1d5bdda4
+    <node_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 1327, y: 1166}
+    <character>k__BackingField: 
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: faf05a68-9779-4c20-8c20-23023e0a17a7
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: I'm sorry, I'm going to have to ask you to leave.
+    <options>k__BackingField:
+    - <text>k__BackingField: Okay.
+      <node_ID>k__BackingField: 
+    <group_ID>k__BackingField: b0ed5a9e-5fc9-40b4-ad12-87ba6d2322d5
+    <node_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 2041, y: 1250}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: d8f48b94-1e4e-42cc-aa3e-5c66b1d3939b
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: Ah well I hope you don't mind if I make something for
+      myself! Can I get you anything to eat?
+    <options>k__BackingField:
+    - <text>k__BackingField: I certainly could go for something to eat please.
+      <node_ID>k__BackingField: bb8c9fc2-61a6-48fd-b970-11a04eb4131b
+    - <text>k__BackingField: I'm not very hungry either, thank you.
+      <node_ID>k__BackingField: 4160e82b-bd71-49d6-8e9f-39d340eb2db8
+    - <text>k__BackingField: Actually I do mind.
+      <node_ID>k__BackingField: ea1f278d-78c9-433a-858a-f4548c912e09
+    <group_ID>k__BackingField: 42cc13a8-6ae9-431e-b251-3e8410a6820f
+    <node_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 1225, y: 701}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: c4dcb721-8001-4b03-94d2-a14c8d15129c
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: Would you like milk, sugar?
+    <options>k__BackingField:
+    - <text>k__BackingField: Just milk, thank you.
+      <node_ID>k__BackingField: b4350246-26a6-4fc2-9018-d09fba529ab8
+    - <text>k__BackingField: I would like both please.
+      <node_ID>k__BackingField: 3c64f731-72aa-487e-b401-490bd1272969
+    - <text>k__BackingField: Just sugar, thank you.
+      <node_ID>k__BackingField: 3c64f731-72aa-487e-b401-490bd1272969
+    - <text>k__BackingField: Neither, thank you.
+      <node_ID>k__BackingField: 91814bb4-bad5-4257-b419-892bab876b90
+    <group_ID>k__BackingField: 4facac11-222b-47f2-a4dd-ca74c5d18363
+    <node_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 1777, y: -220}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 3c64f731-72aa-487e-b401-490bd1272969
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: How many sugars would you like?
+    <options>k__BackingField:
+    - <text>k__BackingField: One sugar, please.
+      <node_ID>k__BackingField: b4350246-26a6-4fc2-9018-d09fba529ab8
+    - <text>k__BackingField: Two sugars, please.
+      <node_ID>k__BackingField: b4350246-26a6-4fc2-9018-d09fba529ab8
+    - <text>k__BackingField: Three sugars, please.
+      <node_ID>k__BackingField: b4350246-26a6-4fc2-9018-d09fba529ab8
+    - <text>k__BackingField: I'll add the sugars, thank you.
+      <node_ID>k__BackingField: 0329619e-3af3-430a-9513-2bb1872b52be
+    <group_ID>k__BackingField: a4ff8010-4b42-49fd-b9a8-29b3c0d28ac1
+    <node_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 2528, y: -198}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 91814bb4-bad5-4257-b419-892bab876b90
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: Ooh, classy!
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 
+    <group_ID>k__BackingField: 0fb92422-8b4e-47c5-bcba-b6f140394a52
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 2558, y: 241}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: b4350246-26a6-4fc2-9018-d09fba529ab8
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: Coming right up!
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 
+    <group_ID>k__BackingField: 5bf95bcf-057e-4d67-9824-07855f9dc8e1
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 3099, y: -561}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 0329619e-3af3-430a-9513-2bb1872b52be
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: Coming right up! The sugar is in that cupboard when you're
+      ready.
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 
+    <group_ID>k__BackingField: b4bf0253-59a5-4ec9-916d-99ba9a78ee93
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 3186, y: -139}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: bb8c9fc2-61a6-48fd-b970-11a04eb4131b
+    <name>k__BackingField: NodeName
+    <text>k__BackingField: Good choice! Snacks are in that cupboard there, help yourself.
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 
+    <group_ID>k__BackingField: d270f21a-72b3-44c4-89a6-00ef0d7c66c4
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 2065, y: 567}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   <previous_group_names>k__BackingField:
   - START
   - END
+  - HotDrink
+  - ColdDrink
+  - NoDrink
+  - NotHungry
+  - DoMind
+  - Continue
+  - MilkAndSugar
+  - HowManySugars
+  - Neither
+  - NodeGroup
+  - CustomSugars
+  - Food
   <previous_ungrouped_node_names>k__BackingField: []
   <previous_grouped_node_names>k__BackingField:
     m_keys:
     - END
     - START
+    - HotDrink
+    - ColdDrink
+    - NotHungry
+    - DoMind
+    - Continue
+    - NoDrink
+    - MilkAndSugar
+    - HowManySugars
+    - Neither
+    - NodeGroup
+    - CustomSugars
+    - Food
