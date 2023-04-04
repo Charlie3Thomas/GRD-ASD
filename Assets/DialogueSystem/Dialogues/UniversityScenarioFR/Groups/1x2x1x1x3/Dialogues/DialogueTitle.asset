@@ -16,7 +16,7 @@ MonoBehaviour:
   <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: 'Output port leading to next node :'
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: e6c9a8035f13e17419460816c481c819, type: 2}
-  <dlog_type>k__BackingField: 0
+  - <text>k__BackingField: Avancer vers le poste disponible
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 10d12a252f97ecb4cb8583649a2c78be, type: 2}
+  <dlog_type>k__BackingField: 1
   <is_starting_dlog>k__BackingField: 0

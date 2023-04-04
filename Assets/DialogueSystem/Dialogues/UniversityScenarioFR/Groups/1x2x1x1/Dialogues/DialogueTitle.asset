@@ -16,11 +16,12 @@ MonoBehaviour:
   <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: fd549d32a1863e44bb15543b753975ff, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 7d89535c2e9aaf84e943673e49935fce, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 637122cdd48af53418c4b063321e2b50, type: 2}
+  - <text>k__BackingField: '"Justement, en passant, j''ai vu qu''il n''y en avait
+      pas."'
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: ca7f7dce8c757064e90121f90b2e513f, type: 2}
+  - <text>k__BackingField: '"D''accord, merci."'
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 3a6dd09ef17f45947823852b4c5a1d3c, type: 2}
+  - <text>k__BackingField: '"..."'
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 3a6dd09ef17f45947823852b4c5a1d3c, type: 2}
   <dlog_type>k__BackingField: 1
   <is_starting_dlog>k__BackingField: 0

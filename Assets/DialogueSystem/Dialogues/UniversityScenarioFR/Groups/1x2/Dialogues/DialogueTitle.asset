@@ -16,9 +16,9 @@ MonoBehaviour:
   <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: e6c9a8035f13e17419460816c481c819, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: d277b0765df4d6d48a63bff1ea1b8504, type: 2}
+  - <text>k__BackingField: Il n'y a pas de place pour moi ici, je vais chercher ailleurs
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 0a82ac713b6d3c64594209f3bea8ecba, type: 2}
+  - <text>k__BackingField: Avancer vers le poste disponible
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 10d12a252f97ecb4cb8583649a2c78be, type: 2}
   <dlog_type>k__BackingField: 1
   <is_starting_dlog>k__BackingField: 0

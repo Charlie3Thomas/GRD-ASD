@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: DialogueTitle
   m_EditorClassIdentifier: 
   <dlog_title>k__BackingField: DialogueTitle
-  <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+  <dlog_text>k__BackingField: Il vous faut alors une solution.
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
+  - <text>k__BackingField: "Demander de l'aide aux \xE9tudiants assis autour de vous"
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 7026a565b582d9241898aa1d6e81b239, type: 2}
+  - <text>k__BackingField: Aller voir la documentaliste
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 7dc37d9fdbbf3de41a9d65c91701edab, type: 2}
+  - <text>k__BackingField: Rentrer chez soi
     <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 36f3da604fad37e4d89486e566f001f0, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 82e47fd5bf8b48148beb19b3748d4550, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: f957c2c7047ccfc4bab8762ca7301791, type: 2}
   <dlog_type>k__BackingField: 1
   <is_starting_dlog>k__BackingField: 0

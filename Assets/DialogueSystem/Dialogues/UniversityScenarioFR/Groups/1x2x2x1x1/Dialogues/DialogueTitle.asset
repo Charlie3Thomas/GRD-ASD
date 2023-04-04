@@ -16,9 +16,9 @@ MonoBehaviour:
   <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: c7d050a86f8ddd041b2b03bbf8a9b377, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 84779fe5dfe6ccb4987a3946b0d33439, type: 2}
+  - <text>k__BackingField: "\"Pardon, j'ai cru que l'ordinateur \xE9tait libre\""
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 345c45cae690ea64c8fdf14b3c677675, type: 2}
+  - <text>k__BackingField: '"..."'
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: f5c22b3eec5a7be4397fc4e356a9b162, type: 2}
   <dlog_type>k__BackingField: 1
   <is_starting_dlog>k__BackingField: 0

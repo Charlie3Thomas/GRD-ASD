@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: DialogueTitle
   m_EditorClassIdentifier: 
   <dlog_title>k__BackingField: DialogueTitle
-  <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
-  <dlog_tip_text>k__BackingField: 
+  <dlog_text>k__BackingField: Vous poursuivez votre route et pour atteindre l'espace
+    informatique.
+  <dlog_tip_text>k__BackingField: "Lorsque vous entrez dans une BU, la personne pr\xE9sente
+    \xE0 l'accueil travaille ici et est \xE0 votre disposition pour vous donner des
+    renseignements.\nIl est alors commun\xE9ment admis de la saluer. Un \"bonjour\"
+    en r\xE9ponse au sien suffit. Sans sollicitation de sa part, vous pouvez l'initier."
   <list_dlog_choices>k__BackingField:
   - <text>k__BackingField: 'Output port leading to next node :'
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: d5e35084727b5c749b72862bc3fc4997, type: 2}
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: a1e41866bb3e5154f8326977b2aced41, type: 2}
   <dlog_type>k__BackingField: 0
   <is_starting_dlog>k__BackingField: 0

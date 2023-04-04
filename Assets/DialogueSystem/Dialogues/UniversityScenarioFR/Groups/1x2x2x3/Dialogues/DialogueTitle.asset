@@ -16,9 +16,9 @@ MonoBehaviour:
   <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 832af37535aa3844ba0cd308d397ffaf, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 05f695d265d2eb243a1fa0c49b9d17cf, type: 2}
+  - <text>k__BackingField: S'asseoir au poste disponible
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 6ea0e770cd08a404981d3f7bfe093ac1, type: 2}
+  - <text>k__BackingField: '"Est-ce que ce poste est libre ?"'
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 9ed72c8a7e7849946a4bf19b6cb48168, type: 2}
   <dlog_type>k__BackingField: 1
   <is_starting_dlog>k__BackingField: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogueTitle
   m_EditorClassIdentifier: 
   <dlog_title>k__BackingField: DialogueTitle
-  <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
+  <dlog_text>k__BackingField: "Vous commencez ainsi \xE0 travailler."
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
   - <text>k__BackingField: 'Output port leading to next node :'

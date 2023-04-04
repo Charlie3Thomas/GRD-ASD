@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: DialogueTitle
   m_EditorClassIdentifier: 
   <dlog_title>k__BackingField: DialogueTitle
-  <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
-  <dlog_tip_text>k__BackingField: 
+  <dlog_text>k__BackingField: "Vous h\xE9sitez un instant mais vous ravisez finalement."
+  <dlog_tip_text>k__BackingField: "La documentaliste, dont le bureau se situe \xE0
+    l'accueil de la BU, est \xE0 votre disposition pour vous donner des renseignements
+    ou vous aider.\nN'h\xE9sitez pas \xE0 la solliciter si vous rencontrez des difficult\xE9s."
   <list_dlog_choices>k__BackingField:
   - <text>k__BackingField: 'Output port leading to next node :'
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 284ce9a16502283459ebdf7314dcb9a2, type: 2}
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 7dc37d9fdbbf3de41a9d65c91701edab, type: 2}
   <dlog_type>k__BackingField: 0
   <is_starting_dlog>k__BackingField: 0

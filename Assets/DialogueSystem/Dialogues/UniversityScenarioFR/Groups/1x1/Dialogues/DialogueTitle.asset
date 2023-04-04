@@ -16,11 +16,11 @@ MonoBehaviour:
   <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
+  - <text>k__BackingField: Saluer en passant
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 26485281de006ef47a4828c0abb01af0, type: 2}
+  - <text>k__BackingField: "S'arr\xEAter pour saluer"
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 0ff0778740110164fbcab7b62ab89949, type: 2}
+  - <text>k__BackingField: Continuer silencieusement son chemin
     <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 00d4e50dbaa0646469d945fcbb41ed87, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 9b336994f09bbf149961a7e204d927f0, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 7848b30f6c355da4086ddf8b1aab2017, type: 2}
   <dlog_type>k__BackingField: 1
-  <is_starting_dlog>k__BackingField: 1
+  <is_starting_dlog>k__BackingField: 0

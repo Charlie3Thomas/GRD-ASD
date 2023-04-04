@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  <dlog_title>k__BackingField: 2
+  <dlog_text>k__BackingField: "Sans que l'\xE9change n'invite \xE0 s'\xE9tendre davantage,
+    vous poursuivez votre chemin jusqu'\xE0 l'espace informatique."
+  <dlog_tip_text>k__BackingField: 
+  <list_dlog_choices>k__BackingField:
+  - <text>k__BackingField: 'Output port leading to next node :'
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: a1e41866bb3e5154f8326977b2aced41, type: 2}
+  <dlog_type>k__BackingField: 0
+  <is_starting_dlog>k__BackingField: 0

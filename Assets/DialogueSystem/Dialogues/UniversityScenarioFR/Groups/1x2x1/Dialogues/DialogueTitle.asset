@@ -16,11 +16,11 @@ MonoBehaviour:
   <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: c05df984133cbd24eb8b272558d4eb94, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 17d21d0e84d8a464185d486d35fcca43, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: fff8289e609e5424a9410d5c4219fafa, type: 2}
+  - <text>k__BackingField: "Acc\xE8s \xE0 VScode"
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 1111ea328dce6d24d9e982fe5d9c7d14, type: 2}
+  - <text>k__BackingField: "Des \xE9tudiants sont bruyants"
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: ca7f7dce8c757064e90121f90b2e513f, type: 2}
+  - <text>k__BackingField: "\"Non merci, \xE7a ira\""
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 3a6dd09ef17f45947823852b4c5a1d3c, type: 2}
   <dlog_type>k__BackingField: 1
   <is_starting_dlog>k__BackingField: 0

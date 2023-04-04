@@ -16,11 +16,11 @@ MonoBehaviour:
   <dlog_text>k__BackingField: '''Dialogue prompt for choice.''.'
   <dlog_tip_text>k__BackingField: 
   <list_dlog_choices>k__BackingField:
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 1758485fde3225945a5ad23ce9637fcb, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: dc7e13385d4918e4ebfea3ffd75bb76c, type: 2}
-  - <text>k__BackingField: '''Dialogue option leading to next node :'''
-    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: fca9c1d112b9ad941a38341fce44d6ed, type: 2}
+  - <text>k__BackingField: '"Merci, c''est gentil"'
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 5ac156b321ce7e54796296a6b2b250bd, type: 2}
+  - <text>k__BackingField: '"Non, c''est tout bon, merci"'
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 5ac156b321ce7e54796296a6b2b250bd, type: 2}
+  - <text>k__BackingField: "Acc\xE8s aux ordinateurs"
+    <next_dlog_node>k__BackingField: {fileID: 11400000, guid: 1c76af0098be424419755f2e0a593ade, type: 2}
   <dlog_type>k__BackingField: 1
   <is_starting_dlog>k__BackingField: 0
