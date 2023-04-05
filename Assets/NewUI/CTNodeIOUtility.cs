@@ -15,13 +15,13 @@ namespace CT.Utilis
         [SerializeField] private CTNodeDataSO current_node;
         [SerializeField] private CTNodeDataSO next_node;
 
+        [SerializeField] private List<CTNodeOptionData> current_node_choices;
         [SerializeField] private string current_node_dlog;
         [SerializeField] private string current_node_tip;
-        [SerializeField] private List<CTNodeOptionData> current_node_choices;
         [SerializeField] private string current_character;
-        //[SerializeField] private string current_background; - NOT IMPLEMENTED YET
-        [SerializeField] private bool tip;
-        [SerializeField] private bool is_end_node;
+
+        public string current_character_data_name;
+        private bool tip;
 
         private void OnEnable()
         {
@@ -109,11 +109,6 @@ namespace CT.Utilis
 
                 tip = false;
             }
-
-            // Check if current node is an end node
-            is_end_node = CheckIfEndNode();
-
-
         }
 
         public void OnOptionChosen(int _choice_index)
@@ -196,6 +191,7 @@ namespace CT.Utilis
 
         private void TranslateCharacter()
         {
+            current_character_data_name = current_character;
             // Remove carriage return(s) from string
             string s = current_character;
             s = s.Replace("\r", "");
@@ -225,6 +221,11 @@ namespace CT.Utilis
         public bool IsThisEndNode()
         {
             return CheckIfEndNode();
+        }
+
+        public string GetBackground()
+        {
+            return current_node.background;
         }
 
         #endregion

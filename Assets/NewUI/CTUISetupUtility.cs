@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 namespace CT.UI.Engine
@@ -70,16 +71,16 @@ namespace CT.UI.Engine
         public void RefreshUI()
         {
             // Instantiate new background
-            InstantiateNewBackground(0); // Use index from node
+            InstantiateNewBackground(TranslateBackground());
 
             // Instantiate new character
-            InstantiateNewCharacter(0); // Use index from node
+            InstantiateNewCharacter(TranslateCharacter());
 
             // Instantiate new choices
-            InstantiateChoiceButton(node_data.GetDlogChoices().Count); // Use index from node
+            InstantiateChoiceButton(node_data.GetDlogChoices().Count);
 
             // Instantiate new narration
-            InstantiateNarrationWindow(node_data.GetDlogText()); // Use text from node
+            InstantiateNarrationWindow(node_data.GetDlogText());
         }
 
 
@@ -175,6 +176,12 @@ namespace CT.UI.Engine
         #region Character Methods
         private void InstantiateNewCharacter(int _index)
         {
+            //if (_index < 0)
+            //{
+
+            //    return;
+            //}
+
             // Ensure index is within range
             EnsureIndexWithinRange(_index, character_sprites);
 
@@ -302,6 +309,62 @@ namespace CT.UI.Engine
             }
 
             return -1;
+        }
+
+        private int TranslateBackground()
+        {
+            //Debug.Log(node_data.GetBackground());
+            switch(node_data.GetBackground())
+            {
+                case "None":
+                    return -1;
+                case "Background_0":
+                    return 0;
+                case "Background_1":
+                    return 1;
+                case "Background_2":
+                    return 2;
+                case "Background_3":
+                    return 3;
+                case "Background_4":
+                    return 4;
+                default:
+                    return -1;
+            }
+        }
+
+        private int TranslateCharacter()
+        {
+            //Debug.Log(node_data.current_character_data_name);
+            switch(node_data.current_character_data_name) 
+            { 
+                case "None":
+                    return -1;
+                case "Narrator":
+                    return 0;
+                case "Character_0":
+                    return 1;
+                case "Character_1":
+                    return 2;
+                case "Character_2":
+                    return 3;
+                case "Character_3":
+                    return 4;
+                case "Character_4":
+                    return 5;
+                case "Character_5":
+                    return 6;
+                case "Character_6":
+                    return 7;
+                case "Character_7":
+                    return 8;
+                case "Character_8":
+                    return 9;
+                case "Character_9":
+                    return 10;
+                default:
+                    return -1;
+            }
         }
 
         #endregion
