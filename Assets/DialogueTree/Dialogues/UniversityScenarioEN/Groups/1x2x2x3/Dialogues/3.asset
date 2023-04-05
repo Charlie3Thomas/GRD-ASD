@@ -15,14 +15,14 @@ MonoBehaviour:
   <node_name>k__BackingField: 3
   <text>k__BackingField: '"Um... Sorry."'
   <options>k__BackingField:
-  - <text>k__BackingField: S'asseoir au poste disponible
+  - <text>k__BackingField: Sit at the available station.
     <next_node>k__BackingField: {fileID: 11400000, guid: f22b72d94e22bd04182ea0df9189495d, type: 2}
-  - <text>k__BackingField: '"Est-ce que ce poste est libre ?"'
+  - <text>k__BackingField: '"Is this station free?"'
     <next_node>k__BackingField: {fileID: 11400000, guid: 3dd1ff31d819e0e4f8b0556da8a28128, type: 2}
   <type>k__BackingField: 1
   <is_start>k__BackingField: 0
   <tip_text>k__BackingField: 
   <character>k__BackingField: Character_1
-  <background>k__BackingField: 
-  <char_dropdown_index>k__BackingField: 2
-  <bg_dropdown_index>k__BackingField: 0
+  <background>k__BackingField: Background_0
+  <char_dropdown_index>k__BackingField: 3
+  <bg_dropdown_index>k__BackingField: 1

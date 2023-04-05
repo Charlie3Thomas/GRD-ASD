@@ -12,6 +12,9 @@ namespace CT.UI.Engine
     [RequireComponent(typeof(CTNodeIOUtility))]
     public class CTUISetupUtility : MonoBehaviour
     {
+        [Header("Characters - Element 0 should always be 'Narrator'")]
+        [SerializeField] public List<string> scene_characters;
+
         [SerializeField] private CTNodeIOUtility node_data;
 
         // Character sprites
@@ -143,7 +146,8 @@ namespace CT.UI.Engine
 
                 //ScaleButtonWithText(button.GetComponentInChildren<UnityEngine.UI.Button>());
 
-                button.GetComponentInChildren<UnityEngine.UI.Button>().onClick.AddListener(OnChoiceButtonClick);
+                // This is an absolute hack and a half ngl
+                button.GetComponentInChildren<UnityEngine.UI.Button>().onClick.AddListener(() => OnChoiceButtonClick(Int32.Parse(button.name)));
 
                 //button.name = index.ToString();
             }
@@ -154,6 +158,8 @@ namespace CT.UI.Engine
             Destroy(narration);
 
             narration = Instantiate(text_prefab, narration_anchor_point);
+
+            //Debug.Log(node_data.GetCharacter());
 
             narration.GetComponentInChildren<TextMeshProUGUI>().text = $"{node_data.GetCharacter()}: {_dlog}";
 
@@ -222,10 +228,12 @@ namespace CT.UI.Engine
         #endregion
 
         #region Button Methods
-        private void OnChoiceButtonClick()
+        private void OnChoiceButtonClick(int _index)
         {
+            // Yes, this is a hack.
             Debug.Log("Choice button clicked!");
-
+            
+            node_data.OnOptionChosen(_index);
         }
 
         #endregion

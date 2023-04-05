@@ -282,10 +282,58 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: characters.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: characters.Array.data[0]
+      value: Narrator
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: characters.Array.data[1]
+      value: Documentalist
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: characters.Array.data[2]
+      value: Student
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: scene_characters.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: scene_characters.Array.data[0]
+      value: Narrator
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: scene_characters.Array.data[1]
+      value: Documentalist
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: scene_characters.Array.data[2]
+      value: Student 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: scene_characters.Array.data[3]
+      value: Student 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2034132639, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: starting_node
       value: 
-      objectReference: {fileID: 11400000, guid: a1f4be68f6614cf49932a5d1cec48248, type: 2}
+      objectReference: {fileID: 11400000, guid: a8c687cb9ed6bf946843858b660b488a, type: 2}
+    - target: {fileID: 4903672100097365501, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903672100097365501, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903672100097365501, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 210
+      objectReference: {fileID: 0}
     - target: {fileID: 4903672100399633895, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -185

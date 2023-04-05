@@ -1,6 +1,7 @@
 using CT.Data;
 using CT.SO;
 using CT.UI.Engine;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -49,44 +50,36 @@ namespace CT.Utilis
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 OnOptionChosen(0);
-
-                UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 OnOptionChosen(1);
-
-                UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 OnOptionChosen(2);
-
-                UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 OnOptionChosen(3);
-
-                UI_setup.RefreshUI();
             }
             if (Input.GetKeyDown(KeyCode.Alpha5))
             {
                 OnOptionChosen(4);
-
-                UI_setup.RefreshUI();
             }
         }
 
         #region Node access methods
         public void ReadNodeInformation()
         {
-            // Read current node information
-            current_node_dlog = current_node.text;
+            // Read current node information and sanitise
+            current_node_dlog = current_node.text.Replace("\r", "");
 
             current_node_choices = current_node.options;
 
             current_character = current_node.character;
+
+            TranslateCharacter();
 
             // If current node is a narration node
             if (current_node.type == Enums.CTNodeType.Narration)
@@ -140,6 +133,8 @@ namespace CT.Utilis
                 current_node = next_node;
 
                 ReadNodeInformation();
+
+                UI_setup.RefreshUI();
             }
         }
 
@@ -185,6 +180,23 @@ namespace CT.Utilis
         public CT.Enums.CTNodeType GetNodeType()
         {
             return current_node.type;
+        }
+
+        private void TranslateCharacter()
+        {
+            // Remove carriage return(s) from string
+            string s = current_character;
+            s = s.Replace("\r", "");
+
+            int i = 0;
+            foreach (NodeCharacter cha in (NodeCharacter[])Enum.GetValues(typeof(NodeCharacter)))
+            {
+                if (cha.ToString().Replace("\r", "") == s)
+                {
+                    current_character = UI_setup.scene_characters[i].Replace("\r", "");
+                }
+                i++;
+            }
         }
 
         // Get current character

@@ -233,6 +233,7 @@ namespace CT.Components
 
 public enum NodeCharacter
 {
+    None,
     Narrator,
     Character_0,
     Character_1,
@@ -248,6 +249,7 @@ public enum NodeCharacter
 
 public enum Backgrounds
 {
+    None,
     Background_0,
     Background_1,
     Background_2,

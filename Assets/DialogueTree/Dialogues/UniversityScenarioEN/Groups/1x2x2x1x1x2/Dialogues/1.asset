@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 1
-  <text>k__BackingField: "Bien que fuyant son regard, vous ne trouvez pas d'ouverture
-    pour vous \xE9clipser."
+  <text>k__BackingField: Although avoiding his/her gaze, you can't find an opportunity
+    to slip away.
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 100fa68b3c1eaa042a99d41f5f6a1ce1, type: 2}
   <type>k__BackingField: 0
   <is_start>k__BackingField: 0
   <tip_text>k__BackingField: 
-  <character>k__BackingField: 
-  <background>k__BackingField: 
-  <char_dropdown_index>k__BackingField: 0
-  <bg_dropdown_index>k__BackingField: 0
+  <character>k__BackingField: Narrator
+  <background>k__BackingField: Background_1
+  <char_dropdown_index>k__BackingField: 1
+  <bg_dropdown_index>k__BackingField: 2
