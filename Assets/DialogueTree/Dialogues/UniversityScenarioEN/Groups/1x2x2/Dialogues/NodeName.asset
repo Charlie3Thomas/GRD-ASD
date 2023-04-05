@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: NodeName
+  m_EditorClassIdentifier: 
+  <node_name>k__BackingField: NodeName
+  <text>k__BackingField: '"Seeing you approach, the two students interrupt their
+    conversation, although one of them can''t seem to stop laughing and is not able
+    to talk to you properly. The other one looks at you questioningly."'
+  <options>k__BackingField:
+  - <text>k__BackingField: Sit down at the available workstation.
+    <next_node>k__BackingField: {fileID: 11400000, guid: f22b72d94e22bd04182ea0df9189495d, type: 2}
+  - <text>k__BackingField: '"Excuse me. Is this workstation available?"'
+    <next_node>k__BackingField: {fileID: 11400000, guid: 3dd1ff31d819e0e4f8b0556da8a28128, type: 2}
+  - <text>k__BackingField: '"You should speak more quietly."'
+    <next_node>k__BackingField: {fileID: 11400000, guid: cc061cddf57291f4e98a803c62ee0759, type: 2}
+  <type>k__BackingField: 1
+  <is_start>k__BackingField: 0
+  <tip_text>k__BackingField: 
+  <character>k__BackingField: Narrator
+  <background>k__BackingField: Background_0
+  <char_dropdown_index>k__BackingField: 1
+  <bg_dropdown_index>k__BackingField: 1

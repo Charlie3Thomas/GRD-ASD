@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea80ec4afc403c2418e4ecd5096f14c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starting_dlog: {fileID: 11400000, guid: fe933cb9dba275646a3fd3c03fd998f7, type: 2}
+  starting_dlog: {fileID: 11400000, guid: 80daaac2fc5c47d48ac97c980cb36085, type: 2}
   text_UI: {fileID: 972895314}
   test_button_1: {fileID: 1424094061}
   test_button_2: {fileID: 234528461}
@@ -250,6 +250,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1313,7 +1314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
