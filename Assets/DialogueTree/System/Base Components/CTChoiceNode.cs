@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -59,7 +60,7 @@ namespace CT.Components
 
             p_out.userData = _data;
 
-            CTOptionSaveData option = (CTOptionSaveData) _data;
+            CTOptionSaveData option = (CTOptionSaveData)_data;
 
             Button remove_option = CTComponentUtility.CreateButton("Remove", () =>
             {
@@ -88,3 +89,4 @@ namespace CT.Components
         #endregion
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
@@ -395,7 +396,7 @@ namespace CT.GraphView
 
                     if (ge.GetType() == t_edge)
                     {
-                        Edge edge = (Edge) ge;
+                        Edge edge = (Edge)ge;
 
                         dead_edges.Add(edge);
 
@@ -407,7 +408,7 @@ namespace CT.GraphView
                         continue;
                     }
 
-                    CTGroup group = (CTGroup) ge;
+                    CTGroup group = (CTGroup)ge;
 
                     dead_groups.Add(group);
                 }
@@ -423,7 +424,7 @@ namespace CT.GraphView
                             continue;
                         }
 
-                        CTNode node = (CTNode) ge;
+                        CTNode node = (CTNode)ge;
 
                         nodes.Add(node);
                     }
@@ -566,3 +567,4 @@ namespace CT.GraphView
         #endregion
     }
 }
+#endif

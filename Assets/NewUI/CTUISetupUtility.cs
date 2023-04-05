@@ -1,15 +1,15 @@
-using CT.Data;
-using CT.Utilis;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 
 namespace CT.UI.Engine
 {
+    using Data;
+    using Utilis;
     [RequireComponent(typeof(CTNodeIOUtility))]
     public class CTUISetupUtility : MonoBehaviour
     {
@@ -141,7 +141,7 @@ namespace CT.UI.Engine
 
                 choices_buttons.Add(button);
 
-                button.transform.position += new Vector3(0.0f, i * 35.0f, 0.0f);
+                button.transform.position += new Vector3(0.0f, i * 50.0f, 0.0f);
 
                 //ResizeButtonToTextureScale(button.GetComponent<UnityEngine.UI.Button>(), 2);
 
@@ -300,7 +300,7 @@ namespace CT.UI.Engine
 
         private int CompareCharacterStringWithEnum(string _name)
         {             
-            foreach (NodeCharacter cha in (NodeCharacter[]) Enum.GetValues(typeof(NodeCharacter)))
+            foreach (Enums.NodeCharacter cha in (Enums.NodeCharacter[]) Enum.GetValues(typeof(Enums.NodeCharacter)))
             {
                 if (cha.ToString() == _name)
                 {

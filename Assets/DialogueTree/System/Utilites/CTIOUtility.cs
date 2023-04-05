@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -281,7 +282,7 @@ namespace CT.Utils
             {
                 foreach (Port p in n.Value.outputContainer.Children())
                 {
-                    CTOptionSaveData option_data = (CTOptionSaveData) p.userData;
+                    CTOptionSaveData option_data = (CTOptionSaveData)p.userData;
 
                     if (string.IsNullOrEmpty(option_data.node_ID))
                     {
@@ -290,7 +291,7 @@ namespace CT.Utils
 
                     CTNode nextNode = loaded_nodes[option_data.node_ID];
 
-                    Port nextNodeInputPort = (Port) nextNode.inputContainer.Children().First();
+                    Port nextNodeInputPort = (Port)nextNode.inputContainer.Children().First();
 
                     Edge edge = p.ConnectTo(nextNodeInputPort);
 
@@ -500,3 +501,4 @@ namespace CT.Utils
     }
 
 }
+#endif

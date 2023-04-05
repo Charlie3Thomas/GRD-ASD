@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.IO;
 using UnityEditor;
 using UnityEditor.UIElements;
@@ -121,3 +122,4 @@ namespace CT.GraphView
         #endregion
     }
 }
+#endif

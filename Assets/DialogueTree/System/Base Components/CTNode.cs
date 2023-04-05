@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,7 +63,7 @@ namespace CT.Components
 
             TextField input = CTComponentUtility.CreateTextField(node_name, null, callback =>
             {
-                TextField target = (TextField) callback.target;
+                TextField target = (TextField)callback.target;
 
                 target.value = callback.newValue;
 
@@ -140,7 +141,7 @@ namespace CT.Components
 
         public bool IsStartingNode()
         {
-            Port in_port = (Port) inputContainer.Children().First();
+            Port in_port = (Port)inputContainer.Children().First();
 
             return !in_port.connected;
         }
@@ -256,3 +257,4 @@ public enum Backgrounds
     Background_3,
     Background_4
 }
+#endif

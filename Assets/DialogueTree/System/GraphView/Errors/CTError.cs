@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 
 namespace CT.Data.Error
@@ -14,11 +15,12 @@ namespace CT.Data.Error
         private void SetRandomColour()
         {
             colour = new Color32(
-                (byte) Random.Range(0, 256),
-                (byte) Random.Range(0, 256),
-                (byte) Random.Range(0, 256),
+                (byte)Random.Range(0, 256),
+                (byte)Random.Range(0, 256),
+                (byte)Random.Range(0, 256),
                 255
             );
         }
     }
 }
+#endif

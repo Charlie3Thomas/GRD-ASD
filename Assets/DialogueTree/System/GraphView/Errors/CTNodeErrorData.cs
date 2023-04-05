@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections.Generic;
 
 namespace CT.Data.Error
@@ -16,3 +17,4 @@ namespace CT.Data.Error
         }
     }
 }
+#endif

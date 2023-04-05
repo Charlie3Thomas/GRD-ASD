@@ -1,12 +1,15 @@
-using CT.Data;
-using CT.SO;
-using CT.UI.Engine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 namespace CT.Utilis
 {
+    using Data;
+    using SO;
+    using UI.Engine;
+    using Enums;
+
     public class CTNodeIOUtility : MonoBehaviour
     {
         [SerializeField] private CTUISetupUtility UI_setup;
@@ -233,29 +236,7 @@ namespace CT.Utilis
     }
 
     #region Enumerations
-    public enum NodeCharacter
-    {
-        Narrator,
-        Character_0,
-        Character_1,
-        Character_2,
-        Character_3,
-        Character_4,
-        Character_5,
-        Character_6,
-        Character_7,
-        Character_8,
-        Character_9
-    }
 
-    public enum Backgrounds
-    { 
-        Default,
-        Background_0,
-        Background_1,
-        Background_2,
-        Background_3
-    }
 
     #endregion
 }

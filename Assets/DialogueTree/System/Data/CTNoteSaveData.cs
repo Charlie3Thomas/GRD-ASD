@@ -1,10 +1,9 @@
-using System;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace CT.Data.Save
 {
     using Enums;
+    using System.Collections.Generic;
+    using System;
+    using UnityEngine;
 
     [Serializable]
     public class CTNoteSaveData
