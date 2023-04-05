@@ -43,6 +43,14 @@ namespace CT.Utilis
         private void Update()
         {
             Test();
+
+            if (current_node.type == Enums.CTNodeType.Narration)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    OnOptionChosen(0);
+                }
+            }
         }
 
         private void Test()
@@ -101,7 +109,11 @@ namespace CT.Utilis
 
                 tip = false;
             }
-            
+
+            // Check if current node is an end node
+            is_end_node = CheckIfEndNode();
+
+
         }
 
         public void OnOptionChosen(int _choice_index)
@@ -140,10 +152,10 @@ namespace CT.Utilis
 
         private bool CheckIfEndNode()
         {
-            if (current_node.options.Count > 0)
-                return false;
-            else
+            if (next_node == null)
                 return true;
+            else
+                return false;
         }
 
 

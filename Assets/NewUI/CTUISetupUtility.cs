@@ -146,7 +146,7 @@ namespace CT.UI.Engine
 
                 //ScaleButtonWithText(button.GetComponentInChildren<UnityEngine.UI.Button>());
 
-                // This is an absolute hack and a half ngl
+                // Yes, this is a horrible hack. No, I am not sorry.
                 button.GetComponentInChildren<UnityEngine.UI.Button>().onClick.AddListener(() => OnChoiceButtonClick(Int32.Parse(button.name)));
 
                 //button.name = index.ToString();
@@ -230,7 +230,6 @@ namespace CT.UI.Engine
         #region Button Methods
         private void OnChoiceButtonClick(int _index)
         {
-            // Yes, this is a hack.
             Debug.Log("Choice button clicked!");
             
             node_data.OnOptionChosen(_index);
