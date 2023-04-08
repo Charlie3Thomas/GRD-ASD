@@ -9,7 +9,10 @@ using UnityEngine;
 namespace CT.UI.Engine
 {
     using Data;
+    using UnityEngine.UI;
     using Utilis;
+    using static System.Net.Mime.MediaTypeNames;
+
     [RequireComponent(typeof(CTNodeIOUtility))]
     public class CTUISetupUtility : MonoBehaviour
     {
@@ -48,20 +51,22 @@ namespace CT.UI.Engine
         private List<GameObject> choices_buttons;
         public GameObject tip;
 
+        private List<GameObject> UI_cleanup;
+
         private void Start()
         {
-            background = new GameObject();
+            background = new GameObject("Background");
 
-            character = new GameObject();
+            character = new GameObject("Character");
 
-            show_tip_button = new GameObject();
+            show_tip_button = new GameObject("Show tip button");
 
-            next_button = new GameObject();
+            next_button = new GameObject("Next button");
 
-            narration = new GameObject();
+            narration = new GameObject("Narration");
 
             choices_buttons = new List<GameObject>();
-
+            UI_cleanup = new List<GameObject>();
             RefreshUI();
         }
 
@@ -71,6 +76,8 @@ namespace CT.UI.Engine
 
         public void RefreshUI()
         {
+            CleanupUI();
+
             // Instantiate new background
             InstantiateNewBackground(TranslateBackground());
 
@@ -155,7 +162,7 @@ namespace CT.UI.Engine
                 // Add offset to dlog_choices_centre
                 GameObject button = Instantiate(txt_bttn_prefab, dlog_choices_centre);
 
-                button.GetComponent<TextMeshProUGUI>().text = choices[index].text;
+                button.GetComponentInChildren<TextMeshProUGUI>().text = choices[index].text;
 
                 button.name = index.ToString();
 
@@ -208,9 +215,9 @@ namespace CT.UI.Engine
             Destroy(character.gameObject);
 
             character = Instantiate(image_prefab, character_anchor_point); // Instantiate image object
-            
+
             character.GetComponent<UnityEngine.UI.Image>().sprite = ConvertTexture2DToSprite(character_sprites[_index]); // Set sprite
-            
+
             SetAnchors(character);
         }
 
@@ -228,7 +235,7 @@ namespace CT.UI.Engine
             background = Instantiate(image_prefab, this.transform); // Instantiate image object
 
             background.GetComponent<UnityEngine.UI.Image>().sprite = ConvertTexture2DToSprite(location_sprites[_index]); // Set sprite
-            
+
             SetAnchors(background);
 
             StretchToFillCanvas(background.GetComponent<UnityEngine.UI.Image>(), this.gameObject.GetComponent<Canvas>());
@@ -258,7 +265,7 @@ namespace CT.UI.Engine
         private void OnChoiceButtonClick(int _index)
         {
             Debug.Log("Choice button clicked!");
-            
+
             node_data.OnOptionChosen(_index);
         }
 
@@ -266,6 +273,26 @@ namespace CT.UI.Engine
 
 
         #region Utility Methods
+
+        private void CleanupUI()
+        {
+            List<GameObject> cleanup = new List<GameObject>();
+
+            foreach (GameObject go in UI_cleanup)
+            {
+                if (go != null)
+                {
+                    cleanup.Add(go);
+                }
+            }
+
+            foreach (GameObject go in cleanup)
+            {
+                UI_cleanup.Remove(go);
+                Destroy(go);
+            }
+        }
+
         private Sprite ConvertTexture2DToSprite(Texture2D _tex)
         {
             return Sprite.Create(_tex, new Rect(0, 0, _tex.width, _tex.height), new Vector2(0.5f, 0.5f), 100);
