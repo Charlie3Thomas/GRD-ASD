@@ -46,6 +46,7 @@ namespace CT.UI.Engine
         private GameObject next_button;
         private GameObject narration;
         private List<GameObject> choices_buttons;
+        public GameObject tip;
 
         private void Start()
         {
@@ -81,6 +82,16 @@ namespace CT.UI.Engine
 
             // Instantiate new narration
             InstantiateNarrationWindow(node_data.GetDlogText());
+
+            if (node_data.IsThereATip())
+                // Instantiate tip button
+                InstantiateRevealTipButton();
+            else
+                // Destroy tip button
+                Destroy(show_tip_button);
+
+            // Set text to tip text and hide/show window
+            SetTipTextAndStatus();
         }
 
 
@@ -88,11 +99,20 @@ namespace CT.UI.Engine
         private void InstantiateRevealTipButton()
         {
             // Instantiate tip button and place at fixed position on the screen
-            show_tip_button = Instantiate(txt_bttn_prefab, tip_anchor_point);
+            show_tip_button = Instantiate(tip_bttn_prefab, tip_anchor_point);
 
             show_tip_button.GetComponentInChildren<TextMeshProUGUI>().text = "";
 
             ResizeButtonToTextureScale(show_tip_button.GetComponent<UnityEngine.UI.Button>(), 1);
+
+            show_tip_button.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => tip.SetActive(!tip.activeSelf));
+        }
+
+        private void SetTipTextAndStatus()
+        {
+            // Tip text
+            tip.GetComponent<TextMeshProUGUI>().text = node_data.GetTipText();
+            tip.SetActive(false);
         }
 
         private void InstantiateNextDialogueButton()

@@ -81,21 +81,6 @@ MonoBehaviour:
     <name>k__BackingField: 1x3x2
     <pos>k__BackingField: {x: 12715, y: 4535}
   <nodes>k__BackingField:
-  - <ID>k__BackingField: 4e6ccf96-b339-46ed-b427-cb55bfad046c
-    <name>k__BackingField: START
-    <text>k__BackingField: "\rFor a college assignment, you need VScode software,
-      which you don't have on your computer."
-    <options>k__BackingField:
-    - <text>k__BackingField: Next Node
-      <node_ID>k__BackingField: dc9e2751-d955-4467-a63e-03880fecd7fe
-    <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
-    <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 285, y: 229}
-    <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
-    <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 5e3b35ff-299a-48b3-a8ac-7ea196e9dc20
     <name>k__BackingField: 3
     <text>k__BackingField: So you go there to begin your study.
@@ -1159,6 +1144,21 @@ MonoBehaviour:
     <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 3
     <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 4e6ccf96-b339-46ed-b427-cb55bfad046c
+    <name>k__BackingField: START
+    <text>k__BackingField: "\rFor a college assignment, you need VScode software,
+      which you don't have on your computer."
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: dc9e2751-d955-4467-a63e-03880fecd7fe
+    <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 285, y: 229}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Background_0
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: This is a tip. Enjoy being tipped.
   <previous_group_names>k__BackingField:
   - START
   - 1X1X2

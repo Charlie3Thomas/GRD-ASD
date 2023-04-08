@@ -9,15 +9,21 @@ namespace CT.Utilis
     using SO;
     using UI.Engine;
     using Enums;
+    using UnityEngine.UI;
+    using TMPro;
 
     public class CTNodeIOUtility : MonoBehaviour
     {
+        [Header("Node Data")]
         [SerializeField] private CTUISetupUtility UI_setup;
-
         [SerializeField] private CTNodeDataSO starting_node;
         [SerializeField] private CTNodeDataSO current_node;
         [SerializeField] private CTNodeDataSO next_node;
 
+        [Header("Interaction")]
+        [SerializeField] private Button next_node_button;
+
+        [Header("Debugging Serialisation")]
         [SerializeField] private List<CTNodeOptionData> current_node_choices;
         [SerializeField] private string current_node_dlog;
         [SerializeField] private string current_node_tip;
@@ -40,19 +46,21 @@ namespace CT.Utilis
             //current_character = "";
             //tip = false;
             //is_end_node = false;
+            next_node_button.onClick.AddListener(Oingo);
             
         }
 
         private void Update()
         {
-            Test();
+            Test();            
+        }
 
+        private void Oingo()
+        {
+            Debug.Log("Oingo");
             if (current_node.type == Enums.CTNodeType.Narration)
             {
-                if (Input.GetMouseButtonDown(0))
-                {
-                    OnOptionChosen(0);
-                }
+                OnOptionChosen(0);
             }
         }
 

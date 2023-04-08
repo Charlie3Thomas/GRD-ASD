@@ -111,8 +111,8 @@ namespace CT.Utils
                 character = _node.character,
                 background = _node.background,
                 char_dropdown_index = _node.char_dropdown_index,
-                bg_dropdown_index = _node.bg_dropdown_index
-
+                bg_dropdown_index = _node.bg_dropdown_index,
+                dlog_tip_text = _node.tip_text
             };
 
             _tree.nodes.Add(node_data);

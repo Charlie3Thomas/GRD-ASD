@@ -20,7 +20,7 @@ MonoBehaviour:
     <next_node>k__BackingField: {fileID: 11400000, guid: cbc314ca2b2cb314192d32715e775899, type: 2}
   <type>k__BackingField: 0
   <is_start>k__BackingField: 1
-  <tip_text>k__BackingField: 
+  <tip_text>k__BackingField: This is a tip. Enjoy being tipped.
   <character>k__BackingField: Narrator
   <background>k__BackingField: Background_0
   <char_dropdown_index>k__BackingField: 1
