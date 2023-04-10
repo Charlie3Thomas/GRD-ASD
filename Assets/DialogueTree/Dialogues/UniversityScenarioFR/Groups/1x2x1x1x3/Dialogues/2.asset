@@ -16,12 +16,12 @@ MonoBehaviour:
   <text>k__BackingField: "Les choses n'y ont pas tellement chang\xE9 et vous constatez
     avec regr\xEAt que vous n'avez plus qu'une solution."
   <options>k__BackingField:
-  - <text>k__BackingField: Avancer vers le poste disponible
+  - <text>k__BackingField: Move towards the available workstation.
     <next_node>k__BackingField: {fileID: 11400000, guid: b7dd743e8c1e77f48977e6eb939027e1, type: 2}
   <type>k__BackingField: 1
   <is_start>k__BackingField: 0
   <tip_text>k__BackingField: 
-  <character>k__BackingField: 
-  <background>k__BackingField: 
-  <char_dropdown_index>k__BackingField: 0
-  <bg_dropdown_index>k__BackingField: 0
+  <character>k__BackingField: Narrator
+  <background>k__BackingField: Background_1
+  <char_dropdown_index>k__BackingField: 1
+  <bg_dropdown_index>k__BackingField: 2

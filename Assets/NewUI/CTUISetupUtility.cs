@@ -168,7 +168,7 @@ namespace CT.UI.Engine
 
                 choices_buttons.Add(button);
 
-                button.transform.position += new Vector3(0.0f, i * 50.0f, 0.0f);
+                button.transform.position += new Vector3(0.0f, i * 60.0f, 0.0f);
 
                 //ResizeButtonToTextureScale(button.GetComponent<UnityEngine.UI.Button>(), 2);
 

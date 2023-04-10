@@ -307,7 +307,7 @@ PrefabInstance:
     - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: txt_bttn_prefab
       value: 
-      objectReference: {fileID: 8096474854323885988, guid: 150108735b9fa904cba8e85192819907, type: 3}
+      objectReference: {fileID: 6528863282905913942, guid: 023586469e764984c80681065aa7661b, type: 3}
     - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: txt_background_prefab
       value: 
@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: tip_UI
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2034132639, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: starting_node
+      value: 
+      objectReference: {fileID: 11400000, guid: a0216aa01a070e34d9d8f43c3c9420ec, type: 2}
     - target: {fileID: 4903672099461538847, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
@@ -438,7 +442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4903672100399633895, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -260
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 4903672100740365349, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: m_Pivot.x
