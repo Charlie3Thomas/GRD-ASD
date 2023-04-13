@@ -16,37 +16,37 @@ MonoBehaviour:
   <groups>k__BackingField:
   - <ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
     <name>k__BackingField: START
-    <pos>k__BackingField: {x: 202, y: 170}
+    <pos>k__BackingField: {x: -1077, y: 263}
   - <ID>k__BackingField: 99262684-9d97-42f3-8831-658768b96504
     <name>k__BackingField: 1X1X2
-    <pos>k__BackingField: {x: 2482, y: 614}
+    <pos>k__BackingField: {x: 2304, y: 608}
   - <ID>k__BackingField: f17e72ff-b40c-4cdc-8b56-c0e97dbec195
     <name>k__BackingField: 1x1x1
     <pos>k__BackingField: {x: 3165, y: 407}
   - <ID>k__BackingField: 2e424720-b5dd-4dd8-aaac-01ea59ff9872
     <name>k__BackingField: 1x1x2x3
-    <pos>k__BackingField: {x: 3178, y: 936}
+    <pos>k__BackingField: {x: 2978, y: 998}
   - <ID>k__BackingField: d96577f3-8076-416e-99ad-b9cc964e1bdb
     <name>k__BackingField: 1x1x3
-    <pos>k__BackingField: {x: 3188.0002, y: 1581}
+    <pos>k__BackingField: {x: 2282, y: 1535}
   - <ID>k__BackingField: 1e7be066-bcdd-4eda-946c-b7fefb633af4
     <name>k__BackingField: 1x2
     <pos>k__BackingField: {x: 4015, y: 682}
   - <ID>k__BackingField: 91bc4b24-8593-4fa4-a8bb-99ebdbeac3de
     <name>k__BackingField: 1x2x2
-    <pos>k__BackingField: {x: 5618.9995, y: 1166.0001}
+    <pos>k__BackingField: {x: 5619, y: 1166}
   - <ID>k__BackingField: d5dbd6e4-4aaf-4933-baea-b5b1e703d004
     <name>k__BackingField: 1x2x1
-    <pos>k__BackingField: {x: 3793.0002, y: 1515}
+    <pos>k__BackingField: {x: 3793, y: 1515}
   - <ID>k__BackingField: 8f735cbe-b33e-4010-bb2b-2b4264a28344
     <name>k__BackingField: 1x2x1x1x3
-    <pos>k__BackingField: {x: 5075.9995, y: 1726.9999}
+    <pos>k__BackingField: {x: 5076, y: 1727}
   - <ID>k__BackingField: 7c2e1873-89d3-4c94-ac2d-933b6dfa2a50
     <name>k__BackingField: 1x2x1x1
     <pos>k__BackingField: {x: 4761, y: 2214}
   - <ID>k__BackingField: d30a1163-c087-4ba5-aef2-3b359db09351
     <name>k__BackingField: 1x2x1x1x1
-    <pos>k__BackingField: {x: 4008.9998, y: 2830}
+    <pos>k__BackingField: {x: 4009, y: 2830}
   - <ID>k__BackingField: d6fab745-1d1c-4cfe-8b57-01ff118f2256
     <name>k__BackingField: 1x2x2x3
     <pos>k__BackingField: {x: 6167, y: 1887}
@@ -55,7 +55,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 8030, y: 2049}
   - <ID>k__BackingField: f6d23efd-5ee3-49c9-9006-df5609745407
     <name>k__BackingField: 1x2x2x1
-    <pos>k__BackingField: {x: 7298.0005, y: 1196}
+    <pos>k__BackingField: {x: 7298, y: 1196}
   - <ID>k__BackingField: 4e45f760-5652-48d5-92a9-4875f88b4e59
     <name>k__BackingField: 1x2x2x1x1
     <pos>k__BackingField: {x: 8429, y: 1435}
@@ -70,7 +70,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 10776, y: 3610}
   - <ID>k__BackingField: 4a2dfe15-51ce-4b20-832d-6094104380f5
     <name>k__BackingField: 1x3x1
-    <pos>k__BackingField: {x: 12307, y: 3857.0002}
+    <pos>k__BackingField: {x: 12307, y: 3857}
   - <ID>k__BackingField: 06026d74-ec47-4500-8038-9817356afb19
     <name>k__BackingField: 2
     <pos>k__BackingField: {x: 14234, y: 4491}
@@ -89,41 +89,27 @@ MonoBehaviour:
       <node_ID>k__BackingField: df071a9b-e56a-4281-9bd9-ca9df4720ea8
     <group_ID>k__BackingField: 99262684-9d97-42f3-8831-658768b96504
     <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 2507, y: 673}
+    <pos>k__BackingField: {x: 2329, y: 667}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: a7428b30-c1c1-4f2a-b20b-7411e4de31d6
     <name>k__BackingField: 3
-    <text>k__BackingField: "Documentaliste : \"Si vous avez besoin d'un renseignement,
-      je suis disponible. N'h\xE9sitez pas.\""
+    <text>k__BackingField: "\"Si vous avez besoin d'un renseignement, je suis disponible.
+      N'h\xE9sitez pas.\""
     <options>k__BackingField:
     - <text>k__BackingField: '"Merci, c''est gentil"'
       <node_ID>k__BackingField: 1f972573-5e34-45ff-8a7b-70abe0811bd2
     - <text>k__BackingField: '"Non, c''est tout bon, merci"'
       <node_ID>k__BackingField: 1f972573-5e34-45ff-8a7b-70abe0811bd2
     - <text>k__BackingField: "Acc\xE8s aux ordinateurs"
-      <node_ID>k__BackingField: 4f456738-9e3b-49fc-9ece-91fb75861bb6
+      <node_ID>k__BackingField: 1d9d1db7-8b0a-4a1f-babb-4b4296f77ee0
     <group_ID>k__BackingField: 99262684-9d97-42f3-8831-658768b96504
     <node_type>k__BackingField: 1
-    <pos>k__BackingField: {x: 2507, y: 884}
+    <pos>k__BackingField: {x: 2329, y: 878}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 2
-    <bg_dropdown_index>k__BackingField: 1
-    <dlog_tip_text>k__BackingField: 
-  - <ID>k__BackingField: df071a9b-e56a-4281-9bd9-ca9df4720ea8
-    <name>k__BackingField: 2
-    <text>k__BackingField: "Vous voyant vous arr\xEAter, elle encha\xEEne."
-    <options>k__BackingField:
-    - <text>k__BackingField: Next Node
-      <node_ID>k__BackingField: a7428b30-c1c1-4f2a-b20b-7411e4de31d6
-    <group_ID>k__BackingField: 99262684-9d97-42f3-8831-658768b96504
-    <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 2781, y: 673}
-    <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
     <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
@@ -140,24 +126,26 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 3203, y: 690}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: a0473371-543d-488e-b07e-a4b3f8890965
     <name>k__BackingField: NodeName
-    <text>k__BackingField: Vous poursuivez votre route et pour atteindre l'espace
-      informatique.
+    <text>k__BackingField: Vous poursuivez votre route pour atteindre l'espace informatique.
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 94a3b123-e184-45b4-bbd4-8e0de8d4a4d1
     <group_ID>k__BackingField: d96577f3-8076-416e-99ad-b9cc964e1bdb
     <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 3213, y: 1640}
+    <pos>k__BackingField: {x: 2307, y: 1594}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
-    <dlog_tip_text>k__BackingField: 
+    <dlog_tip_text>k__BackingField: "Les documentalistes, dont le bureau se situe
+      \xE0 l'accueil de la BU, sont \xE0 votre disposition pour vous donner des renseignements
+      ou vous aider. N'h\xE9sitez pas \xE0 les solliciter si vous rencontrez des
+      difficult\xE9s."
   - <ID>k__BackingField: 95f04c3c-4e39-48cb-b0c1-885eac6f22f9
     <name>k__BackingField: 2
     <text>k__BackingField: 'Le logiciel dont vous avez besoin pour votre exercice
@@ -173,7 +161,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4587, y: 741}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 42e9fcba-b3dd-4fcf-a389-c612a7785664
@@ -189,7 +177,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4040, y: 970}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 4caeca11-9bde-4602-a7e1-f73e6cebd54b
@@ -204,7 +192,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4907, y: 970}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 67a2bbfc-5894-4ac5-8aa7-04aefd4a1a0f
@@ -233,7 +221,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 5101, y: 1786}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: a1649759-4e45-4518-8886-9c8c8f6ba7c5
@@ -241,19 +229,19 @@ MonoBehaviour:
     <text>k__BackingField: "Les choses n'y ont pas tellement chang\xE9 et vous constatez
       avec regr\xEAt que vous n'avez plus qu'une solution."
     <options>k__BackingField:
-    - <text>k__BackingField: Move towards the available workstation.
+    - <text>k__BackingField: "D\xE9placez-vous vers le poste de travail disponible."
       <node_ID>k__BackingField: beb6960e-179b-44ab-8fc8-4e5e02f5d921
     <group_ID>k__BackingField: 8f735cbe-b33e-4010-bb2b-2b4264a28344
     <node_type>k__BackingField: 1
     <pos>k__BackingField: {x: 5494, y: 1786}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: d8761dd1-da7e-49e5-a671-11a6acdfd342
     <name>k__BackingField: 1
-    <text>k__BackingField: 'Documentaliste : "Je vous accompagne."'
+    <text>k__BackingField: '"Je vous accompagne."'
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 9bea0153-f1e5-4cdc-967a-4d1a60175730
@@ -262,7 +250,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4034, y: 2889}
     <character>k__BackingField: Character_0
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 2
+    <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 9bea0153-f1e5-4cdc-967a-4d1a60175730
@@ -277,7 +265,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4307, y: 2889}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: e4a29cf0-a388-484a-86b7-362cff2dcceb
@@ -292,13 +280,13 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4803, y: 2889}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: da67e4c6-02d4-4ff4-add7-03fbc7baba44
     <name>k__BackingField: 6
-    <text>k__BackingField: "Documentaliste : \"Cet ordinateur ne semble pas utilis\xE9.
-      Est-ce qu'il serait possible que vous le lib\xE9riez ?\""
+    <text>k__BackingField: "\"Cet ordinateur ne semble pas utilis\xE9. Est-ce qu'il
+      serait possible que vous le lib\xE9riez ?\""
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 4645f6ca-7300-4ca7-9b2b-cd1e8cb78341
@@ -307,7 +295,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4034, y: 3305}
     <character>k__BackingField: Character_0
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 2
+    <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 4645f6ca-7300-4ca7-9b2b-cd1e8cb78341
@@ -323,7 +311,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4642, y: 3305}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 1ac73942-59e2-42a2-9e93-a56cd95447e7
@@ -337,14 +325,13 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 7323, y: 1255}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 2146a3f5-3639-4f04-abae-e52a2fc6e77a
     <name>k__BackingField: 2
-    <text>k__BackingField: 'Etudiant : "Ah, non. Un ami va revenir. Par contre, on
-      n''a pas vraiment besoin de trois ordinateur. Si tu veux je peux te laisser
-      le mien."'
+    <text>k__BackingField: '"Ah, non. Un ami va revenir. Par contre, on n''a pas
+      vraiment besoin de trois ordinateur. Si tu veux je peux te laisser le mien."'
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 6fe69596-0645-4910-807a-46c1e31829fc
@@ -353,13 +340,12 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 8055, y: 2338}
     <character>k__BackingField: Character_1
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 3
+    <char_dropdown_index>k__BackingField: 2
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: c24091be-e48f-4192-9ccd-4828506f92ab
     <name>k__BackingField: 3
-    <text>k__BackingField: "Etudiant : \"Pardon, mais il y a d\xE9j\xE0 quelqu'un
-      sur cet ordinateur.\""
+    <text>k__BackingField: "\"Pardon, mais il y a d\xE9j\xE0 quelqu'un sur cet ordinateur.\""
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 69c3ea6a-7141-428c-afdf-40b203428b93
@@ -368,7 +354,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 7323, y: 1466}
     <character>k__BackingField: Character_1
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 3
+    <char_dropdown_index>k__BackingField: 2
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: b1a38448-9867-403c-8b11-dedd4957cf15
@@ -387,7 +373,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 7323, y: 1685}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 610cfc97-da17-4189-b632-e7e78a98a340
@@ -409,16 +395,16 @@ MonoBehaviour:
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: b3249e20-be26-48fe-8291-36526c655b93
     <name>k__BackingField: 1
-    <text>k__BackingField: 'Etudiant : "Pas de soucis."'
+    <text>k__BackingField: '"Pas de soucis."'
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 2e6769e1-4e5f-456e-be8f-83ac96821515
     <group_ID>k__BackingField: b6dab75b-e3dc-448b-ab1e-4b18f6d8f2c3
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 8771, y: 2905}
-    <character>k__BackingField: Character_2
+    <character>k__BackingField: Character_1
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 4
+    <char_dropdown_index>k__BackingField: 2
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 2e6769e1-4e5f-456e-be8f-83ac96821515
@@ -433,7 +419,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 9087, y: 2948}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 6fe69596-0645-4910-807a-46c1e31829fc
@@ -447,7 +433,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 9637, y: 3002}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: dcc7d443-0e75-459a-976a-7c2b2c43fd4a
@@ -463,30 +449,14 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 10029, y: 1896}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
-    <dlog_tip_text>k__BackingField: 
-  - <ID>k__BackingField: dc9e2751-d955-4467-a63e-03880fecd7fe
-    <name>k__BackingField: 2
-    <text>k__BackingField: "Votre professeur vous a indiqu\xE9 que les ordinateurs
-      de la salle informatique de la Biblioth\xE8que Universitaire poss\xE8dent une
-      licence de ce logiciel."
-    <options>k__BackingField:
-    - <text>k__BackingField: Next Node
-      <node_ID>k__BackingField: 5e3b35ff-299a-48b3-a8ac-7ea196e9dc20
-    <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
-    <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 935, y: 229}
-    <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 4ae4d37e-d28e-4f49-af9f-404ed6ae388e
     <name>k__BackingField: 2
-    <text>k__BackingField: "Documentaliste : \"Bien s\xFBr, les ordinateurs de la
-      salle informatique sont disponibles pour \xE7a.\nHum, il y a du monde aujourd'hui.
-      Revenez me voir si vous ne trouvez pas de place.\""
+    <text>k__BackingField: "\"Bien s\xFBr, les ordinateurs de la salle informatique
+      sont disponibles pour \xE7a.\nHum, il y a du monde aujourd'hui. Revenez me
+      voir si vous ne trouvez pas de place.\""
     <options>k__BackingField:
     - <text>k__BackingField: '"Justement, en passant, j''ai vu qu''il n''y en avait
         pas."'
@@ -500,7 +470,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 5141, y: 2273}
     <character>k__BackingField: Character_0
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 2
+    <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: beb6960e-179b-44ab-8fc8-4e5e02f5d921
@@ -535,7 +505,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 6192, y: 1946}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 76030d82-eab0-4c55-bdb5-44ef2043d310
@@ -551,7 +521,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 6710, y: 2156}
     <character>k__BackingField: Character_1
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 3
+    <char_dropdown_index>k__BackingField: 2
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 8b01c73f-1371-4485-9e0b-69901c145cc2
@@ -565,7 +535,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4838, y: 3096}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: ec8c2b26-9272-4766-8e3b-a105ef1cafd6
@@ -579,13 +549,13 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 3190, y: 466}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 63381ea8-e441-4904-a949-44d8d9823db0
     <name>k__BackingField: 3
-    <text>k__BackingField: 'Documentaliste : "Excusez-moi. Vous avez l''air de chercher
-      quelque chose, je peux vous aider ?"'
+    <text>k__BackingField: '"Excusez-moi. Vous avez l''air de chercher quelque chose,
+      je peux vous aider ?"'
     <options>k__BackingField:
     - <text>k__BackingField: "Acc\xE8s \xE0 VScode"
       <node_ID>k__BackingField: afd57565-d685-4c4e-81cd-d4c3f29fd742
@@ -613,7 +583,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4143, y: 3096}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: ba006560-d50a-40d9-8d03-e39883d53f4b
@@ -643,22 +613,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 9546, y: 1896}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 2
-    <dlog_tip_text>k__BackingField: 
-  - <ID>k__BackingField: a24a663b-f00a-4744-be96-9f1e4e4b89d0
-    <name>k__BackingField: 3
-    <text>k__BackingField: 'Etudiant : "La salle est pleine. Si tu veux un ordinateur,
-      on peut t''en laisser un si tu veux."'
-    <options>k__BackingField:
-    - <text>k__BackingField: Next Node
-      <node_ID>k__BackingField: 6fe69596-0645-4910-807a-46c1e31829fc
-    <group_ID>k__BackingField: 26da043d-7085-424d-a725-a5adf88e9669
-    <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 9662, y: 2123}
-    <character>k__BackingField: Character_2
-    <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 4
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 99eb63d0-56c5-4907-ad79-bdcf8fc28cd6
@@ -673,7 +628,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 8158, y: 2108}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: dd519627-2c89-4cad-852b-9c468f1b1d3a
@@ -687,7 +642,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 14259, y: 4550}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_2
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 3
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 902c6a27-4fc3-4293-a3d9-bfd9c7d10412
@@ -702,7 +657,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 10801, y: 3884}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_2
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 3
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 78caaae7-bc16-4e7e-96d4-aeb2590ad7fe
@@ -721,7 +676,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 11154, y: 4115}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_2
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 3
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 7cba8fa6-a054-4bef-b9e3-6d9be74d31f4
@@ -735,13 +690,13 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 12332, y: 3916}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 7b749a79-99b8-4853-bdce-c65d3b31aa21
     <name>k__BackingField: 3
-    <text>k__BackingField: "Etudiant : \"Oui, sans probl\xE8me, mais n'oublie pas
-      de te d\xE9connecter une fois que tu auras termin\xE9.\""
+    <text>k__BackingField: "\"Oui, sans probl\xE8me, mais n'oublie pas de te d\xE9connecter
+      une fois que tu auras termin\xE9.\""
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 511f9731-cb0e-4f52-b798-3ac869e6b438
@@ -750,7 +705,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 12332, y: 4141}
     <character>k__BackingField: Character_1
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 3
+    <char_dropdown_index>k__BackingField: 2
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: f3cdc46b-a7d1-4f94-9a05-a8820bdc56b7
@@ -765,7 +720,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 12740, y: 4594}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: bce468f5-c627-4a1f-9b2f-290000f698eb
@@ -781,13 +736,13 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 13176, y: 4594}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 90bb384a-d680-4dec-9e89-0884853dd969
     <name>k__BackingField: 3
-    <text>k__BackingField: "Documentaliste : \"Oui. J'ai \xE0 disposition des codes
-      d'acc\xE8s pour les \xE9tudiants.\nIl me faudra ta carte \xE9tudiante par contre.\""
+    <text>k__BackingField: "\"Oui. J'ai \xE0 disposition des codes d'acc\xE8s pour
+      les \xE9tudiants.\nIl me faudra ta carte \xE9tudiante par contre.\""
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 1f949fcb-7f5c-4e1f-938a-7bfb8565f719
@@ -796,7 +751,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 12740, y: 4819}
     <character>k__BackingField: Character_0
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 2
+    <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: e9660b7a-f7e6-4f52-8665-cca08cc36dcd
@@ -810,7 +765,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 11885, y: 4607}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 1f949fcb-7f5c-4e1f-938a-7bfb8565f719
@@ -824,7 +779,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 13212, y: 4819}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 7a577f13-250a-4eaa-bc7b-7692c1368e24
@@ -840,13 +795,13 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 12644, y: 3916}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 4b44d1e4-b491-4251-a7b6-1d18a6014c9a
     <name>k__BackingField: 4
     <text>k__BackingField: "Vous tentez avec un autre qui vous revient mais le r\xE9sultat
-      est le m\xEAme.\nUne derni\xE8re tentative vous fait abandonner."
+      est le m\xEAme.\r\nUne derni\xE8re tentative sans succ\xE8s vous fait abandonner."
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 78caaae7-bc16-4e7e-96d4-aeb2590ad7fe
@@ -855,7 +810,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 11270, y: 3884}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_2
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 3
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 77a1e18f-f8cb-41a4-a7d3-2bf124fb710a
@@ -870,7 +825,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 13129, y: 5040}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 68b6591b-2d37-40ba-9602-a2e7aa360f0f
@@ -885,7 +840,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 11270, y: 3669}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_2
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 3
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: af96f243-9a2a-44d9-a214-a702937bbf7a
@@ -899,7 +854,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 10824, y: 3669}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_2
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 3
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 4e6ccf96-b339-46ed-b427-cb55bfad046c
@@ -911,12 +866,12 @@ MonoBehaviour:
       <node_ID>k__BackingField: dc9e2751-d955-4467-a63e-03880fecd7fe
     <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
     <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 285, y: 229}
+    <pos>k__BackingField: {x: -994, y: 322}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
-    <dlog_tip_text>k__BackingField: This is a tip. Enjoy being tipped.
+    <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 5e3b35ff-299a-48b3-a8ac-7ea196e9dc20
     <name>k__BackingField: 3
     <text>k__BackingField: Vous vous y rendez donc pour commencer votre devoir.
@@ -925,10 +880,10 @@ MonoBehaviour:
       <node_ID>k__BackingField: ce0b5ae8-d412-4b91-a910-edada7f9ee78
     <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
     <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 227, y: 461}
+    <pos>k__BackingField: {x: -1052, y: 554}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: ce0b5ae8-d412-4b91-a910-edada7f9ee78
@@ -940,10 +895,10 @@ MonoBehaviour:
       <node_ID>k__BackingField: 1d9d860a-8b4e-4254-987a-f4efc811d0c9
     <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
     <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 585, y: 461}
+    <pos>k__BackingField: {x: -694, y: 554}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 1d9d860a-8b4e-4254-987a-f4efc811d0c9
@@ -954,15 +909,15 @@ MonoBehaviour:
       <node_ID>k__BackingField: c28a0bbd-b7b0-4bb3-8a35-5c39e32c7da4
     <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
     <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 1253, y: 461}
+    <pos>k__BackingField: {x: -26, y: 554}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: c28a0bbd-b7b0-4bb3-8a35-5c39e32c7da4
     <name>k__BackingField: 6
-    <text>k__BackingField: 'Documentaliste : "Bonjour, bienvenue."'
+    <text>k__BackingField: '"Bonjour, bienvenue."'
     <options>k__BackingField:
     - <text>k__BackingField: Saluer en passant
       <node_ID>k__BackingField: ec8c2b26-9272-4766-8e3b-a105ef1cafd6
@@ -972,42 +927,16 @@ MonoBehaviour:
       <node_ID>k__BackingField: a0473371-543d-488e-b07e-a4b3f8890965
     <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
     <node_type>k__BackingField: 1
-    <pos>k__BackingField: {x: 1516, y: 461}
+    <pos>k__BackingField: {x: 237, y: 554}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 2
-    <bg_dropdown_index>k__BackingField: 1
-    <dlog_tip_text>k__BackingField: 
-  - <ID>k__BackingField: 4f456738-9e3b-49fc-9ece-91fb75861bb6
-    <name>k__BackingField: 1
-    <text>k__BackingField: "Documentaliste : \"Oui tout \xE0 fait. Ils sont l\xE0
-      pour \xE7a.\""
-    <options>k__BackingField:
-    - <text>k__BackingField: Next Node
-      <node_ID>k__BackingField: 1d9d1db7-8b0a-4a1f-babb-4b4296f77ee0
-    <group_ID>k__BackingField: 2e424720-b5dd-4dd8-aaac-01ea59ff9872
-    <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 3222, y: 995}
-    <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
     <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
-    <dlog_tip_text>k__BackingField: 
-  - <ID>k__BackingField: 1d9d1db7-8b0a-4a1f-babb-4b4296f77ee0
-    <name>k__BackingField: 2
-    <text>k__BackingField: 'Vous : "Peut-on utiliser librement les ordinateurs de
-      la salle informatique ?"'
-    <options>k__BackingField:
-    - <text>k__BackingField: Next Node
-      <node_ID>k__BackingField: 1f972573-5e34-45ff-8a7b-70abe0811bd2
-    <group_ID>k__BackingField: 2e424720-b5dd-4dd8-aaac-01ea59ff9872
-    <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: 3203, y: 1235}
-    <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 2
-    <bg_dropdown_index>k__BackingField: 1
-    <dlog_tip_text>k__BackingField: 
+    <dlog_tip_text>k__BackingField: "Lorsque vous entrez dans une Biblioth\xE8que
+      Universitaire, la personne pr\xE9sente \xE0 l'accueil travaille ici et est
+      \xE0 votre disposition pour vous donner des renseignements. Il est alors commun\xE9ment
+      admis de la saluer. Un \"bonjour\" en r\xE9ponse au sien suffit. Si elle ne
+      vous pr\xE9sente pas de salutation, vous pouvez l'initier."
   - <ID>k__BackingField: 94a3b123-e184-45b4-bbd4-8e0de8d4a4d1
     <name>k__BackingField: 1
     <text>k__BackingField: "Vous avancez davantage dans la salle et cherchez un endroit
@@ -1020,7 +949,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4040, y: 741}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 58688fb2-9d75-496f-9dd7-8c81ea05839b
@@ -1030,16 +959,17 @@ MonoBehaviour:
       \xE9changent joyeusement \xE0 un volume sonore que vous trouvez bien \xE9lev\xE9
       pour un tel endroit."
     <options>k__BackingField:
-    - <text>k__BackingField: There is no room for me here, I will look elsewhere.
+    - <text>k__BackingField: Il n'y a pas de place pour moi ici, je vais chercher
+        ailleurs.
       <node_ID>k__BackingField: dc52172d-9991-4bc8-9df0-d12b06103cd2
-    - <text>k__BackingField: Advance towards the available workstation.
+    - <text>k__BackingField: Avancez vers le poste de travail disponible.
       <node_ID>k__BackingField: beb6960e-179b-44ab-8fc8-4e5e02f5d921
     <group_ID>k__BackingField: 1e7be066-bcdd-4eda-946c-b7fefb633af4
     <node_type>k__BackingField: 1
     <pos>k__BackingField: {x: 4040, y: 1203}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: dc52172d-9991-4bc8-9df0-d12b06103cd2
@@ -1068,7 +998,7 @@ MonoBehaviour:
     <group_ID>k__BackingField: 7c2e1873-89d3-4c94-ac2d-933b6dfa2a50
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 4786, y: 2294}
-    <character>k__BackingField: Narrator
+    <character>k__BackingField: Character_0
     <background>k__BackingField: Background_0
     <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
@@ -1085,7 +1015,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 12926, y: 4141}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: c85cb7c2-64a9-4992-bcff-f7f1ea5147c5
@@ -1100,7 +1030,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 6763, y: 1946}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: fc08b0bb-0b6f-4fb2-83a7-1e6bf6f8742a
@@ -1115,7 +1045,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 7583, y: 1255}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 69c3ea6a-7141-428c-afdf-40b203428b93
@@ -1130,7 +1060,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 7705, y: 1466}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 1
+    <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 46f23370-b40e-450f-b166-56ff68452e28
@@ -1149,17 +1079,17 @@ MonoBehaviour:
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 67dc6775-dcb8-4d41-a67d-c70cc14fb5c5
     <name>k__BackingField: 3
-    <text>k__BackingField: "Etudiant : \"De toutes fa\xE7ons on n'en avait pas besoin.
-      Si tu veux on peut t'en laisser un.\""
+    <text>k__BackingField: "\"De toutes fa\xE7ons on n'en avait pas besoin. Si tu
+      veux on peut t'en laisser un.\""
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
       <node_ID>k__BackingField: 6fe69596-0645-4910-807a-46c1e31829fc
     <group_ID>k__BackingField: b6dab75b-e3dc-448b-ab1e-4b18f6d8f2c3
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 9031, y: 3221}
-    <character>k__BackingField: Character_2
+    <character>k__BackingField: Character_1
     <background>k__BackingField: Background_1
-    <char_dropdown_index>k__BackingField: 4
+    <char_dropdown_index>k__BackingField: 2
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: c11480ef-599f-4707-8395-a19e3b3982d9
@@ -1174,7 +1104,81 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 9930, y: 3196}
     <character>k__BackingField: Narrator
     <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 2
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 1d9d1db7-8b0a-4a1f-babb-4b4296f77ee0
+    <name>k__BackingField: 2
+    <text>k__BackingField: 'Vous : "Peut-on utiliser librement les ordinateurs de
+      la salle informatique ?"'
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 4f456738-9e3b-49fc-9ece-91fb75861bb6
+    <group_ID>k__BackingField: 2e424720-b5dd-4dd8-aaac-01ea59ff9872
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 3003, y: 1057}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Background_0
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 4f456738-9e3b-49fc-9ece-91fb75861bb6
+    <name>k__BackingField: 1
+    <text>k__BackingField: "\"Oui tout \xE0 fait. Ils sont l\xE0 pour \xE7a.\""
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 1f972573-5e34-45ff-8a7b-70abe0811bd2
+    <group_ID>k__BackingField: 2e424720-b5dd-4dd8-aaac-01ea59ff9872
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 3471, y: 1057}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_0
     <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: df071a9b-e56a-4281-9bd9-ca9df4720ea8
+    <name>k__BackingField: 2
+    <text>k__BackingField: "Vous voyant vous arr\xEAter, elle encha\xEEne."
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: a7428b30-c1c1-4f2a-b20b-7411e4de31d6
+    <group_ID>k__BackingField: 99262684-9d97-42f3-8831-658768b96504
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 2603, y: 667}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Background_0
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: dc9e2751-d955-4467-a63e-03880fecd7fe
+    <name>k__BackingField: 2
+    <text>k__BackingField: "Votre professeur vous a indiqu\xE9 que les ordinateurs
+      de la salle informatique de la Biblioth\xE8que Universitaire poss\xE8dent une
+      licence de ce logiciel."
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 5e3b35ff-299a-48b3-a8ac-7ea196e9dc20
+    <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: -344, y: 322}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Background_0
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 1
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: a24a663b-f00a-4744-be96-9f1e4e4b89d0
+    <name>k__BackingField: 3
+    <text>k__BackingField: '"La salle est pleine. Si tu veux un ordinateur, on peut
+      t''en laisser un si tu veux."'
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 6fe69596-0645-4910-807a-46c1e31829fc
+    <group_ID>k__BackingField: 26da043d-7085-424d-a725-a5adf88e9669
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 9662, y: 2123}
+    <character>k__BackingField: Character_2
+    <background>k__BackingField: Background_1
+    <char_dropdown_index>k__BackingField: 3
     <bg_dropdown_index>k__BackingField: 2
     <dlog_tip_text>k__BackingField: 
   <previous_group_names>k__BackingField:
@@ -1215,7 +1219,6 @@ MonoBehaviour:
     - 1x2x2x1x1
     - 1x2x2x1x1x1
     - 1x2x2x1x1x2
-    - START
     - 1x2x1x1
     - 1x2x2
     - 1x2x2x3
@@ -1224,4 +1227,5 @@ MonoBehaviour:
     - 1x3x1
     - 1x3x2
     - 1x3x3
+    - START
     - 1x1x2x3

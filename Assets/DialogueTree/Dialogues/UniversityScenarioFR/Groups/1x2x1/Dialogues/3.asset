@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 3
-  <text>k__BackingField: 'Documentaliste : "Excusez-moi. Vous avez l''air de chercher
-    quelque chose, je peux vous aider ?"'
+  <text>k__BackingField: '"Excusez-moi. Vous avez l''air de chercher quelque chose,
+    je peux vous aider ?"'
   <options>k__BackingField:
   - <text>k__BackingField: "Acc\xE8s \xE0 VScode"
     <next_node>k__BackingField: {fileID: 11400000, guid: d921f944c2d8f47438feeba71442beb4, type: 2}

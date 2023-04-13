@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5018052290431845444, guid: 4f3a4063e47ca9c4bba38b324349752c, type: 3}
       propertyPath: m_Name
-      value: Narration
+      value: TipText
       objectReference: {fileID: 0}
     - target: {fileID: 5018052290431845447, guid: 4f3a4063e47ca9c4bba38b324349752c, type: 3}
       propertyPath: m_Pivot.x

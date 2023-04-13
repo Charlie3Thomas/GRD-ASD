@@ -28,6 +28,8 @@ namespace CT
             this.transform.SetAsFirstSibling();
 
             this.GetComponent<RectTransform>().sizeDelta = new Vector2(600, 20 * line_count);
+
+            Debug.Log($"{this.gameObject.name} + GetLineCount");
         }
     }
 }

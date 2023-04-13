@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: NodeName
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: NodeName
-  <text>k__BackingField: Vous poursuivez votre route et pour atteindre l'espace informatique.
+  <text>k__BackingField: Vous poursuivez votre route pour atteindre l'espace informatique.
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: e6c440084af4204478a58f1b77469bce, type: 2}
   <type>k__BackingField: 0
   <is_start>k__BackingField: 0
-  <tip_text>k__BackingField: 
+  <tip_text>k__BackingField: "Les documentalistes, dont le bureau se situe \xE0 l'accueil
+    de la BU, sont \xE0 votre disposition pour vous donner des renseignements ou
+    vous aider. N'h\xE9sitez pas \xE0 les solliciter si vous rencontrez des difficult\xE9s."
   <character>k__BackingField: Narrator
   <background>k__BackingField: Background_0
-  <char_dropdown_index>k__BackingField: 1
+  <char_dropdown_index>k__BackingField: 0
   <bg_dropdown_index>k__BackingField: 1

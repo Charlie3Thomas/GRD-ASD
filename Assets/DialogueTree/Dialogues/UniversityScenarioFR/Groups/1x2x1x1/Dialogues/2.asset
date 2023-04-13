@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 2
-  <text>k__BackingField: "Documentaliste : \"Bien s\xFBr, les ordinateurs de la salle
-    informatique sont disponibles pour \xE7a.\nHum, il y a du monde aujourd'hui.
-    Revenez me voir si vous ne trouvez pas de place.\""
+  <text>k__BackingField: "\"Bien s\xFBr, les ordinateurs de la salle informatique
+    sont disponibles pour \xE7a.\nHum, il y a du monde aujourd'hui. Revenez me voir
+    si vous ne trouvez pas de place.\""
   <options>k__BackingField:
   - <text>k__BackingField: '"Justement, en passant, j''ai vu qu''il n''y en avait
       pas."'
@@ -29,5 +29,5 @@ MonoBehaviour:
   <tip_text>k__BackingField: 
   <character>k__BackingField: Character_0
   <background>k__BackingField: Background_0
-  <char_dropdown_index>k__BackingField: 2
+  <char_dropdown_index>k__BackingField: 1
   <bg_dropdown_index>k__BackingField: 1

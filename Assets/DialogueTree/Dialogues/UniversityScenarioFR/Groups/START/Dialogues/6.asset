@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 6
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 6
-  <text>k__BackingField: 'Documentaliste : "Bonjour, bienvenue."'
+  <text>k__BackingField: '"Bonjour, bienvenue."'
   <options>k__BackingField:
   - <text>k__BackingField: Saluer en passant
     <next_node>k__BackingField: {fileID: 11400000, guid: 16497571028590943ada957f9dd786cf, type: 2}
@@ -23,8 +23,12 @@ MonoBehaviour:
     <next_node>k__BackingField: {fileID: 11400000, guid: d08c14897483d2c4ea53655854a12d53, type: 2}
   <type>k__BackingField: 1
   <is_start>k__BackingField: 0
-  <tip_text>k__BackingField: 
+  <tip_text>k__BackingField: "Lorsque vous entrez dans une Biblioth\xE8que Universitaire,
+    la personne pr\xE9sente \xE0 l'accueil travaille ici et est \xE0 votre disposition
+    pour vous donner des renseignements. Il est alors commun\xE9ment admis de la
+    saluer. Un \"bonjour\" en r\xE9ponse au sien suffit. Si elle ne vous pr\xE9sente
+    pas de salutation, vous pouvez l'initier."
   <character>k__BackingField: Character_0
   <background>k__BackingField: Background_0
-  <char_dropdown_index>k__BackingField: 2
+  <char_dropdown_index>k__BackingField: 1
   <bg_dropdown_index>k__BackingField: 1

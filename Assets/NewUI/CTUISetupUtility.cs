@@ -32,6 +32,7 @@ namespace CT.UI.Engine
         [SerializeField] private GameObject image_prefab;
         [SerializeField] private GameObject text_prefab;
         [SerializeField] private GameObject tip_bttn_prefab;
+        [SerializeField] private GameObject tip_text_window;
         [SerializeField] private GameObject txt_bttn_prefab;
 
         // Anchor Points
@@ -72,6 +73,10 @@ namespace CT.UI.Engine
 
         private void Update()
         {
+            if (Input.GetKey("escape"))
+            {
+                UnityEngine.Application.Quit();
+            }
         }
 
         public void RefreshUI()
@@ -91,14 +96,16 @@ namespace CT.UI.Engine
             InstantiateNarrationWindow(node_data.GetDlogText());
 
             if (node_data.IsThereATip())
+            {
                 // Instantiate tip button
+                Destroy(tip.gameObject);
                 InstantiateRevealTipButton();
+            }
             else
                 // Destroy tip button
                 Destroy(show_tip_button);
 
-            // Set text to tip text and hide/show window
-            SetTipTextAndStatus();
+            
         }
 
 
@@ -112,13 +119,18 @@ namespace CT.UI.Engine
 
             ResizeButtonToTextureScale(show_tip_button.GetComponent<UnityEngine.UI.Button>(), 1);
 
+            tip = Instantiate(tip_text_window, tip_anchor_point);
+
+            // Set text to tip text and hide/show window
+            SetTipTextAndStatus();
+
             show_tip_button.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => tip.SetActive(!tip.activeSelf));
         }
 
         private void SetTipTextAndStatus()
         {
             // Tip text
-            tip.GetComponent<TextMeshProUGUI>().text = node_data.GetTipText();
+            tip.GetComponentInChildren<TextMeshProUGUI>().text = node_data.GetTipText();
             tip.SetActive(false);
         }
 

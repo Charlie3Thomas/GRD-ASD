@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 3
-  <text>k__BackingField: "Etudiant : \"Pardon, mais il y a d\xE9j\xE0 quelqu'un sur
-    cet ordinateur.\""
+  <text>k__BackingField: "\"Pardon, mais il y a d\xE9j\xE0 quelqu'un sur cet ordinateur.\""
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 94a67241c37db6a49a79950379e8ca16, type: 2}
@@ -23,5 +22,5 @@ MonoBehaviour:
   <tip_text>k__BackingField: 
   <character>k__BackingField: Character_1
   <background>k__BackingField: Background_1
-  <char_dropdown_index>k__BackingField: 3
+  <char_dropdown_index>k__BackingField: 2
   <bg_dropdown_index>k__BackingField: 2

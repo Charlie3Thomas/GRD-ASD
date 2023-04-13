@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 2
-  <text>k__BackingField: 'Etudiant : "Ah, non. Un ami va revenir. Par contre, on
-    n''a pas vraiment besoin de trois ordinateur. Si tu veux je peux te laisser le
-    mien."'
+  <text>k__BackingField: '"Ah, non. Un ami va revenir. Par contre, on n''a pas vraiment
+    besoin de trois ordinateur. Si tu veux je peux te laisser le mien."'
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: fcaffd356943bd746be4ec1f6a3d10d7, type: 2}
@@ -24,5 +23,5 @@ MonoBehaviour:
   <tip_text>k__BackingField: 
   <character>k__BackingField: Character_1
   <background>k__BackingField: Background_1
-  <char_dropdown_index>k__BackingField: 3
+  <char_dropdown_index>k__BackingField: 2
   <bg_dropdown_index>k__BackingField: 2

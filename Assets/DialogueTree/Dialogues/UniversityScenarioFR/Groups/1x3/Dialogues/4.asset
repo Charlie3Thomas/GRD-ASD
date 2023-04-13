@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 4
   <text>k__BackingField: "Vous tentez avec un autre qui vous revient mais le r\xE9sultat
-    est le m\xEAme.\nUne derni\xE8re tentative vous fait abandonner."
+    est le m\xEAme.\r\nUne derni\xE8re tentative sans succ\xE8s vous fait abandonner."
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 2df12d0f699bd0a48976c2b692f07527, type: 2}
@@ -23,5 +23,5 @@ MonoBehaviour:
   <tip_text>k__BackingField: 
   <character>k__BackingField: Narrator
   <background>k__BackingField: Background_2
-  <char_dropdown_index>k__BackingField: 1
+  <char_dropdown_index>k__BackingField: 0
   <bg_dropdown_index>k__BackingField: 3
