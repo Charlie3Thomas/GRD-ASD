@@ -10,6 +10,7 @@ namespace CT.UI.Engine
 {
     using Data;
     using UnityEngine.UI;
+    using UnityEngine.UIElements;
     using Utilis;
     using static System.Net.Mime.MediaTypeNames;
 
@@ -56,6 +57,8 @@ namespace CT.UI.Engine
 
         private List<GameObject> UI_cleanup;
 
+        private bool tip_status = false;
+
         private void Start()
         {
             background = new GameObject("Background");
@@ -97,24 +100,26 @@ namespace CT.UI.Engine
             // Instantiate new narration
             UpdateNarrationWindow(node_data.GetDlogText());
 
-            if (node_data.IsThereATip())
-            {
-                // Instantiate tip button
-                Destroy(tip.gameObject);
-                SetTipButtonStatus();
-            }
-            else
-                // Destroy tip button
-                Destroy(show_tip_button);
+            SetTipButtonStatus();
 
-            
+            //if (node_data.IsThereATip())
+            //{
+            //    // Instantiate tip button
+            //    Destroy(tip.gameObject);
+            //    SetTipButtonStatus();
+            //}
+            //else
+            //    // Destroy tip button
+            //    Destroy(show_tip_button);
+
+
         }
 
 
         #region Button Methods
         private void SetTipButtonStatus()
         {
-
+            tip.GetComponentInChildren<UnityEngine.UI.Button>().onClick.AddListener(() => ToggleTip());
 
             //// Instantiate tip button and place at fixed position on the screen
             //show_tip_button = Instantiate(tip_bttn_prefab, tip_anchor_point);
@@ -131,11 +136,24 @@ namespace CT.UI.Engine
             //show_tip_button.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => tip.SetActive(!tip.activeSelf));
         }
 
-        private void SetTipTextAndStatus()
+        private void ToggleTip()
         {
-            // Tip text
-            tip.GetComponentInChildren<TextMeshProUGUI>().text = node_data.GetTipText();
-            tip.SetActive(false);
+            if (tip_status == false) 
+            {
+                // Tip text
+                Debug.Log("Toggling tip!");
+                txt_narration.text = node_data.GetTipText();
+                tip.GetComponentInChildren<TextMeshProUGUI>().text = "Cacher";
+                txt_character_name.text = "Cacher";
+                tip_status = true;
+            }
+            else
+            {
+                // Dialogue text
+                Debug.Log("Toggling tip!");
+                UpdateNarrationWindow(node_data.GetDlogText());
+            }
+            
         }
 
         private void InstantiateNextDialogueButton()
@@ -201,6 +219,16 @@ namespace CT.UI.Engine
         {
             txt_narration.text = _dlog;
             txt_character_name.text = node_data.GetCharacterName();
+            tip_status = false;
+
+            if (node_data.IsThereATip())
+            {
+                tip.SetActive(true);
+            }
+            else
+            {
+                tip.SetActive(false);
+            }
 
             // UPDATE TEXT SIZE BASED ON STRING LENGTH
 

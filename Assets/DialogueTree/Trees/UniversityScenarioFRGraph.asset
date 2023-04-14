@@ -16,16 +16,16 @@ MonoBehaviour:
   <groups>k__BackingField:
   - <ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
     <name>k__BackingField: START
-    <pos>k__BackingField: {x: -1077.0001, y: 263}
+    <pos>k__BackingField: {x: -1077, y: 263}
   - <ID>k__BackingField: 99262684-9d97-42f3-8831-658768b96504
     <name>k__BackingField: 1X1X2
     <pos>k__BackingField: {x: 2304, y: 608}
   - <ID>k__BackingField: f17e72ff-b40c-4cdc-8b56-c0e97dbec195
     <name>k__BackingField: 1x1x1
-    <pos>k__BackingField: {x: 3178, y: 376.00003}
+    <pos>k__BackingField: {x: 3178, y: 376}
   - <ID>k__BackingField: 2e424720-b5dd-4dd8-aaac-01ea59ff9872
     <name>k__BackingField: 1x1x2x3
-    <pos>k__BackingField: {x: 2978.0002, y: 998}
+    <pos>k__BackingField: {x: 2978, y: 998}
   - <ID>k__BackingField: d96577f3-8076-416e-99ad-b9cc964e1bdb
     <name>k__BackingField: 1x1x3
     <pos>k__BackingField: {x: 2282, y: 1535}
@@ -34,7 +34,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4015, y: 682}
   - <ID>k__BackingField: 91bc4b24-8593-4fa4-a8bb-99ebdbeac3de
     <name>k__BackingField: 1x2x2
-    <pos>k__BackingField: {x: 5619.0005, y: 1166}
+    <pos>k__BackingField: {x: 5619, y: 1166}
   - <ID>k__BackingField: d5dbd6e4-4aaf-4933-baea-b5b1e703d004
     <name>k__BackingField: 1x2x1
     <pos>k__BackingField: {x: 3793, y: 1515}
@@ -46,10 +46,10 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4761, y: 2214}
   - <ID>k__BackingField: d30a1163-c087-4ba5-aef2-3b359db09351
     <name>k__BackingField: 1x2x1x1x1
-    <pos>k__BackingField: {x: 4009.0002, y: 2779}
+    <pos>k__BackingField: {x: 4009, y: 2779}
   - <ID>k__BackingField: d6fab745-1d1c-4cfe-8b57-01ff118f2256
     <name>k__BackingField: 1x2x2x3
-    <pos>k__BackingField: {x: 6167.0005, y: 1887.0001}
+    <pos>k__BackingField: {x: 6167, y: 1887}
   - <ID>k__BackingField: 8d5efe6c-cc79-4a9e-b826-cf7e120a8f85
     <name>k__BackingField: 1x2x2x1x2
     <pos>k__BackingField: {x: 8030, y: 2049}
@@ -58,10 +58,10 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 7298, y: 1196}
   - <ID>k__BackingField: 4e45f760-5652-48d5-92a9-4875f88b4e59
     <name>k__BackingField: 1x2x2x1x1
-    <pos>k__BackingField: {x: 8422, y: 1407.0001}
+    <pos>k__BackingField: {x: 8422, y: 1407}
   - <ID>k__BackingField: b6dab75b-e3dc-448b-ab1e-4b18f6d8f2c3
     <name>k__BackingField: 1x2x2x1x1x1
-    <pos>k__BackingField: {x: 8746.001, y: 2846}
+    <pos>k__BackingField: {x: 8746, y: 2846}
   - <ID>k__BackingField: 26da043d-7085-424d-a725-a5adf88e9669
     <name>k__BackingField: 1x2x2x1x1x2
     <pos>k__BackingField: {x: 9521, y: 1837}
@@ -685,7 +685,7 @@ MonoBehaviour:
     <background>k__BackingField: Background_0
     <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 1
-    <dlog_tip_text>k__BackingField: Bingo bango bongo
+    <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 5e3b35ff-299a-48b3-a8ac-7ea196e9dc20
     <name>k__BackingField: 3
     <charcter_name>k__BackingField: Narrateur
