@@ -30,10 +30,11 @@ namespace CT.UI.Engine
         // Prefabs
         [Header("UI Prefabs")]
         [SerializeField] private GameObject image_prefab;
-        [SerializeField] private GameObject text_prefab;
-        [SerializeField] private GameObject tip_bttn_prefab;
-        [SerializeField] private GameObject tip_text_window;
+        //[SerializeField] private GameObject text_prefab;
+        //[SerializeField] private GameObject tip_bttn_prefab;
+        //[SerializeField] private GameObject tip_text_window;
         [SerializeField] private GameObject txt_bttn_prefab;
+        [SerializeField] private TextMeshProUGUI txt_narration;
 
         // Anchor Points
         [Header("Anchor Points")]
@@ -93,13 +94,13 @@ namespace CT.UI.Engine
             InstantiateChoiceButton(node_data.GetDlogChoices().Count);
 
             // Instantiate new narration
-            InstantiateNarrationWindow(node_data.GetDlogText());
+            UpdateNarrationWindow(node_data.GetDlogText());
 
             if (node_data.IsThereATip())
             {
                 // Instantiate tip button
                 Destroy(tip.gameObject);
-                InstantiateRevealTipButton();
+                SetTipButtonStatus();
             }
             else
                 // Destroy tip button
@@ -110,21 +111,23 @@ namespace CT.UI.Engine
 
 
         #region Button Methods
-        private void InstantiateRevealTipButton()
+        private void SetTipButtonStatus()
         {
-            // Instantiate tip button and place at fixed position on the screen
-            show_tip_button = Instantiate(tip_bttn_prefab, tip_anchor_point);
 
-            show_tip_button.GetComponentInChildren<TextMeshProUGUI>().text = "";
 
-            ResizeButtonToTextureScale(show_tip_button.GetComponent<UnityEngine.UI.Button>(), 1);
+            //// Instantiate tip button and place at fixed position on the screen
+            //show_tip_button = Instantiate(tip_bttn_prefab, tip_anchor_point);
 
-            tip = Instantiate(tip_text_window, tip_anchor_point);
+            //show_tip_button.GetComponentInChildren<TextMeshProUGUI>().text = "";
 
-            // Set text to tip text and hide/show window
-            SetTipTextAndStatus();
+            //ResizeButtonToTextureScale(show_tip_button.GetComponent<UnityEngine.UI.Button>(), 1);
 
-            show_tip_button.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => tip.SetActive(!tip.activeSelf));
+            //tip = Instantiate(tip_text_window, tip_anchor_point);
+
+            //// Set text to tip text and hide/show window
+            //SetTipTextAndStatus();
+
+            //show_tip_button.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => tip.SetActive(!tip.activeSelf));
         }
 
         private void SetTipTextAndStatus()
@@ -180,7 +183,7 @@ namespace CT.UI.Engine
 
                 choices_buttons.Add(button);
 
-                button.transform.position += new Vector3(0.0f, i * 60.0f, 0.0f);
+                button.transform.position += new Vector3(0.0f, i * 110.0f, 0.0f);
 
                 //ResizeButtonToTextureScale(button.GetComponent<UnityEngine.UI.Button>(), 2);
 
@@ -193,15 +196,19 @@ namespace CT.UI.Engine
             }
         }
 
-        private void InstantiateNarrationWindow(string _dlog)
+        private void UpdateNarrationWindow(string _dlog)
         {
-            Destroy(narration);
+            txt_narration.GetComponentInChildren<TextMeshProUGUI>().text = _dlog;
 
-            narration = Instantiate(text_prefab, narration_anchor_point);
+            // UPDATE TEXT SIZE BASED ON STRING LENGTH
 
-            //Debug.Log(node_data.GetCharacter());
+            //Destroy(narration);
 
-            narration.GetComponentInChildren<TextMeshProUGUI>().text = $"{node_data.GetCharacter()}: {_dlog}";
+            //narration = Instantiate(text_prefab, narration_anchor_point);
+
+            ////Debug.Log(node_data.GetCharacter());
+
+            //narration.GetComponentInChildren<TextMeshProUGUI>().text = $"{node_data.GetCharacter()}: {_dlog}";
 
             //ResizeButtonToTextureScale(narration.GetComponent<UnityEngine.UI.Button>(), 4);
 
