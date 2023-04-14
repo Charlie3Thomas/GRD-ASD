@@ -282,18 +282,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 736947197, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1099276553, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
-      propertyPath: m_text
-      value: Conseil
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
-      propertyPath: tip
-      value: 
-      objectReference: {fileID: 1355791895}
     - target: {fileID: 4903672100740365349, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -385,8 +373,3 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
---- !u!1 &1355791895 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4903672099086502671, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
-  m_PrefabInstance: {fileID: 901090330}
-  m_PrefabAsset: {fileID: 0}

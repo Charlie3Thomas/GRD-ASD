@@ -22,7 +22,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 2304, y: 608}
   - <ID>k__BackingField: f17e72ff-b40c-4cdc-8b56-c0e97dbec195
     <name>k__BackingField: 1x1x1
-    <pos>k__BackingField: {x: 3178, y: 376}
+    <pos>k__BackingField: {x: 3178, y: 376.00003}
   - <ID>k__BackingField: 2e424720-b5dd-4dd8-aaac-01ea59ff9872
     <name>k__BackingField: 1x1x2x3
     <pos>k__BackingField: {x: 2978, y: 998}
@@ -114,7 +114,7 @@ MonoBehaviour:
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: a0473371-543d-488e-b07e-a4b3f8890965
     <name>k__BackingField: NodeName
-    <charcter_name>k__BackingField: 
+    <charcter_name>k__BackingField: Narrateur
     <text>k__BackingField: Vous poursuivez votre route pour atteindre l'espace informatique.
     <options>k__BackingField:
     - <text>k__BackingField: Next Node
@@ -411,7 +411,7 @@ MonoBehaviour:
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 63381ea8-e441-4904-a949-44d8d9823db0
     <name>k__BackingField: 3
-    <charcter_name>k__BackingField: "\xC9tudiant 1"
+    <charcter_name>k__BackingField: Documentalist
     <text>k__BackingField: '"Excusez-moi. Vous avez l''air de chercher quelque chose,
       je peux vous aider ?"'
     <options>k__BackingField:
@@ -426,7 +426,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 4049, y: 1813}
     <character>k__BackingField: Character_0
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 2
+    <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 67cd9659-3953-417b-821f-43899a418078
@@ -669,22 +669,6 @@ MonoBehaviour:
     <background>k__BackingField: Background_2
     <char_dropdown_index>k__BackingField: 0
     <bg_dropdown_index>k__BackingField: 3
-    <dlog_tip_text>k__BackingField: 
-  - <ID>k__BackingField: 4e6ccf96-b339-46ed-b427-cb55bfad046c
-    <name>k__BackingField: START
-    <charcter_name>k__BackingField: Narrateur
-    <text>k__BackingField: Pour un devoir universitaire, vous avez besoin du logiciel
-      VScode, dont vous ne disposez pas sur votre ordinateur.
-    <options>k__BackingField:
-    - <text>k__BackingField: Next Node
-      <node_ID>k__BackingField: dc9e2751-d955-4467-a63e-03880fecd7fe
-    <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
-    <node_type>k__BackingField: 0
-    <pos>k__BackingField: {x: -994, y: 322}
-    <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 5e3b35ff-299a-48b3-a8ac-7ea196e9dc20
     <name>k__BackingField: 3
@@ -1251,6 +1235,22 @@ MonoBehaviour:
     <background>k__BackingField: Background_1
     <char_dropdown_index>k__BackingField: 2
     <bg_dropdown_index>k__BackingField: 2
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 4e6ccf96-b339-46ed-b427-cb55bfad046c
+    <name>k__BackingField: START
+    <charcter_name>k__BackingField: Narrateur
+    <text>k__BackingField: Pour un devoir universitaire, vous avez besoin du logiciel
+      VScode, dont vous ne disposez pas sur votre ordinateur.
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: dc9e2751-d955-4467-a63e-03880fecd7fe
+    <group_ID>k__BackingField: c78cf41a-9d26-4cc4-8941-f5061d7b25f4
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: -994, y: 322}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Background_0
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   <previous_group_names>k__BackingField:
   - START

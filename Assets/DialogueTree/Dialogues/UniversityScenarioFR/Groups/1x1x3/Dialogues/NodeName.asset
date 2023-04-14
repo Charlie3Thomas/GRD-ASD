@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: NodeName
   <text>k__BackingField: Vous poursuivez votre route pour atteindre l'espace informatique.
-  <character_name>k__BackingField: 
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: e6c440084af4204478a58f1b77469bce, type: 2}
