@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 4
   <text>k__BackingField: "Alors que vous l'en remerciez, il vous offre l'acc\xE8s
     sur votre poste."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 15dfdda29d09c7842abf6c836d35a7d0, type: 2}

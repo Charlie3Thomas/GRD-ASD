@@ -16,6 +16,7 @@ MonoBehaviour:
   <text>k__BackingField: "En parcourant la pi\xE8ce du regard, vous vous rendez rapidement
     compte que, \xE0 l'exception d'un ordinateur hors service, une seule place reste
     vacante."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 6e1baaaffedf4694cb50350d8c18f053, type: 2}

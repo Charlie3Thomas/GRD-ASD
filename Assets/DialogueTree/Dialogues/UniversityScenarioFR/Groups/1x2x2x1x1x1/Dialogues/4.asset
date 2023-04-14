@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 4
   <text>k__BackingField: Vous acquiescez.
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 2f2936c4654a7c342bc5261fc55a9d01, type: 2}

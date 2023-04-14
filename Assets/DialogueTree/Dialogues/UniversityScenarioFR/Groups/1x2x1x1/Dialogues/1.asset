@@ -16,6 +16,7 @@ MonoBehaviour:
   <text>k__BackingField: "\"Oui. J'aurais eu besoin d'acc\xE9der au logiciel VScode.\nJe
     crois savoir qu'il est sur les sessions \xE9tudiantes.\nVous savez comment je
     pourrais y avoir acc\xE8s ?\""
+  <character_name>k__BackingField: Documentalist
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: e49180b061a5b1d499dd491885616fc6, type: 2}

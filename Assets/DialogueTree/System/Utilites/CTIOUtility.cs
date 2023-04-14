@@ -103,6 +103,7 @@ namespace CT.Utils
             {
                 ID = _node.ID,
                 name = _node.node_name,
+                charcter_name = _node.character_name,
                 options = options,
                 text = _node.text,
                 group_ID = _node.group?.ID,
@@ -138,6 +139,7 @@ namespace CT.Utils
             node.Initialise(
                 _node.node_name,
                 _node.text,
+                _node.character_name,
                 _node.tip_text,
                 ConvertOptions(_node.options),
                 _node.node_type,
@@ -239,6 +241,7 @@ namespace CT.Utils
                 node.ID = n.ID;
                 node.options = options;
                 node.text = n.text;
+                node.character_name = n.charcter_name;
                 node.tip_text = n.dlog_tip_text;
                 node.character = n.character;
                 node.background = n.background;

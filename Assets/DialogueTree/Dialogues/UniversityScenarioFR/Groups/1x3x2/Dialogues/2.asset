@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 2
   <text>k__BackingField: "Vous : \"Excusez-moi, j'ai oubli\xE9 mon mot-de-passe pour
     pouvoir me connecter \xE0 ma session.\nEst-ce que vous pouvez m'aider ?\""
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: aad69dd88c944934c94114e53d2fcc45, type: 2}

@@ -17,6 +17,7 @@ namespace CT.Components
     {
         public string ID { get; set; }
         public string node_name { get; set; }
+        public string character_name { get; set; }
         public List<CTOptionSaveData> options { get; set; }
         public string text { get; set; }
         public string tip_text { get; set; }
@@ -124,6 +125,12 @@ namespace CT.Components
             //drop_down.index = dropdown_index;
             //drop_down.RegisterValueChangedCallback(OnDropDownValueChanged);
             visual_element.Add(char_drop_down);
+
+            // Character name text field
+            Foldout character_name_foldout = CTComponentUtility.CreateFoldout("Character Name");
+            TextField tf_character_name = CTComponentUtility.CreateTextField(character_name, null, callback => character_name = callback.newValue);
+            character_name_foldout.Add(tf_character_name);
+            visual_element.Add(character_name_foldout);
 
             Foldout textFoldout = CTComponentUtility.CreateFoldout("Node Text");
             TextField textTextField = CTComponentUtility.CreateTextArea(text, null, callback => text = callback.newValue);

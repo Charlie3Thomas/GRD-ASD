@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 2
   <text>k__BackingField: "En passant \xE0 l'entr\xE9e, la documentaliste, vous voyant
     perdu(e) dans vos pens\xE9es, vous interpelle."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: da58771f14ab7dc4caa889327ba082aa, type: 2}
@@ -23,5 +24,5 @@ MonoBehaviour:
   <tip_text>k__BackingField: 
   <character>k__BackingField: Narrator
   <background>k__BackingField: Background_0
-  <char_dropdown_index>k__BackingField: 1
+  <char_dropdown_index>k__BackingField: 0
   <bg_dropdown_index>k__BackingField: 1

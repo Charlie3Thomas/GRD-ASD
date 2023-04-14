@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 5
   <text>k__BackingField: Elle en profite alors pour les interroger.
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 777d90e08b4698f4da2da2f1d57b43c0, type: 2}

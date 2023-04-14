@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 5
   <text>k__BackingField: Il vous faut alors une solution.
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: "Demander de l'aide aux \xE9tudiants assis autour de vous"
     <next_node>k__BackingField: {fileID: 11400000, guid: 18be21bf87eaa314e87588bca2e5e701, type: 2}

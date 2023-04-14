@@ -35,6 +35,7 @@ namespace CT.UI.Engine
         //[SerializeField] private GameObject tip_text_window;
         [SerializeField] private GameObject txt_bttn_prefab;
         [SerializeField] private TextMeshProUGUI txt_narration;
+        [SerializeField] private TextMeshProUGUI txt_character_name;
 
         // Anchor Points
         [Header("Anchor Points")]
@@ -198,7 +199,8 @@ namespace CT.UI.Engine
 
         private void UpdateNarrationWindow(string _dlog)
         {
-            txt_narration.GetComponentInChildren<TextMeshProUGUI>().text = _dlog;
+            txt_narration.text = _dlog;
+            txt_character_name.text = node_data.GetCharacterName();
 
             // UPDATE TEXT SIZE BASED ON STRING LENGTH
 

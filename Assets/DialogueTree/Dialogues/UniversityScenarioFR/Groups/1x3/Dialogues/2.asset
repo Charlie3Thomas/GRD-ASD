@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 2
   <text>k__BackingField: "En cherchant \xE0 vous connecter \xE0 votre session, l'acc\xE8s
     vous est refus\xE9."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 008ce1dc830168c478a9141ed6b56d6a, type: 2}

@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 1
   <text>k__BackingField: "\"Excusez-moi. Je pense que vous devriez parler moins fort,
     vous pourriez d\xE9ranger les autres.\""
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 269370c574190c24992a26eaeb82b542, type: 2}

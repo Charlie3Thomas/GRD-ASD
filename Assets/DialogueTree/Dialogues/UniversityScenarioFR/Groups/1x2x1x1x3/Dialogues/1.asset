@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 1
   <text>k__BackingField: Sans prolonger la discussion, vous retournez dans la salle.
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 3d49cf1d93d7d904e9783e40e28c7fcb, type: 2}

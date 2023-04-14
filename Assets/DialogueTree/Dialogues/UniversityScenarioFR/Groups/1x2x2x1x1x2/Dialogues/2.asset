@@ -16,6 +16,7 @@ MonoBehaviour:
   <text>k__BackingField: "Un rapide coup d'\u0153il aux deux membres de son groupe
     de travail suffisent \xE0 l'\xE9tudiant plant\xE9 devant vous pour interpr\xE9ter
     la situation."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 019c2340253a5b74387a74bcc897470d, type: 2}

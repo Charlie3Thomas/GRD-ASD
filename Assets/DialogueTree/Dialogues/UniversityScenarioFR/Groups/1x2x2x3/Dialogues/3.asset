@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 3
   <text>k__BackingField: "Etudiant : \"Hum. D\xE9sol\xE9.\""
+  <character_name>k__BackingField: "\xC9tudiant 1"
   <options>k__BackingField:
   - <text>k__BackingField: S'asseoir au poste disponible
     <next_node>k__BackingField: {fileID: 11400000, guid: 6c074eba16047724fb66067c13a57338, type: 2}

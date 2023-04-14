@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 1
   <text>k__BackingField: '"Pas de soucis."'
+  <character_name>k__BackingField: Documentalist
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 25b4eb9c9c197e54faecc1fd3e0df88f, type: 2}

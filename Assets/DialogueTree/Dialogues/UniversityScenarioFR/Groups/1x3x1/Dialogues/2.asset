@@ -16,6 +16,7 @@ MonoBehaviour:
   <text>k__BackingField: "Vous : \"Excuse-moi, je ne parviens pas \xE0 me connecter
     \xE0 ma session.\nEst-ce que tu pourrais me pr\xEAter la tienne s'il te pla\xEEt
     ?\""
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 3fbff0eb745236b4b88d17cc47f15f3a, type: 2}

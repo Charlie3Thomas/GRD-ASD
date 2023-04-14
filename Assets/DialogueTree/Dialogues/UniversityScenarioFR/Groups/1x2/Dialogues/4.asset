@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 4
   <text>k__BackingField: "Vous relevez \xE9galement qu'aucun panneau ne s\xE9pare
     les bureaux les uns des autres."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 30d8831cc41f70f4b9c1f5da6be25353, type: 2}

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: NodeName
   <text>k__BackingField: "Vous h\xE9sitez un instant mais vous ravisez finalement."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 1b99996c9820cb444bfd7789bbed116a, type: 2}

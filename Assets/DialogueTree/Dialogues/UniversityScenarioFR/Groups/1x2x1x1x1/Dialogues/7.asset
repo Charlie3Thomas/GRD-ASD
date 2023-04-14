@@ -16,6 +16,7 @@ MonoBehaviour:
   <text>k__BackingField: "Le ton ne laisse que peu de place \xE0 la discussion. Les
     \xE9tudiants s'ex\xE9cutent, ferment la session et vous laissent acc\xE9der au
     poste."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 540db700524585742b6267363cf1c509, type: 2}

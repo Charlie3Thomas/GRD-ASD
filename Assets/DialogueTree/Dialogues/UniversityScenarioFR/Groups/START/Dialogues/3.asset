@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 3
   <text>k__BackingField: Vous vous y rendez donc pour commencer votre devoir.
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 6040f8a903bb22c44a7b858c0b99230a, type: 2}

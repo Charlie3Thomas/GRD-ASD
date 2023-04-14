@@ -17,6 +17,7 @@ MonoBehaviour:
     deux \xE9tudiants \xE0 moiti\xE9 occup\xE9s sur leur ordinateur respectif, \xE9changent
     joyeusement \xE0 un volume sonore que vous trouvez bien \xE9lev\xE9 pour un tel
     endroit."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Il n'y a pas de place pour moi ici, je vais chercher ailleurs.
     <next_node>k__BackingField: {fileID: 11400000, guid: adc84793e71f60545853bed9e522268a, type: 2}

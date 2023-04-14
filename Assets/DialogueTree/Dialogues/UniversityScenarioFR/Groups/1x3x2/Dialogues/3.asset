@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 3
   <text>k__BackingField: "\"Oui. J'ai \xE0 disposition des codes d'acc\xE8s pour
     les \xE9tudiants.\nIl me faudra ta carte \xE9tudiante par contre.\""
+  <character_name>k__BackingField: Documentalist
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 62d8cc651399c3644b90b230443947e4, type: 2}

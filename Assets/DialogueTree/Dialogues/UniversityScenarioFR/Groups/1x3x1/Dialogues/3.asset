@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 3
   <text>k__BackingField: "\"Oui, sans probl\xE8me, mais n'oublie pas de te d\xE9connecter
     une fois que tu auras termin\xE9.\""
+  <character_name>k__BackingField: "\xC9tudiant 1"
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 35c8f79e4212a804990f396f3446588e, type: 2}

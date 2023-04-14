@@ -219,9 +219,14 @@ namespace CT.Utilis
         }
 
         // Get current character
-        public string GetCharacter()
+        public string GetCharacterDataName()
         {
             return current_character;
+        }
+
+        public string GetCharacterName()
+        {
+            return current_node.character_name;
         }
 
         public bool IsThereATip()

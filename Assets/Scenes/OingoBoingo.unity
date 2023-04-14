@@ -619,6 +619,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5437740421362633900, guid: 5fd7dcfe111bc1348b132fe75221c589, type: 3}
     - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: txt_character_name
+      value: 
+      objectReference: {fileID: 1601222019}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: txt_background_prefab
       value: 
       objectReference: {fileID: 597649508952925378, guid: f9be20be13bf65b4bbd1ffdc07e67cfc, type: 3}
@@ -1382,7 +1386,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Documentalist
+  m_text: Character Name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

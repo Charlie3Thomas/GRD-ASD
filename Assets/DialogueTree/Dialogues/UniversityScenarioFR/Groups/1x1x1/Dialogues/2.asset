@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 2
   <text>k__BackingField: "Sans que l'\xE9change n'invite \xE0 s'\xE9tendre davantage,
     vous poursuivez votre chemin jusqu'\xE0 l'espace informatique."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: e6c440084af4204478a58f1b77469bce, type: 2}

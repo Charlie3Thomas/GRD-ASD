@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 1
   <text>k__BackingField: "Vous rejoignez le bureau de la documentaliste, puis vous
     adressez \xE0 elle."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: e432e31012546244e850dc039f8c5fc2, type: 2}

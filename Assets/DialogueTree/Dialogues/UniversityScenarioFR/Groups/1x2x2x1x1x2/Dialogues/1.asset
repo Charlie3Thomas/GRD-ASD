@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 1
   <text>k__BackingField: "Bien que fuyant son regard, vous ne trouvez pas d'ouverture
     pour vous \xE9clipser."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 255c6e20ebfb2e848bf21303d59da235, type: 2}

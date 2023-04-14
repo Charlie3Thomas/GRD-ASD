@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 6
   <text>k__BackingField: "\"Cet ordinateur ne semble pas utilis\xE9. Est-ce qu'il
     serait possible que vous le lib\xE9riez ?\""
+  <character_name>k__BackingField: Documentalist
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: d17d56b6e2f78484ba2dcc265bbe40c4, type: 2}

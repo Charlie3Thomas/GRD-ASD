@@ -16,6 +16,7 @@ MonoBehaviour:
   <text>k__BackingField: "Vous voyant approcher, les deux \xE9tudiants s'interrompent,
     bien que l'un ne trouve les moyens de calmer son rire et ne semble tout \xE0
     fait en mesure de dialoguer avec vous.\nL'autre vous questionne du regard."
+  <character_name>k__BackingField: Documentalist
   <options>k__BackingField:
   - <text>k__BackingField: S'asseoir au poste disponible
     <next_node>k__BackingField: {fileID: 11400000, guid: 6c074eba16047724fb66067c13a57338, type: 2}

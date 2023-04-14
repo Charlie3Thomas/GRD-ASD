@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 2
-  <text>k__BackingField: 'Vous : "Peut-on utiliser librement les ordinateurs de la
-    salle informatique ?"'
+  <text>k__BackingField: '"Peut-on utiliser librement les ordinateurs de la salle
+    informatique ?"'
+  <character_name>k__BackingField: Vous
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 31cd5059616d4ce4892b1d122c44fb3a, type: 2}

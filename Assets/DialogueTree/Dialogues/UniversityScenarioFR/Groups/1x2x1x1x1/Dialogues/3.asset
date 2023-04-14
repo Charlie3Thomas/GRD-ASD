@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 3
   <text>k__BackingField: "Remarquant aussit\xF4t les deux \xE9tudiants autour desquels
     r\xE8gne une ambiance tr\xE8s anim\xE9e, elle s'approche."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 6fe7a92758fb5fa4b9e86a6f912da972, type: 2}

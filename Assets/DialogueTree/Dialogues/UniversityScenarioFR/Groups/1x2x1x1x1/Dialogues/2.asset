@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 2
   <text>k__BackingField: "La documentaliste, \xE0 ces mots, se l\xE8ve et vous m\xE8ne
     jusqu'\xE0 l'espace informatique."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 3fa9a84d82b72a44bb5bfd7ac44ceb3f, type: 2}

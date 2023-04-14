@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <node_name>k__BackingField: 4
   <text>k__BackingField: "Votre carte \xE9tait \xE0 sa place et vous la lui tendez."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 45d1208b80cd66442a3d037331a10820, type: 2}

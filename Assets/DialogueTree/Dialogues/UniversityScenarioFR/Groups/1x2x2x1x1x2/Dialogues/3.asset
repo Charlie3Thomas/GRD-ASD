@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 3
   <text>k__BackingField: '"La salle est pleine. Si tu veux un ordinateur, on peut
     t''en laisser un si tu veux."'
+  <character_name>k__BackingField: " \xC9tudiant 2"
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: fcaffd356943bd746be4ec1f6a3d10d7, type: 2}

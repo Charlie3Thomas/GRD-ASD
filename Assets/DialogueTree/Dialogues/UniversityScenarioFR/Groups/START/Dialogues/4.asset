@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 4
   <text>k__BackingField: "En entrant, vous passez devant l'accueil, celui-ci prenant
     la forme d'un bureau derri\xE8re lequel si\xE8ge une documentaliste."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 22de12b3789042445b8c80e73738d213, type: 2}

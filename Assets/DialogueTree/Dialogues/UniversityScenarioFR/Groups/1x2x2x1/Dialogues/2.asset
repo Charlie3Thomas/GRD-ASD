@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 2
   <text>k__BackingField: "Apr\xE8s un instant de confusion, l'\xE9tudiant \xE0 votre
     gauche se reprend."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 3e56dcfd8a68afe47bbaedc744e6ec3e, type: 2}

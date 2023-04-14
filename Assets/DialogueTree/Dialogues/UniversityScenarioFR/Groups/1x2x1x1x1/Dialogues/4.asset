@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 4
   <text>k__BackingField: "Le silence se fait rapidement et seul un simple rappel
     des r\xE8gles essentielles de la biblioth\xE8que s'av\xE8re n\xE9cessaire."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: d305a3c0f410ba64cbcea8242ffc9e7b, type: 2}

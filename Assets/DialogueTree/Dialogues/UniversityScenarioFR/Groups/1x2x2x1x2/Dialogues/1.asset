@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 1
   <text>k__BackingField: "Vous : \"C'est le seul poste que j'ai trouv\xE9 de libre.
     Il n'est vraiment pas possible que je l'utilise ?\""
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: c702516daece70d46a1d7089b8aa7f32, type: 2}

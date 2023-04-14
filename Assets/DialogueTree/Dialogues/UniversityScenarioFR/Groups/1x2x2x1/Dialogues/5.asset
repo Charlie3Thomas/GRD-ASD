@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 5
   <text>k__BackingField: "Vous remarquez \xE9galement qu'aucun mat\xE9riel n'encombre
     le bureau.\nCela ne vous \xE9voque pas un travail tr\xE8s engag\xE9."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Se lever
     <next_node>k__BackingField: {fileID: 11400000, guid: a4242aaf0d683a446a681d87f8dea4b2, type: 2}

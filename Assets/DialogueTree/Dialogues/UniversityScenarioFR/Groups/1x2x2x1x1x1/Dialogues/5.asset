@@ -15,6 +15,7 @@ MonoBehaviour:
   <node_name>k__BackingField: 5
   <text>k__BackingField: "L'\xE9tudiant de gauche se tourne vers son ordinateur et
     ferme sa session.\nVous l'en remerciez simplement."
+  <character_name>k__BackingField: Narrateur
   <options>k__BackingField:
   - <text>k__BackingField: Next Node
     <next_node>k__BackingField: {fileID: 11400000, guid: 540db700524585742b6267363cf1c509, type: 2}
