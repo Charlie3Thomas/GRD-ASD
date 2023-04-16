@@ -22,7 +22,7 @@ MonoBehaviour:
     <pos>k__BackingField: {x: 2304, y: 608}
   - <ID>k__BackingField: f17e72ff-b40c-4cdc-8b56-c0e97dbec195
     <name>k__BackingField: 1x1x1
-    <pos>k__BackingField: {x: 3178, y: 376.00003}
+    <pos>k__BackingField: {x: 3178, y: 376}
   - <ID>k__BackingField: 2e424720-b5dd-4dd8-aaac-01ea59ff9872
     <name>k__BackingField: 1x1x2x3
     <pos>k__BackingField: {x: 2978, y: 998}
@@ -91,9 +91,9 @@ MonoBehaviour:
     <group_ID>k__BackingField: 99262684-9d97-42f3-8831-658768b96504
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 2329, y: 667}
-    <character>k__BackingField: Narrator
+    <character>k__BackingField: Character_0
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 0
+    <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 1f972573-5e34-45ff-8a7b-70abe0811bd2
@@ -884,9 +884,9 @@ MonoBehaviour:
     <group_ID>k__BackingField: 2e424720-b5dd-4dd8-aaac-01ea59ff9872
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 3003, y: 1057}
-    <character>k__BackingField: Narrator
+    <character>k__BackingField: Character_0
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 0
+    <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 4f456738-9e3b-49fc-9ece-91fb75861bb6
@@ -914,9 +914,9 @@ MonoBehaviour:
     <group_ID>k__BackingField: 99262684-9d97-42f3-8831-658768b96504
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 2603, y: 667}
-    <character>k__BackingField: Narrator
+    <character>k__BackingField: Character_0
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 0
+    <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: a24a663b-f00a-4744-be96-9f1e4e4b89d0
@@ -982,9 +982,9 @@ MonoBehaviour:
     <group_ID>k__BackingField: f17e72ff-b40c-4cdc-8b56-c0e97dbec195
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 3203, y: 435}
-    <character>k__BackingField: Narrator
+    <character>k__BackingField: Character_0
     <background>k__BackingField: Background_0
-    <char_dropdown_index>k__BackingField: 0
+    <char_dropdown_index>k__BackingField: 1
     <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: e4a29cf0-a388-484a-86b7-362cff2dcceb

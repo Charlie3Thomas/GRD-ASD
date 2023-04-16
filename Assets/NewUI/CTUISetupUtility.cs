@@ -161,7 +161,7 @@ namespace CT.UI.Engine
                 // Dialogue text
                 Debug.Log("Toggling to narration!");
                 txt_character_name.text = node_data.GetCharacterName();
-                tip.GetComponentInChildren<TextMeshProUGUI>().text = node_data.GetCharacterName();
+                tip.GetComponentInChildren<TextMeshProUGUI>().text = "Conseil";
                 txt_narration.text = node_data.GetDlogText();
                 tip_status = false;
                 return;
