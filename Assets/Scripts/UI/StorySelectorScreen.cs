@@ -7,24 +7,22 @@ using System;
 
 namespace Aspie.UI
 {
+    
     public class StorySelectorScreen : MonoBehaviour
     {
         [SerializeField]
         private Button closeButton;
         [SerializeField]
         private GameObject storyContainer;
-        private List<StoryView> storyList;
+        [SerializeField]
+        private StoryView storyPrefab;
+        private List<StoryView> storyViewList;
 
         public Action<StoryView> OnStorySelected;
-
         void Start()
         {
-            storyList = new List<StoryView>();
-            storyList = storyContainer.GetComponentsInChildren<StoryView>().ToList();
-            foreach(StoryView sv in storyList)
-            {
-                sv.OnStorySelected += selectStory;
-            }
+            storyViewList = new List<StoryView>();
+            instantiateStories();
             closeButton.onClick.AddListener(closeClicked);
         }
 
@@ -36,6 +34,16 @@ namespace Aspie.UI
         {
             Debug.Log("Story Selected :: " + sv.name);
             OnStorySelected?.Invoke(sv);
+        }
+        private void instantiateStories()
+        {
+            foreach(Story s in GameDataManager.Instance.StoryList)
+            {
+                StoryView sv = Instantiate(storyPrefab, storyContainer.transform);
+                storyViewList.Add(sv);
+                sv.OnStorySelected += selectStory;
+                sv.UdpateStory(s);
+            }
         }
     }
 }
