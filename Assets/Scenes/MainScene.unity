@@ -1354,7 +1354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92aa5c31ca505844fbfd9f32d5edfe2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeButton: {fileID: 0}
+  closeButton: {fileID: 451950015}
 --- !u!1 &304496403
 GameObject:
   m_ObjectHideFlags: 0
