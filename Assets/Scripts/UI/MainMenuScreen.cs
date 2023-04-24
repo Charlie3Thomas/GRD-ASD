@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Aspie.UI
@@ -33,7 +34,7 @@ namespace Aspie.UI
         public Action OnPlayStoryClicked;
         public Action OnSettingsClicked;
         public Action OnHelpClicked;
-        public Action<StoryView> OnStorySelected;
+        public Action<Story> OnStorySelected;
 
         void Start()
         {
@@ -80,11 +81,12 @@ namespace Aspie.UI
             Debug.Log("EXIT CLICK");
         }
 
-        private void playStory(StoryView sv)
+        private void playStory(Story s)
         {
             storySelectorScreen.gameObject.SetActive(false);
-            Debug.Log("Playing story : " + sv.name);
-            OnStorySelected?.Invoke(sv);
+            Debug.Log("Playing story : " + s.SceneName);
+            OnStorySelected?.Invoke(s);
+            SceneManager.LoadScene(s.SceneName, LoadSceneMode.Additive);
         }
 
         private void changeBGSprite()

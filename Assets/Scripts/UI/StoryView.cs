@@ -17,8 +17,10 @@ namespace Aspie.UI
         private TextMeshProUGUI contentText;
         [SerializeField]
         private Image storyImage;
+        [SerializeField]
+        private Story story;
 
-        public Action<StoryView> OnStorySelected;
+        public Action<Story> OnStorySelected;
 
         void Start()
         {
@@ -27,7 +29,7 @@ namespace Aspie.UI
 
         private void selectClicked()
         {
-            OnStorySelected?.Invoke(this);
+            OnStorySelected?.Invoke(story);
         }
         public void UdpateStory(Story story)
         {
@@ -35,6 +37,7 @@ namespace Aspie.UI
             titleText.text = story.Title;
             contentText.text = story.Context;
             storyImage.sprite = story.StorySprite;
+            this.story = story;
         }
     }
 }
