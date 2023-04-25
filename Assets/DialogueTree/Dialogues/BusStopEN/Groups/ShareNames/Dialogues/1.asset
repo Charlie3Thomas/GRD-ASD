@@ -23,6 +23,6 @@ MonoBehaviour:
   <tip_text>k__BackingField: When someone shares their name, it is polite to also
     share yours.
   <character>k__BackingField: Character_0
-  <background>k__BackingField: Background_0
+  <background>k__BackingField: Default
   <char_dropdown_index>k__BackingField: 1
-  <bg_dropdown_index>k__BackingField: 1
+  <bg_dropdown_index>k__BackingField: 0

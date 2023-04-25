@@ -29,6 +29,6 @@ MonoBehaviour:
   <tip_text>k__BackingField: Someone you recognise smiling at you shows they also
     recognise you. They may wish to talk with you, as the bus is late.
   <character>k__BackingField: Narrator
-  <background>k__BackingField: Background_0
+  <background>k__BackingField: Default
   <char_dropdown_index>k__BackingField: 0
-  <bg_dropdown_index>k__BackingField: 1
+  <bg_dropdown_index>k__BackingField: 0

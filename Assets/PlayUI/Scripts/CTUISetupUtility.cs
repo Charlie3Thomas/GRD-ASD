@@ -423,18 +423,18 @@ namespace CT.UI.Engine
             //Debug.Log(node_data.GetBackground());
             switch(node_data.GetBackground())
             {
-                case "None":
-                    return -1;
-                case "Background_0":
+                case "Default":
                     return 0;
-                case "Background_1":
+                case "Background_0":
                     return 1;
-                case "Background_2":
+                case "Background_1":
                     return 2;
-                case "Background_3":
+                case "Background_2":
                     return 3;
-                case "Background_4":
+                case "Background_3":
                     return 4;
+                case "Background_4":
+                    return 5;
                 default:
                     return -1;
             }

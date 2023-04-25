@@ -14,19 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <file_name>k__BackingField: TreeName
   <node_groups>k__BackingField:
-    m_keys:
-    - {fileID: 11400000, guid: e5b717a0f07f19d40932fa8f2c6e4ee6, type: 2}
-    - {fileID: 11400000, guid: 177d5eec44ad2624899235923d50741a, type: 2}
-    - {fileID: 11400000, guid: 35c0d0d3fe241ce44994dcfc111901e0, type: 2}
-    - {fileID: 11400000, guid: bc80dbc9b41cfb14a8cfd7124a1a07f9, type: 2}
-    - {fileID: 11400000, guid: 61f212dfd27411a44b7f10734df8998b, type: 2}
-    - {fileID: 11400000, guid: 67cc76db4e2f3704797064f4e7d5fea5, type: 2}
-    - {fileID: 11400000, guid: 677d81a8b18125c488976a418bc04000, type: 2}
-    - {fileID: 11400000, guid: 85deab6034ac2fd46aedde5e41ecc613, type: 2}
-    - {fileID: 11400000, guid: d57cc81d614d6614dab0d3da155fd1ae, type: 2}
-    - {fileID: 11400000, guid: f99ce69dd5945384bb9acdf1779d4e8c, type: 2}
-    - {fileID: 11400000, guid: 13910de77ab46dc44997e7658cb94383, type: 2}
-    - {fileID: 11400000, guid: fd79c67e8f9f6c6409563f21446bd267, type: 2}
-    - {fileID: 11400000, guid: b83a93d8e37f3df4c88167c43aef61f4, type: 2}
-    - {fileID: 11400000, guid: f33e52b687307d44893d071ced9afc47, type: 2}
-  <ungrouped_nodes>k__BackingField: []
+    m_keys: []
+  <ungrouped_nodes>k__BackingField:
+  - {fileID: 11400000, guid: 26578228e225ee74bb46fe60d4d45a71, type: 2}

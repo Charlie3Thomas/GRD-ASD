@@ -75,9 +75,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 931, y: 581}
     <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: FlimboFlombo
   - <ID>k__BackingField: 2c8e4bdb-b67e-4f9b-820a-109115e9f814
     <name>k__BackingField: 1
@@ -91,9 +91,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 3581, y: -31}
     <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: This body language signifies they they have an
       interest in talking with you while you wait for the bus.
   - <ID>k__BackingField: cd4ceb12-a369-4069-b472-32af6025803f
@@ -108,9 +108,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 3590, y: 350}
     <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: This body language signifies they they have an
       interest in talking with you while you wait for the bus.
   - <ID>k__BackingField: a7c98300-04eb-415d-9be4-0dbd75e16316
@@ -125,9 +125,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 1
     <pos>k__BackingField: {x: 4549, y: 775}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: When someone shares their name, it is polite
       to also share yours.
   - <ID>k__BackingField: f3b34185-1954-48be-a5b4-206f8db5dce6
@@ -142,9 +142,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 5175, y: 813}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 2f151a96-2211-4c44-bf72-7a4bd7713629
     <name>k__BackingField: 2
@@ -165,9 +165,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 1
     <pos>k__BackingField: {x: 5175, y: 1069}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: ca3d1f74-c1ac-4a62-a848-e871a6d29930
     <name>k__BackingField: 2
@@ -185,9 +185,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 1
     <pos>k__BackingField: {x: 4462, y: -103}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: This is "small talk", a conversational tool used
       to signal your mood and get a sense of the mood of the other person. In this
       case, you may have had an otherwise excellent experience with the busses in
@@ -205,9 +205,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 4537, y: -411}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 1ee0a16b-72e0-4b84-b0a0-be2381fff70d
     <name>k__BackingField: 1
@@ -220,9 +220,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 5909, y: 373}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 7aeb8734-84a7-4599-a5ac-9fd4d764868c
     <name>k__BackingField: 1
@@ -236,9 +236,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 5099, y: 374}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 4b73bf2e-f259-446a-9fd7-4a99401120c1
     <name>k__BackingField: NodeName
@@ -252,9 +252,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 4449, y: 364}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: She is being sarcastic
   - <ID>k__BackingField: 4523a64c-825f-4ac6-bdc1-4049eef85e6d
     <name>k__BackingField: 2
@@ -268,9 +268,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 1850, y: 580}
     <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 9c903764-ddad-41ba-a399-c08e92a27ba8
     <name>k__BackingField: 1
@@ -289,9 +289,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 1
     <pos>k__BackingField: {x: 2718, y: 555}
     <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: Someone you recognise smiling at you shows they
       also recognise you. They may wish to talk with you, as the bus is late.
   - <ID>k__BackingField: df2392b2-63c7-41f2-86b9-9a0c73f5ce9c
@@ -306,9 +306,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 5858, y: 1359}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: Some people may encourage you to step out of
       your comfort zone. It's up to you whether you do this or not.
   - <ID>k__BackingField: 44e51d86-6311-4503-8707-a85d166407b1
@@ -322,9 +322,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 6128, y: 712}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 22853b89-773a-46f0-b727-06378a7b7c58
     <name>k__BackingField: NodeName
@@ -338,9 +338,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 6126, y: 1036}
     <character>k__BackingField: Character_0
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 1
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 2609d5bf-0f79-4814-96a0-db658bb99f33
     <name>k__BackingField: NodeName
@@ -353,9 +353,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 6809, y: 1165}
     <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: 9b1a0add-402a-4c3a-8cd9-50033509b569
     <name>k__BackingField: 1
@@ -369,9 +369,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 1336, y: 581}
     <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: 
   - <ID>k__BackingField: d108effd-6832-482a-a9c6-5ee25b25251e
     <name>k__BackingField: 1
@@ -385,9 +385,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 3581, y: -380}
     <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: This body language signifies they they have an
       interest in talking with you while you wait for the bus.
   - <ID>k__BackingField: aedc9678-b7fd-4c47-897b-6b9ca3a0182e
@@ -402,9 +402,9 @@ MonoBehaviour:
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 5896, y: 1694}
     <character>k__BackingField: Narrator
-    <background>k__BackingField: Background_0
+    <background>k__BackingField: Default
     <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
     <dlog_tip_text>k__BackingField: This body language signifies they they have an
       interest in talking with you while you wait for the bus.
   <previous_group_names>k__BackingField:
