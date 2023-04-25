@@ -18,7 +18,7 @@ namespace Aspie.UI
         private StoryView storyPrefab;
         private List<StoryView> storyViewList;
 
-        public Action<StoryView> OnStorySelected;
+        public Action<Story> OnStorySelected;
         void Start()
         {
             storyViewList = new List<StoryView>();
@@ -30,10 +30,10 @@ namespace Aspie.UI
         {
             gameObject.SetActive(false);
         }
-        private void selectStory(StoryView sv)
+        private void selectStory(Story s)
         {
-            Debug.Log("Story Selected :: " + sv.name);
-            OnStorySelected?.Invoke(sv);
+            Debug.Log("Story Selected :: " + s.SceneName);
+            OnStorySelected?.Invoke(s);
         }
         private void instantiateStories()
         {

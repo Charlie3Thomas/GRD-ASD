@@ -11,6 +11,7 @@ namespace Aspie
         public string Title;
         public string Context;
         public Sprite StorySprite;
+        public string SceneName;
     }
     public class GameDataManager : MonoBehaviour
     {
