@@ -25,10 +25,10 @@ MonoBehaviour:
     <group_ID>k__BackingField: 
     <node_type>k__BackingField: 0
     <pos>k__BackingField: {x: 633, y: 315}
-    <character>k__BackingField: Narrator
-    <background>k__BackingField: Default
-    <char_dropdown_index>k__BackingField: 0
-    <bg_dropdown_index>k__BackingField: 0
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Background_0
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 1
     <dlog_tip_text>k__BackingField: Tip Top
   <previous_group_names>k__BackingField: []
   <previous_ungrouped_node_names>k__BackingField:

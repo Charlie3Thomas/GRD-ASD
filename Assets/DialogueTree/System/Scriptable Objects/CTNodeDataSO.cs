@@ -20,7 +20,8 @@ namespace CT.SO
         [field: SerializeField] public int char_dropdown_index { get; set; }
         [field: SerializeField] public int bg_dropdown_index { get; set; }
 
-        public void Initialise(string _name, string _text, string _character_name, string _tip,
+        public void Initialise(
+            string _name, string _text, string _character_name, string _tip,
             List<CTNodeOptionData> _options, CTNodeType _type, bool _is_start,
             string _character, string _background, int _char_dropdown_index,
             int _bg_dropdown_index)

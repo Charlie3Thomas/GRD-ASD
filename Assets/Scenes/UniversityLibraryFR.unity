@@ -282,6 +282,26 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: location_sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: location_sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: c34be0cdab7cc464d8c94584c1247248, type: 3}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: location_sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 3be7a45efaab19b4fb5aee516d0b3c40, type: 3}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: location_sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: a21a16f9cd18f3042abe9cbbaf7da698, type: 3}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: location_sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 95c2dec6976ec2242a117e40c27b8e4d, type: 3}
     - target: {fileID: 4903672100740365349, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
