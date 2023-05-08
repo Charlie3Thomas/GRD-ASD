@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using System;
+using Aspie.Sound;
 
 namespace Aspie.UI
 {
@@ -28,11 +29,13 @@ namespace Aspie.UI
 
         private void closeClicked()
         {
+            AudioService.Instance.PlayButtonSound();
             gameObject.SetActive(false);
         }
         private void selectStory(Story s)
         {
             Debug.Log("Story Selected :: " + s.SceneName);
+            AudioService.Instance.PlayButtonSound();
             OnStorySelected?.Invoke(s);
         }
         private void instantiateStories()
