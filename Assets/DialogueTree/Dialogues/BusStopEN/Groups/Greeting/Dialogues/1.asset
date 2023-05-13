@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: 
+  <node_name>k__BackingField: 1
+  <text>k__BackingField: Someone you recognise catches your eye, and smiles.
+  <character_name>k__BackingField: Narrator
+  <options>k__BackingField:
+  - <text>k__BackingField: Smile back
+    <next_node>k__BackingField: {fileID: 11400000, guid: d86b404816171fb479b9811ddc107422, type: 2}
+  - <text>k__BackingField: Wave
+    <next_node>k__BackingField: {fileID: 11400000, guid: fb5496ecd877cf8428cf6a6da7b2b952, type: 2}
+  - <text>k__BackingField: Walk over to greet them
+    <next_node>k__BackingField: {fileID: 11400000, guid: 69b521d415486454c81c433db61ef9f8, type: 2}
+  - <text>k__BackingField: Look away and pull out your phone
+    <next_node>k__BackingField: {fileID: 11400000, guid: 3544fc606740c044294c8355cbf1488e, type: 2}
+  <type>k__BackingField: 1
+  <is_start>k__BackingField: 0
+  <tip_text>k__BackingField: Someone you recognise smiling at you shows they also
+    recognise you. They may wish to talk with you, as the bus is late.
+  <character>k__BackingField: Narrator
+  <background>k__BackingField: Default
+  <char_dropdown_index>k__BackingField: 0
+  <bg_dropdown_index>k__BackingField: 0

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  <node_name>k__BackingField: 2
+  <text>k__BackingField: '"What do you think of the city so far? I came early so
+    I could explore and get used to geting around."'
+  <character_name>k__BackingField: Lena
+  <options>k__BackingField:
+  - <text>k__BackingField: This is actually my home City, I know it quite well already.
+    <next_node>k__BackingField: {fileID: 11400000, guid: fcbfcd6ba15d2324791615f82d085569, type: 2}
+  - <text>k__BackingField: I know my way around the local shops, but that's about
+      it really.
+    <next_node>k__BackingField: {fileID: 11400000, guid: 4e316fa958bf8d448846e0fefebcb824, type: 2}
+  - <text>k__BackingField: I don't really like going out, so I haven't looked around
+      that much
+    <next_node>k__BackingField: {fileID: 11400000, guid: e8e2ac0d3a224dc4190a2a808eab94a7, type: 2}
+  <type>k__BackingField: 1
+  <is_start>k__BackingField: 0
+  <tip_text>k__BackingField: 
+  <character>k__BackingField: Character_0
+  <background>k__BackingField: Default
+  <char_dropdown_index>k__BackingField: 1
+  <bg_dropdown_index>k__BackingField: 0

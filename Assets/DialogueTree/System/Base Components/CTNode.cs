@@ -42,6 +42,8 @@ namespace CT.Components
             node_name = _name;
             options = new List<CTOptionSaveData>();
             text = "Dialogue text.";
+            character = "Narrator";
+            background = "Default";
 
             SetPosition(new Rect(_pos, Vector2.zero));
 

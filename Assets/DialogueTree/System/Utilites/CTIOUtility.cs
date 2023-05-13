@@ -355,6 +355,7 @@ namespace CT.Utils
 
             return options;
         }
+
         public static void CreateFolder(string parentFolderPath, string newFolderName)
         {
             if (AssetDatabase.IsValidFolder($"{parentFolderPath}/{newFolderName}"))

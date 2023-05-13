@@ -17,10 +17,8 @@ namespace CT.Components
 
             node_type = CTNodeType.Narration;
 
-            CTOptionSaveData option_data = new CTOptionSaveData()
-            {
-                text = "Next Node"
-            };
+            CTOptionSaveData option_data = new CTOptionSaveData();
+            option_data.text = "Next Node";
 
             options.Add(option_data);
         }

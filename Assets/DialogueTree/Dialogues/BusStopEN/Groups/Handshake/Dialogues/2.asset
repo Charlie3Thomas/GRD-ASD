@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  <node_name>k__BackingField: 2
+  <text>k__BackingField: '"Are the busses ever on time? It doesn''t feel like it."'
+  <character_name>k__BackingField: Student???
+  <options>k__BackingField:
+  - <text>k__BackingField: I've never had an issue with the busses in this area.
+    <next_node>k__BackingField: {fileID: 11400000, guid: f46b0ae29f08f85408efaba69fab691c, type: 2}
+  - <text>k__BackingField: Dreadful, right? I left home in a hurry and forgot my
+      headphones.
+    <next_node>k__BackingField: {fileID: 11400000, guid: 0597fbb328e3c594896de2e763fd3d1e, type: 2}
+  - <text>k__BackingField: Why are the busses always late when the weather is bad?
+    <next_node>k__BackingField: {fileID: 11400000, guid: 05e6224798563ec428691e8d67e91e8e, type: 2}
+  <type>k__BackingField: 1
+  <is_start>k__BackingField: 0
+  <tip_text>k__BackingField: This is "small talk", a conversational tool used to
+    signal your mood and get a sense of the mood of the other person. In this case,
+    you may have had an otherwise excellent experience with the busses in this area,
+    but she is looking to engage with you on the shared experience of public transport
+    failiure.
+  <character>k__BackingField: Character_0
+  <background>k__BackingField: Default
+  <char_dropdown_index>k__BackingField: 1
+  <bg_dropdown_index>k__BackingField: 0
