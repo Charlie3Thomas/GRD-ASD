@@ -282,6 +282,54 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1601222018, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601222018, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601222018, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601222018, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 75.400024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601222018, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24.899994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601222019, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_fontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601222019, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641703592, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641703592, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641703592, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 75.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641703592, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: txt_typer
+      value: 
+      objectReference: {fileID: 1951158344}
     - target: {fileID: 2034132638, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: location_sprites.Array.size
       value: 1
@@ -306,6 +354,14 @@ PrefabInstance:
       propertyPath: starting_node
       value: 
       objectReference: {fileID: 11400000, guid: a228ebbc81f6c9e44a46c421eae245dc, type: 2}
+    - target: {fileID: 4903672100399633895, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903672100399633895, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12
+      objectReference: {fileID: 0}
     - target: {fileID: 4903672100740365349, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -397,3 +453,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+--- !u!114 &1512510948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1482932114, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+  m_PrefabInstance: {fileID: 901090330}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1951158342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4903672100097365490, guid: 8542743b2c28b8d40abb3e4fac020dd1, type: 3}
+  m_PrefabInstance: {fileID: 901090330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1951158344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951158342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537bd33630e6fa74a8a9e059470034d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmp_object: {fileID: 1512510948}
+  text_to_type: 
+  type_speed: 0.05
