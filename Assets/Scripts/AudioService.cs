@@ -11,7 +11,7 @@ namespace Aspie.Sound
         public AudioSource SfxSource;
 
         public AudioClip ButtonSound;
-
+        public AudioClip[] BGSounds;
         public static AudioService Instance;
 
         private const string bgVolKey = "BG_VOL";
@@ -37,6 +37,11 @@ namespace Aspie.Sound
             SfxSource.PlayOneShot(ButtonSound);
         }
 
+        public void SetBGClip(int id)
+        {
+            BgSource.clip = BGSounds[id];
+            BgSource.Play();
+        }
         public void StartBGMusic(bool flag)
         {
             if (flag)
