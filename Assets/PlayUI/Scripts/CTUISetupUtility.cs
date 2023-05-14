@@ -86,46 +86,10 @@ namespace CT.UI.Engine
             }
         }
 
-        public void RefreshUI()
-        {
-            CleanupUI();
-
-            // Instantiate new background
-            InstantiateNewBackground(TranslateBackground());
-
-            // Instantiate new character
-            InstantiateNewCharacter(TranslateCharacter());
-
-            // Instantiate new choices
-            InstantiateChoiceButton(node_data.GetDlogChoices().Count);
-
-            // Instantiate new narration
-            UpdateNarrationWindow(node_data.GetDlogText());
-
-            if (node_data.IsThereATip())
-            {
-                // Instantiate tip button
-                tip.SetActive(true);
-            }
-            else
-                // Destroy tip button
-                tip.SetActive(false);
-
-            //if (node_data.IsThereATip())
-            //{
-            //    // Instantiate tip button
-            //    Destroy(tip.gameObject);
-            //    SetTipButtonStatus();
-            //}
-            //else
-            //    // Destroy tip button
-            //    Destroy(show_tip_button);
-
-
-        }
 
 
         #region Button Methods
+
         private void SetTipButtonStatus()
         {
             //tip.GetComponentInChildren<UnityEngine.UI.Button>().onClick.AddListener(() => ToggleTip());
@@ -258,6 +222,13 @@ namespace CT.UI.Engine
             //ScaleButtonWithText(narration.GetComponentInChildren<UnityEngine.UI.Button>());
         }
 
+        private void OnChoiceButtonClick(int _index)
+        {
+            Debug.Log("Choice button clicked!");
+
+            node_data.OnOptionChosen(_index);
+        }
+
         #endregion
 
 
@@ -324,17 +295,50 @@ namespace CT.UI.Engine
         #endregion
 
         #region Button Methods
-        private void OnChoiceButtonClick(int _index)
-        {
-            Debug.Log("Choice button clicked!");
 
-            node_data.OnOptionChosen(_index);
-        }
 
         #endregion
 
 
         #region Utility Methods
+
+        public void RefreshUI()
+        {
+            CleanupUI();
+
+            // Instantiate new background
+            InstantiateNewBackground(TranslateBackground());
+
+            // Instantiate new character
+            InstantiateNewCharacter(TranslateCharacter());
+
+            // Instantiate new choices
+            InstantiateChoiceButton(node_data.GetDlogChoices().Count);
+
+            // Instantiate new narration
+            UpdateNarrationWindow(node_data.GetDlogText());
+
+            if (node_data.IsThereATip())
+            {
+                // Show tip button
+                tip.SetActive(true);
+            }
+            else
+                // Hide tip button
+                tip.SetActive(false);
+
+            //if (node_data.IsThereATip())
+            //{
+            //    // Instantiate tip button
+            //    Destroy(tip.gameObject);
+            //    SetTipButtonStatus();
+            //}
+            //else
+            //    // Destroy tip button
+            //    Destroy(show_tip_button);
+
+
+        }
 
         private void CleanupUI()
         {

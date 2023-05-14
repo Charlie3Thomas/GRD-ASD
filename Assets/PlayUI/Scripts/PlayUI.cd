@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CT.Utilis.CTNodeIOUtility">
+    <Position X="0.75" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAVIICAFaAAAACgIAAAQAAECAABAAAAAChAAjAA=</HashCode>
+      <FileName>Assets\PlayUI\Scripts\CTNodeIOUtility.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="UI_setup" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CT.UI.Engine.CTUISetupUtility">
+    <Position X="4.75" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEXIRAQAAiOIIAigAIQIIAAIUAAAlAQQCEAKQgBAKSA=</HashCode>
+      <FileName>Assets\PlayUI\Scripts\CTUISetupUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CT.TextTyper">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQEACAAAAAAAAAAIQAAAAAAAAAAAQAAAEABAAA=</HashCode>
+      <FileName>Assets\PlayUI\Scripts\TextTyper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

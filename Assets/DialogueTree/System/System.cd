@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CT.Components.CTChoiceNode">
+    <Position X="3.75" Y="10.5" Width="1.5" />
+    <InheritanceLine Type="CT.Components.CTNode" FixedToPoint="true">
+      <Path>
+        <Point X="5.375" Y="9.117" />
+        <Point X="5.375" Y="10.125" />
+        <Point X="4.5" Y="10.125" />
+        <Point X="4.5" Y="10.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAwAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Base Components\CTChoiceNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CT.Components.CTGroup">
+    <Position X="7.75" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAgAAABAAAAAAAAQAAAAABAAAEAAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Base Components\CTGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CT.Components.CTNarrationNode">
+    <Position X="2" Y="10.5" Width="1.5" />
+    <InheritanceLine Type="CT.Components.CTNode" FixedToPoint="true">
+      <Path>
+        <Point X="5.375" Y="9.117" />
+        <Point X="5.375" Y="10.125" />
+        <Point X="2.75" Y="10.125" />
+        <Point X="2.75" Y="10.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Base Components\CTNarrationNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CT.Components.CTNode">
+    <Position X="4" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QEAMEgIQAAAAgwCAgQAAEAgAQAAhAgQYAAAgAAABIQA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Base Components\CTNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="node_type" />
+      <Property Name="group" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="options" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CT.Data.Save.CTOptionSaveData">
+    <Position X="4.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Data\CTOptionSaveData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CT.GraphView.CTGraphView">
+    <Position X="18" Y="13.75" Width="2.5" />
+    <AssociationLine Name="ungrouped_node_errors" Type="CT.Data.Error.CTNodeErrorData">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.744" Y="3.727" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEAAgAAAAAAAgIAIIgEBAAApAACgBAAAJAAgAAFkIAQ=</HashCode>
+      <FileName>Assets\DialogueTree\System\GraphView\CTGraphView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="ungrouped_node_errors" />
+      <Field Name="group_errors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CT.GraphView.CTGraphViewWindow">
+    <Position X="14" Y="10.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAkIAAAACApACAAAgAAEAAAAAAAAQACAAEAABACAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\GraphView\CTGraphViewWindow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="graph_view" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CT.Utils.CTComponentUtility">
+    <Position X="16" Y="10.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAIAAQABAAQAAgAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Utilites\CTComponentUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CT.Utils.CTIOUtility">
+    <Position X="10.75" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>xY4EgIAgAAAAAQiwAAAAAAAAAAQAUAyAEAIABJVQIAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Utilites\CTIOUtility.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="graph_view" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="loaded_groups" />
+      <Field Name="loaded_nodes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CT.Data.Save.CTTreeSaveDataSO">
+    <Position X="15.25" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAgAEBAAAAAQAAAAAAAAAAAAAAAAAACAAAAAAAIAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Data\CTTreeSaveDataSO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="groups" />
+      <Property Name="nodes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CT.Data.Save.CTNoteSaveData">
+    <Position X="15.5" Y="0.75" Width="2" />
+    <Members>
+      <Property Name="options" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEgIAgAAAAAAgAAAAAAAEIAAAAAEIAAIAAAAAAAAIUA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Data\CTNoteSaveData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="options" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CT.Data.Save.CTGroupSaveData">
+    <Position X="15.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAIAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Data\CTGroupSaveData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CT.Data.Error.CTError">
+    <Position X="8" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\GraphView\Errors\CTError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CT.Data.Error.CTGroupError">
+    <Position X="8" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\GraphView\Errors\CTGroupError.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="error" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="groups" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CT.Data.Error.CTNodeErrorData">
+    <Position X="6.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\GraphView\Errors\CTNodeErrorData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="err_data" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="nodes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CT.Data.CTNodeOptionData">
+    <Position X="22.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Scriptable Objects\CTNodeOptionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CT.SO.CTNodeDataSO">
+    <Position X="19.25" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAMAgAAAAAAAQAIgAAAEAAAAAABAAAYAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Scriptable Objects\CTNodeDataSO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="options" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CT.SO.CTNodeGroupingSO">
+    <Position X="19.5" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Scriptable Objects\CTNodeGroupingSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CT.SO.CTTreeDataSO">
+    <Position X="19.25" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAIAAAAAAAAAAAAAAAiAAAAAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Scriptable Objects\CTTreeDataSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CT.Enums.CTNodeType">
+    <Position X="1.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NodeCharacter">
+    <Position X="1.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgAAAAQAAAAAAAAAoAAAAAAgQBAAAAAQAAgAAEAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Base Components\CTNode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Backgrounds">
+    <Position X="1.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\DialogueTree\System\Base Components\CTNode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
