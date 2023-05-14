@@ -465,6 +465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537bd33630e6fa74a8a9e059470034d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshProObject: {fileID: 152882070}
-  textToType: 
-  typingSpeed: 0.05
+  tmp_object: {fileID: 152882070}
+  text_to_type: 
+  type_speed: 0.05
