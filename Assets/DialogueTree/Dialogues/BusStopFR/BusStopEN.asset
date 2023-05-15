@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caaa76378291a144d849f29230be0a5a, type: 3}
+  m_Name: BusStopEN
+  m_EditorClassIdentifier: 
+  <file_name>k__BackingField: BusStopFR
+  <node_groups>k__BackingField:
+    m_keys:
+    - {fileID: 11400000, guid: ccad786e9f56fbe499e14e9a866baca0, type: 2}
+    - {fileID: 11400000, guid: 157cd5248ce9de443ae26cd66b433e71, type: 2}
+    - {fileID: 11400000, guid: 4585e18d1810af64f86010b90193c0d2, type: 2}
+    - {fileID: 11400000, guid: d5ef68a4e424819478ff9eb95c71d481, type: 2}
+    - {fileID: 11400000, guid: dade94fe9658d2e49a841c95f91d2bde, type: 2}
+    - {fileID: 11400000, guid: 25385b9303b2f8147b4169c0e5ca4c22, type: 2}
+    - {fileID: 11400000, guid: d6a495d15d9711c418235e25afe6ca97, type: 2}
+    - {fileID: 11400000, guid: cc6f01ae8d64e1643b69515c3ffb7749, type: 2}
+    - {fileID: 11400000, guid: 49f8e21433f4cdb41a6b037fd21a357d, type: 2}
+    - {fileID: 11400000, guid: bd4860791cde3db4086fb5e8d4a5ad83, type: 2}
+    - {fileID: 11400000, guid: 1680a9e7c4c195b41a65e478ce169c88, type: 2}
+    - {fileID: 11400000, guid: a712583cbee6c2642a82e27b9497aef7, type: 2}
+    - {fileID: 11400000, guid: 53ca005256ae0f048816e677ca3d139a, type: 2}
+    - {fileID: 11400000, guid: 23e58d4ac1ea31a4c83c3baed585548b, type: 2}
+    - {fileID: 11400000, guid: a9b1fa1cdc4e2cc4bbb3e93e0be961af, type: 2}
+    - {fileID: 11400000, guid: fdf18dfbd35a50d48a3738ea8dea3de4, type: 2}
+  <ungrouped_nodes>k__BackingField: []

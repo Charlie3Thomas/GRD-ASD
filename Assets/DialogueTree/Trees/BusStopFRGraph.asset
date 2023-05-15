@@ -1,0 +1,451 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0202a3095b7477a4091d56344f0af6b3, type: 3}
+  m_Name: BusStopFRGraph
+  m_EditorClassIdentifier: 
+  <file_name>k__BackingField: BusStopFR
+  <groups>k__BackingField:
+  - <ID>k__BackingField: 7af5e4d2-7105-427d-9143-af3c5ebc928c
+    <name>k__BackingField: START
+    <pos>k__BackingField: {x: 364, y: 541}
+  - <ID>k__BackingField: d9e609c1-11a5-4c6c-856d-827671cc21b5
+    <name>k__BackingField: Greeting
+    <pos>k__BackingField: {x: 2325, y: 500}
+  - <ID>k__BackingField: 58157d7b-623b-43fa-a4da-e31697acaadf
+    <name>k__BackingField: Smile
+    <pos>k__BackingField: {x: 3556, y: -439}
+  - <ID>k__BackingField: 2e21941a-57b2-4d5d-9bc4-c00ee03eb6bd
+    <name>k__BackingField: Wave
+    <pos>k__BackingField: {x: 3556, y: -90}
+  - <ID>k__BackingField: e72b938e-2a1e-4267-9919-db4dceca1dd2
+    <name>k__BackingField: LookAway
+    <pos>k__BackingField: {x: 6095, y: 1680}
+  - <ID>k__BackingField: d1ddbe44-a76a-4b8d-830a-020d665ad244
+    <name>k__BackingField: WalkOver
+    <pos>k__BackingField: {x: 3565, y: 291}
+  - <ID>k__BackingField: 6fc35fa2-f8d6-4b53-b50b-6e22b74406cc
+    <name>k__BackingField: Handshake
+    <pos>k__BackingField: {x: 4437, y: -470}
+  - <ID>k__BackingField: f8be060f-762e-4048-970e-4d9a373086f6
+    <name>k__BackingField: NeverUnlucky
+    <pos>k__BackingField: {x: 5884, y: 314}
+  - <ID>k__BackingField: 4360b3ea-7dbb-440a-a17b-9427f387ca40
+    <name>k__BackingField: ShareNames
+    <pos>k__BackingField: {x: 4500, y: 713}
+  - <ID>k__BackingField: f9f9b5c3-ed4d-4f78-8bde-c6e9bef857aa
+    <name>k__BackingField: LeftInARush
+    <pos>k__BackingField: {x: 4964, y: 318}
+  - <ID>k__BackingField: 19658dc2-9e71-48ff-9295-cac56fcc6a50
+    <name>k__BackingField: Weather
+    <pos>k__BackingField: {x: 4246, y: 313}
+  - <ID>k__BackingField: 84963a26-e1d6-4b6d-8a8e-79e30f083314
+    <name>k__BackingField: Introductions
+    <pos>k__BackingField: {x: 5150, y: 754}
+  - <ID>k__BackingField: d5b0138c-81a0-42a4-afdc-4f74650df536
+    <name>k__BackingField: KnowCity
+    <pos>k__BackingField: {x: 6103, y: 653}
+  - <ID>k__BackingField: 4023340c-dfe5-4e52-9e11-48160f33819d
+    <name>k__BackingField: SmallExplore
+    <pos>k__BackingField: {x: 6101, y: 977}
+  - <ID>k__BackingField: d9d1b7c2-33fe-4d3a-ad5d-b58f2b8c3a0b
+    <name>k__BackingField: DoNoGoOut
+    <pos>k__BackingField: {x: 5833, y: 1300}
+  - <ID>k__BackingField: aa95e353-2c14-46e1-9b8d-b0ca34cab1df
+    <name>k__BackingField: BusArrives
+    <pos>k__BackingField: {x: 6784, y: 1106}
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 6917c263-d0ed-47db-94eb-dfd631e44d66
+    <name>k__BackingField: START
+    <charcter_name>k__BackingField: Narrateur
+    <text>k__BackingField: "Vous attendez \xE0 l'arr\xEAt de bus pour vous rendre
+      \xE0 l'universit\xE9."
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 9b1a0add-402a-4c3a-8cd9-50033509b569
+    <group_ID>k__BackingField: 7af5e4d2-7105-427d-9143-af3c5ebc928c
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 389, y: 601}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: cd4ceb12-a369-4069-b472-32af6025803f
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Narrateur
+    <text>k__BackingField: "Alors que vous vous dirigez vers elle, elle se met \xE0
+      vous imiter."
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 4b69fcf9-8f96-47e4-af4b-7601705cb345
+    <group_ID>k__BackingField: d1ddbe44-a76a-4b8d-830a-020d665ad244
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 3590, y: 350}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: "Cet indice de langage corporel signifie un int\xE9r\xEAt
+      \xE0 s'adresser \xE0 vous."
+  - <ID>k__BackingField: 4b69fcf9-8f96-47e4-af4b-7601705cb345
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Etudiante
+    <text>k__BackingField: "Alors que vous vous approchez l'un de l'autre, elle jette
+      un \u0153il au panneau des horaires et soupir."
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: ca3d1f74-c1ac-4a62-a848-e871a6d29930
+    <group_ID>k__BackingField: 6fc35fa2-f8d6-4b53-b50b-6e22b74406cc
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 4537, y: -411}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 1ee0a16b-72e0-4b84-b0a0-be2381fff70d
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Etudiante
+    <text>k__BackingField: '"Quelle chance ! Maintenant si." - Elle rit.'
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: a7c98300-04eb-415d-9be4-0dbd75e16316
+    <group_ID>k__BackingField: f8be060f-762e-4048-970e-4d9a373086f6
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 5909, y: 373}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 4b73bf2e-f259-446a-9fd7-4a99401120c1
+    <name>k__BackingField: NodeName
+    <charcter_name>k__BackingField: Etudiante
+    <text>k__BackingField: "\"C'est comme s'ils savaient que c'est super d\xE9sagr\xE9able.
+      Je jurerais qu'ils le font pour le fun des fois.\""
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: a7c98300-04eb-415d-9be4-0dbd75e16316
+    <group_ID>k__BackingField: 19658dc2-9e71-48ff-9295-cac56fcc6a50
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 4271, y: 372}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: Son propos est sarcastique.
+  - <ID>k__BackingField: df2392b2-63c7-41f2-86b9-9a0c73f5ce9c
+    <name>k__BackingField: NodeName
+    <charcter_name>k__BackingField: Lena
+    <text>k__BackingField: "\"Errh, s\xE9rieusement, tu devrais sortir au moins une
+      foit pendant que tu es \xE9tu -- Ah, le bus !\""
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 2609d5bf-0f79-4814-96a0-db658bb99f33
+    <group_ID>k__BackingField: d9d1b7c2-33fe-4d3a-ad5d-b58f2b8c3a0b
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 5858, y: 1359}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: "Certaines personnes peuvent vous encourager
+      \xE0 sortir de votre zone de confort. Il vous revient de d\xE9cider si vous
+      souhaitez vous laisser entra\xEEner ou non."
+  - <ID>k__BackingField: 44e51d86-6311-4503-8707-a85d166407b1
+    <name>k__BackingField: NodeName
+    <charcter_name>k__BackingField: Lena
+    <text>k__BackingField: '"La chance ! Tu as pris un appa -- Ah, le bus !"'
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 2609d5bf-0f79-4814-96a0-db658bb99f33
+    <group_ID>k__BackingField: d5b0138c-81a0-42a4-afdc-4f74650df536
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 6128, y: 712}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 22853b89-773a-46f0-b727-06378a7b7c58
+    <name>k__BackingField: NodeName
+    <charcter_name>k__BackingField: Lena
+    <text>k__BackingField: "\"\xC7a n'a pas \xE9t\xE9 \xE9vident pour moi, de m'habituer
+      \xE0 une nouvelle vi -- Ah, le bus !\""
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 2609d5bf-0f79-4814-96a0-db658bb99f33
+    <group_ID>k__BackingField: 4023340c-dfe5-4e52-9e11-48160f33819d
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 6126, y: 1036}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 2609d5bf-0f79-4814-96a0-db658bb99f33
+    <name>k__BackingField: NodeName
+    <charcter_name>k__BackingField: Narrateur
+    <text>k__BackingField: Vous vous retournez et voyez le bus ouvrant ses portes.
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 
+    <group_ID>k__BackingField: aa95e353-2c14-46e1-9b8d-b0ca34cab1df
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 6809, y: 1165}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 9b1a0add-402a-4c3a-8cd9-50033509b569
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Narrateur
+    <text>k__BackingField: "Le panneau digital indiquant les passages de bus \xE0
+      venir annonce que votre bus a du retard."
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 4523a64c-825f-4ac6-bdc1-4049eef85e6d
+    <group_ID>k__BackingField: 7af5e4d2-7105-427d-9143-af3c5ebc928c
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 764, y: 601}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 4523a64c-825f-4ac6-bdc1-4049eef85e6d
+    <name>k__BackingField: 2
+    <charcter_name>k__BackingField: Narrateur
+    <text>k__BackingField: "Vous avez oubli\xE9 vos \xE9couteurs, suite \xE0 un d\xE9part
+      pr\xE9cipit\xE9 pour arriver \xE0 temps pour votre bus, et remarquez des personnes
+      que vous reconnaissez de votre classe."
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 9c903764-ddad-41ba-a399-c08e92a27ba8
+    <group_ID>k__BackingField: 7af5e4d2-7105-427d-9143-af3c5ebc928c
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 1280, y: 600}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: d108effd-6832-482a-a9c6-5ee25b25251e
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Narrateur
+    <text>k__BackingField: Vous lui souriez en retour et elle effectue quelques pas
+      vers vous.
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 4b69fcf9-8f96-47e4-af4b-7601705cb345
+    <group_ID>k__BackingField: 58157d7b-623b-43fa-a4da-e31697acaadf
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 3581, y: -380}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: "Cet indice de langage corporel signifie un int\xE9r\xEAt
+      \xE0 s'adresser \xE0 vous."
+  - <ID>k__BackingField: 2c8e4bdb-b67e-4f9b-820a-109115e9f814
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Narrateur
+    <text>k__BackingField: Vous la saluer d'un geste de la main qu'elle vous rend,
+      avant de s'avancer de quelques pas dans votre direction.
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 4b69fcf9-8f96-47e4-af4b-7601705cb345
+    <group_ID>k__BackingField: 2e21941a-57b2-4d5d-9bc4-c00ee03eb6bd
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 3581, y: -31}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: "Cet indice de langage corporel signifie un int\xE9r\xEAt
+      \xE0 s'adresser \xE0 vous."
+  - <ID>k__BackingField: 9c903764-ddad-41ba-a399-c08e92a27ba8
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Narrateur
+    <text>k__BackingField: L'une d'entre-elles croise votre regard et vous sourit.
+    <options>k__BackingField:
+    - <text>k__BackingField: Renvoyer le sourire
+      <node_ID>k__BackingField: d108effd-6832-482a-a9c6-5ee25b25251e
+    - <text>k__BackingField: Saluer de la main
+      <node_ID>k__BackingField: 2c8e4bdb-b67e-4f9b-820a-109115e9f814
+    - <text>k__BackingField: S'avancer vers elle
+      <node_ID>k__BackingField: cd4ceb12-a369-4069-b472-32af6025803f
+    - <text>k__BackingField: "D\xE9tourner le regard et sortir son t\xE9l\xE9phone"
+      <node_ID>k__BackingField: aedc9678-b7fd-4c47-897b-6b9ca3a0182e
+    <group_ID>k__BackingField: d9e609c1-11a5-4c6c-856d-827671cc21b5
+    <node_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 2350, y: 559}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: "Un sourire qui vous est adress\xE9 de la part
+      de quelqu'un que vous connaissez indique que cette personne vous reconna\xEEt
+      \xE9galement. Le bus \xE9tant en retard, il se pourrait qu'elle appr\xE9cie
+      vous parler."
+  - <ID>k__BackingField: ca3d1f74-c1ac-4a62-a848-e871a6d29930
+    <name>k__BackingField: 2
+    <charcter_name>k__BackingField: Etudiante
+    <text>k__BackingField: "\"Arrive-t-il seulement que les bus soient \xE0 l'heure
+      ? \xC7a n'a pas l'air.\""
+    <options>k__BackingField:
+    - <text>k__BackingField: "Je n'ai jamais eu de probl\xE8me avec les bus de cette
+        ligne."
+      <node_ID>k__BackingField: 1ee0a16b-72e0-4b84-b0a0-be2381fff70d
+    - <text>k__BackingField: "Terrible, hein ? Je suis parti de chez moi en courant,
+        j'en ai oubli\xE9 mes \xE9couteurs."
+      <node_ID>k__BackingField: 7aeb8734-84a7-4599-a5ac-9fd4d764868c
+    - <text>k__BackingField: Pourquoi faut-il que les bus soient toujours en retard
+        quand le temps est mauvais ?
+      <node_ID>k__BackingField: 4b73bf2e-f259-446a-9fd7-4a99401120c1
+    <group_ID>k__BackingField: 6fc35fa2-f8d6-4b53-b50b-6e22b74406cc
+    <node_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 4462, y: -103}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: "Faire la conversation vise \xE0 initier le dialogue
+      en pr\xE9sentant son humeur et s'enqu\xE9rissant de celle de l'interlocuteur.
+      Dans cette situation, vous pourriez avoir une tr\xE8s bonne exp\xE9rience \xE0
+      propos des bus de la ligne, mais elle cherche \xE0 engager la conversation
+      sur une exp\xE9rience partag\xE9e des \xE9checs des transports publiques."
+  - <ID>k__BackingField: 7aeb8734-84a7-4599-a5ac-9fd4d764868c
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Etudiante
+    <text>k__BackingField: "\"J'ai oubli\xE9 mon repas, je vais devoir acheter. Je
+      n'ai pas encore pris le pli le matin, je suis au moins assez contente d'avoir
+      trouv\xE9 le bon arr\xEAt de bus.\""
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: a7c98300-04eb-415d-9be4-0dbd75e16316
+    <group_ID>k__BackingField: f9f9b5c3-ed4d-4f78-8bde-c6e9bef857aa
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 4989, y: 377}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: a7c98300-04eb-415d-9be4-0dbd75e16316
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Lena
+    <text>k__BackingField: "\"Moi c'est Lena au fait. Je crois qu'on s'est rencontr\xE9
+      le jour de la rentr\xE9e.\""
+    <options>k__BackingField:
+    - <text>k__BackingField: Donner son nom simplement.
+      <node_ID>k__BackingField: f3b34185-1954-48be-a5b4-206f8db5dce6
+    <group_ID>k__BackingField: 4360b3ea-7dbb-440a-a17b-9427f387ca40
+    <node_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 4525, y: 772}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: "Quand quelqu'un se pr\xE9sente, il est poli
+      de faire de m\xEAme."
+  - <ID>k__BackingField: f3b34185-1954-48be-a5b4-206f8db5dce6
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Lena
+    <text>k__BackingField: "\"Enchant\xE9e. Je suis mauvaise avec les noms, pardonne
+      moi si je te le redemande \xE0 une fois ou deux.\""
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 2f151a96-2211-4c44-bf72-7a4bd7713629
+    <group_ID>k__BackingField: 84963a26-e1d6-4b6d-8a8e-79e30f083314
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 5175, y: 813}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: 2f151a96-2211-4c44-bf72-7a4bd7713629
+    <name>k__BackingField: 2
+    <charcter_name>k__BackingField: Lena
+    <text>k__BackingField: "\"Qu'est-ce que tu pense de la ville pour l'instant ?
+      Je suis venue t\xF4t pour explorer et m'habituer aux environs.\""
+    <options>k__BackingField:
+    - <text>k__BackingField: "Je suis n\xE9 ici, je connais bien cette ville."
+      <node_ID>k__BackingField: 44e51d86-6311-4503-8707-a85d166407b1
+    - <text>k__BackingField: "Je connais un peu les boutiques du coin mais c'est
+        \xE0 peu pr\xE8s tout."
+      <node_ID>k__BackingField: 22853b89-773a-46f0-b727-06378a7b7c58
+    - <text>k__BackingField: "Je n'aime pas tellement sortir, je n'ai pas beaucoup
+        fouin\xE9."
+      <node_ID>k__BackingField: df2392b2-63c7-41f2-86b9-9a0c73f5ce9c
+    <group_ID>k__BackingField: 84963a26-e1d6-4b6d-8a8e-79e30f083314
+    <node_type>k__BackingField: 1
+    <pos>k__BackingField: {x: 5175, y: 1069}
+    <character>k__BackingField: Character_0
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 1
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  - <ID>k__BackingField: aedc9678-b7fd-4c47-897b-6b9ca3a0182e
+    <name>k__BackingField: 1
+    <charcter_name>k__BackingField: Narrateur
+    <text>k__BackingField: "Vous vous promenez dans votre t\xE9l\xE9phone \xE0 la
+      recherche de quelque chose \xE0 faire en attendant le bus."
+    <options>k__BackingField:
+    - <text>k__BackingField: Next Node
+      <node_ID>k__BackingField: 2609d5bf-0f79-4814-96a0-db658bb99f33
+    <group_ID>k__BackingField: e72b938e-2a1e-4267-9919-db4dceca1dd2
+    <node_type>k__BackingField: 0
+    <pos>k__BackingField: {x: 6120, y: 1739}
+    <character>k__BackingField: Narrator
+    <background>k__BackingField: Default
+    <char_dropdown_index>k__BackingField: 0
+    <bg_dropdown_index>k__BackingField: 0
+    <dlog_tip_text>k__BackingField: 
+  <previous_group_names>k__BackingField:
+  - START
+  - Greeting
+  - Smile
+  - Wave
+  - LookAway
+  - WalkOver
+  - Handshake
+  - NeverUnlucky
+  - ShareNames
+  - LeftInARush
+  - Weather
+  - Introductions
+  - KnowCity
+  - SmallExplore
+  - DoNoGoOut
+  - BusArrives
+  <previous_ungrouped_node_names>k__BackingField: []
+  <previous_grouped_node_names>k__BackingField:
+    m_keys:
+    - START
+    - WalkOver
+    - Handshake
+    - NeverUnlucky
+    - Weather
+    - DoNoGoOut
+    - KnowCity
+    - SmallExplore
+    - BusArrives
+    - Smile
+    - Wave
+    - Greeting
+    - LeftInARush
+    - ShareNames
+    - Introductions
+    - LookAway

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: 
+  <node_name>k__BackingField: 1
+  <text>k__BackingField: "\"Moi c'est Lena au fait. Je crois qu'on s'est rencontr\xE9
+    le jour de la rentr\xE9e.\""
+  <character_name>k__BackingField: Lena
+  <options>k__BackingField:
+  - <text>k__BackingField: Donner son nom simplement.
+    <next_node>k__BackingField: {fileID: 11400000, guid: 7fa97a1e8cda8b3488682ba9b0030826, type: 2}
+  <type>k__BackingField: 1
+  <is_start>k__BackingField: 0
+  <tip_text>k__BackingField: "Quand quelqu'un se pr\xE9sente, il est poli de faire
+    de m\xEAme."
+  <character>k__BackingField: Character_0
+  <background>k__BackingField: Default
+  <char_dropdown_index>k__BackingField: 1
+  <bg_dropdown_index>k__BackingField: 0

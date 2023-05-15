@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  <node_name>k__BackingField: 2
+  <text>k__BackingField: "\"Arrive-t-il seulement que les bus soient \xE0 l'heure
+    ? \xC7a n'a pas l'air.\""
+  <character_name>k__BackingField: Etudiante
+  <options>k__BackingField:
+  - <text>k__BackingField: "Je n'ai jamais eu de probl\xE8me avec les bus de cette
+      ligne."
+    <next_node>k__BackingField: {fileID: 11400000, guid: f0c5460f4cbdeb146880389f81c7ef75, type: 2}
+  - <text>k__BackingField: "Terrible, hein ? Je suis parti de chez moi en courant,
+      j'en ai oubli\xE9 mes \xE9couteurs."
+    <next_node>k__BackingField: {fileID: 11400000, guid: f31160c4896a544478ba5b6f1f4ae6d7, type: 2}
+  - <text>k__BackingField: Pourquoi faut-il que les bus soient toujours en retard
+      quand le temps est mauvais ?
+    <next_node>k__BackingField: {fileID: 11400000, guid: 16004ccadec75c94ba8fcc40298b1d1c, type: 2}
+  <type>k__BackingField: 1
+  <is_start>k__BackingField: 0
+  <tip_text>k__BackingField: "Faire la conversation vise \xE0 initier le dialogue
+    en pr\xE9sentant son humeur et s'enqu\xE9rissant de celle de l'interlocuteur.
+    Dans cette situation, vous pourriez avoir une tr\xE8s bonne exp\xE9rience \xE0
+    propos des bus de la ligne, mais elle cherche \xE0 engager la conversation sur
+    une exp\xE9rience partag\xE9e des \xE9checs des transports publiques."
+  <character>k__BackingField: Character_0
+  <background>k__BackingField: Default
+  <char_dropdown_index>k__BackingField: 1
+  <bg_dropdown_index>k__BackingField: 0
