@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/UI/Scenes/MainMenu.unity
-    guid: 6f8f43fe39c69494bbbe252a41e42ced
-  - enabled: 0
-    path: Assets/Scenes/Dialog 1.unity
-    guid: ad331db0993134eb18a9ddb0c73b506f
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: a8e873931c42996448a2dd1b5e0eec05
+  - enabled: 1
+    path: Assets/Scenes/BusStop.unity
+    guid: 5febd4c52e414934c9b787c6ac4295f9
   - enabled: 1
     path: Assets/Scenes/UniversityLibraryFR.unity
     guid: eae00c7ad78a5a744861e016d53a5ef3

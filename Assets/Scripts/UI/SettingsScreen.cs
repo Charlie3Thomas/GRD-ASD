@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Aspie.Sound;
+using TMPro;
 
 namespace Aspie.UI
 {
@@ -17,6 +18,9 @@ namespace Aspie.UI
         [SerializeField]
         private Slider effectsVolSlider;
 
+        [SerializeField]
+        private TMP_Dropdown audioSelector;
+
         void Start()
         {
             closeButton.onClick.AddListener(closeClicked);
@@ -28,6 +32,16 @@ namespace Aspie.UI
             effectsVolSlider.value = AudioService.Instance.SFXVolLevel;
 
             masterVolSlider.value = Mathf.Max(AudioService.Instance.BGVolLevel, AudioService.Instance.SFXVolLevel);
+            setUpAudioClipDropDown();
+            audioSelector.onValueChanged.AddListener(onBgAudioUpdate);
+        }
+
+        private void setUpAudioClipDropDown()
+        {
+            List<string> clips = new List<string>();
+            foreach (var c in AudioService.Instance.BGSounds)
+                clips.Add(c.name);
+            audioSelector.AddOptions(clips);
         }
 
         private void closeClicked()
@@ -51,6 +65,10 @@ namespace Aspie.UI
         private void onEffectsVolUpdate(float val)
         {
             AudioService.Instance.SetSFXVolume(val);
+        }
+        private void onBgAudioUpdate(int id)
+        {
+            AudioService.Instance.SetBGClip(id);
         }
     }
 }
