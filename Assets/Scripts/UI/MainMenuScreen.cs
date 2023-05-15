@@ -83,7 +83,7 @@ namespace Aspie.UI
         private void exitButtonClicked()
         {
             AudioService.Instance.PlayButtonSound();
-            Debug.Log("EXIT CLICK");
+            Application.Quit();
         }
 
         private void playStory(Story s)
