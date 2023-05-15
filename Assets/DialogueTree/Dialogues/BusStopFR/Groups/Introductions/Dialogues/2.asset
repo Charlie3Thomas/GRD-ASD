@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f262818b55b0f4418296bad0176bdab, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  <node_name>k__BackingField: 2
+  <text>k__BackingField: "\"Qu'est-ce que tu pense de la ville pour l'instant ? Je
+    suis venue t\xF4t pour explorer et m'habituer aux environs.\""
+  <character_name>k__BackingField: Lena
+  <options>k__BackingField:
+  - <text>k__BackingField: "Je suis n\xE9 ici, je connais bien cette ville."
+    <next_node>k__BackingField: {fileID: 11400000, guid: 42b0aa3cc585e314e953a4b1bbc2b00a, type: 2}
+  - <text>k__BackingField: "Je connais un peu les boutiques du coin mais c'est \xE0
+      peu pr\xE8s tout."
+    <next_node>k__BackingField: {fileID: 11400000, guid: 249cd26e5f4980744ade9a341bef7261, type: 2}
+  - <text>k__BackingField: "Je n'aime pas tellement sortir, je n'ai pas beaucoup
+      fouin\xE9."
+    <next_node>k__BackingField: {fileID: 11400000, guid: 18264ba166ebfe9429e43d59eadf0bc8, type: 2}
+  <type>k__BackingField: 1
+  <is_start>k__BackingField: 0
+  <tip_text>k__BackingField: 
+  <character>k__BackingField: Character_0
+  <background>k__BackingField: Default
+  <char_dropdown_index>k__BackingField: 1
+  <bg_dropdown_index>k__BackingField: 0
