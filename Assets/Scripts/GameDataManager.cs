@@ -18,6 +18,8 @@ namespace Aspie
         private static GameDataManager _instance;
         public static GameDataManager Instance { get { return _instance; } }
         public List<Story> StoryList;
+        public List<Story> FrStoryList;
+        public List<Story> EnStoryList;
         void Awake()
         {
             if (_instance == null || _instance != this)

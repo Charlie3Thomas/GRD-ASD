@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Aspie.Sound;
+using Aspie.Language;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 namespace Aspie.UI
 {
     public class SettingsScreen : MonoBehaviour
     {
+        [SerializeField]
+        private TMP_Dropdown languageDropdown;
         [SerializeField]
         private Button closeButton;
         [SerializeField]
@@ -34,6 +39,7 @@ namespace Aspie.UI
             masterVolSlider.value = Mathf.Max(AudioService.Instance.BGVolLevel, AudioService.Instance.SFXVolLevel);
             setUpAudioClipDropDown();
             audioSelector.onValueChanged.AddListener(onBgAudioUpdate);
+            languageDropdown.onValueChanged.AddListener(onLanguageUpdate);
         }
 
         private void setUpAudioClipDropDown()
@@ -69,6 +75,10 @@ namespace Aspie.UI
         private void onBgAudioUpdate(int id)
         {
             AudioService.Instance.SetBGClip(id);
+        }
+        private void onLanguageUpdate(int id)
+        {
+            LocalizationManager.Instance.UpdateLanguage(id);
         }
     }
 }

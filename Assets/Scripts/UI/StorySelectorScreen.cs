@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using System.Linq;
 using System;
 using Aspie.Sound;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+using Aspie.Language;
 
 namespace Aspie.UI
 {
@@ -17,14 +20,17 @@ namespace Aspie.UI
         private GameObject storyContainer;
         [SerializeField]
         private StoryView storyPrefab;
-        private List<StoryView> storyViewList;
+        private List<StoryView> storyViewList = new List<StoryView>();
 
         public Action<Story> OnStorySelected;
         void Start()
         {
-            storyViewList = new List<StoryView>();
-            instantiateStories();
             closeButton.onClick.AddListener(closeClicked);
+        }
+
+        private void OnEnable()
+        {
+            instantiateStories();
         }
 
         private void closeClicked()
@@ -40,12 +46,21 @@ namespace Aspie.UI
         }
         private void instantiateStories()
         {
-            foreach(Story s in GameDataManager.Instance.StoryList)
+            List<Story> currentStory = LocalizationManager.Instance.IsFrench ? GameDataManager.Instance.FrStoryList : GameDataManager.Instance.EnStoryList;
+            for(int i=0; i<currentStory.Count; i++)
             {
-                StoryView sv = Instantiate(storyPrefab, storyContainer.transform);
-                storyViewList.Add(sv);
+                StoryView sv;
+                if (i >= storyViewList.Count)
+                {
+                    sv = Instantiate(storyPrefab, storyContainer.transform);
+                    storyViewList.Add(sv);
+                }
+                else
+                {
+                    sv = storyViewList[i];
+                }
                 sv.OnStorySelected += selectStory;
-                sv.UdpateStory(s);
+                sv.UdpateStory(currentStory[i]);
             }
         }
     }

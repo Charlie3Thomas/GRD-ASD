@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UITable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 9e0581bccace0f24b90a896b93ef96d5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 639315054592
+    m_Localized: Play Story
+    m_Metadata:
+      m_Items: []
+  - m_Id: 829652570112
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959642439680
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12304345567232
+    m_Localized: Play Story
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15090827235328
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15187396890624
+    m_Localized: General
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15600149958656
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15855599849472
+    m_Localized: Ambient Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16038135959552
+    m_Localized: Master Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16195577548800
+    m_Localized: Music Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16457100791808
+    m_Localized: Sound Effects Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17312801722368
+    m_Localized: Sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18733102108672
+    m_Localized: Pause Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19985517088768
+    m_Localized: Go to Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20524573233152
+    m_Localized: Game Over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20635030228992
+    m_Localized: Quit Game
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
