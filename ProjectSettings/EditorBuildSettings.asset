@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: a8e873931c42996448a2dd1b5e0eec05
   - enabled: 1
-    path: Assets/Scenes/BusStop.unity
+    path: Assets/Scenes/BusStopEN.unity
     guid: 5febd4c52e414934c9b787c6ac4295f9
   - enabled: 1
     path: Assets/Scenes/UniversityLibraryFR.unity
