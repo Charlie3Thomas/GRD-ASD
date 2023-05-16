@@ -88,10 +88,8 @@ namespace Aspie.UI
 
         private void playStory(Story s)
         {
-            storySelectorScreen.gameObject.SetActive(false);
-            Debug.Log("Playing story : " + s.SceneName);
             OnStorySelected?.Invoke(s);
-            SceneManager.LoadScene(s.SceneName, LoadSceneMode.Additive);
+            storySelectorScreen.gameObject.SetActive(false);
         }
 
         private void changeBGSprite()

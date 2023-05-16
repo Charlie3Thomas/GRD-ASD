@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 namespace CT.Utilis
 {
     using Data;
@@ -31,6 +30,8 @@ namespace CT.Utilis
 
         public string current_character_data_name;
         private bool tip;
+
+        public static Action OnEndNoteReached;
 
         private void OnEnable()
         {
@@ -128,7 +129,7 @@ namespace CT.Utilis
             if (CheckIfEndNode())
             {
                 Debug.Log("End node is reached, no further dialogue");
-
+                OnEndNoteReached?.Invoke();
                 return;
             }
 
