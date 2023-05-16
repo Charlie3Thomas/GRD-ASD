@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UniversityLibraryFR.unity
     guid: eae00c7ad78a5a744861e016d53a5ef3
+  - enabled: 1
+    path: Assets/Scenes/BusStopFR.unity
+    guid: db8f92f8724fa014d9055962f9b9e376
+  - enabled: 1
+    path: Assets/Scenes/UniversityLibraryEN.unity
+    guid: eef78b2e579f79141b5c7fa52af67ebe
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 4afa2579839a36740b18264cbaba1252, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 9e105c609c5d7314c830e7bb011dd244, type: 2}
