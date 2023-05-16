@@ -1,3 +1,4 @@
+using Aspie.Sound;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -28,6 +29,7 @@ namespace Aspie.UI
         {
             isPaused = !pauseMenu.gameObject.activeSelf;
             pauseMenu.gameObject.SetActive(isPaused);
+            AudioService.Instance.PlayButtonSound();
         }
 
         private void gotoMainMenu()

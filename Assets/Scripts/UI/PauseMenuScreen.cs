@@ -78,6 +78,7 @@ namespace Aspie.UI
         }
         private void onMainMenuButtonClicked()
         {
+            AudioService.Instance.PlayButtonSound();
             OnMainMenuClicked?.Invoke();
         }
     }

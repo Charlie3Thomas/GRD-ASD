@@ -28,11 +28,13 @@ namespace Aspie.UI
             MainMenu.OnStorySelected += loadSceneStory;
             InGame.OnMainMenuRequest += showMainMenu;
             CT.Utilis.CTNodeIOUtility.OnEndNoteReached += showGameOver;
+            GameOver.OnMainMenuRequest += showMainMenu;
         }
 
         private void showMainMenu()
         {
             SceneManager.MoveGameObjectToScene(this.transform.root.gameObject, mainScene);
+            GameOver.gameObject.SetActive(false);
             InGame.gameObject.SetActive(false);
             MainMenu.gameObject.SetActive(true);
             if(inGameScene != mainScene)
